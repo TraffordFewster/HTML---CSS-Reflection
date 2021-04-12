@@ -10,31 +10,49 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/ebb02e5adb.js" crossorigin="anonymous"></script>
     <!-- bootstrap -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- StyleSheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="https://www.netmatters.co.uk/" class="mainLogo">
-                <img src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="netmatters logo">
-            </a>
-            <div class="phoneIcon">
-                <a class="phoneHolder" href="tel:01603704020">
-                    <span class="fas fa-phone-alt fa-2x"></span>
+        <nav class="container-fluid">
+            <div class="row align-middle">
+                <a href="https://www.netmatters.co.uk/" class="mainLogo col-1">
+                    <img src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="netmatters logo">
                 </a>
+                <div class="col filler"></div>
+                <div class="phoneIcon col-1 align-self-end">
+                    <a class="phoneHolder" href="tel:01603704020">
+                        <span class="fas fa-phone-alt fa-2x"></span>
+                    </a>
+                </div>
+                <button class="menuButton col-1 align-self-end">
+                    <span class="burgerBox">
+                        <span class="fas fa-bars"></span>
+                    </span> <br>
+                    <span class="menuText">Menu</span>
+                </button>
             </div>
-            <button class="menuButton">
-                <span class="burgerBox">
-                    <span class="fas fa-bars"></span>
-                </span> <br>
-                <span class="menuText">Menu</span>
-            </button>
-            <div class="searchBar">
-                <input class="" type="search" placeholder="Search..." aria-label="Search">
-                <button type="submit"><i class="fa fa-search"></i></button>
+            <div class="row">
+                <div class="searchBar col">
+                    <input class="searchText" type="search" placeholder="Search..." aria-label="Search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
             </div>
+            <div class="row imageRow">
+                <div class="bgImage">
+                    <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-JQsO.jpg">
+                </div>
+                <div class="textHolder">
+                    <h1 class="display-1">Digital Marketing</h1>
+                    <p class="lead">Generating you <!--you is misstyped on the main website--> new business through
+                        <br>
+                    results-driven marketing activities.
+                    </p>
+                </div>
+            </div>
+            <div class="filler"></div>
         </nav>
         
     </header>

@@ -1,108 +1,125 @@
-nav {
-    margin: $gutter $gutter;
-    display: grid;
-    grid-template-columns: minmax(0px,400px) auto 72px 80px;
-    grid-row: 5em 3em;
-    grid-template-areas: 
-    "logo . phone menu"
-    "search search search search";
-    column-gap: $gutter;
-    row-gap: $gutter;
-    // background: red;
-    // overflow: hidden;
-    padding: .25em;
-    align-items: center;
-    flex-wrap: wrap;
+nav{
+    margin: $gutter;
+}
 
+.menuButton{
+    margin: auto 0;
+    margin-right: $gutter;
+    min-width: 4em;
+    max-width: 4em;
+    text-align: center;
+    text-transform: uppercase;
+    background: $dark-1;
+    border:none;
+    border-radius: 4px;
+    color:white;
+    
+    .menuText{
+        margin-left: -.25em;
+    }
 
-    .mainLogo{
-        grid-area: logo;
-        img {
-            max-height: 5em;
-            margin-top: $gutter;
-        }
+    &:hover{
+        background:$dark-1-hover;
     }
     
-    // Idk how to center this phone thing will come back to it later.
-    .phoneIcon{
-        grid-area: phone;
-        color: $dark-1;
-        margin-left: auto;
-        margin-right: 1em;
-        .phoneHolder {
-            color: $dark-1;
-            padding: .1em;
-            display: inline-block;
-            font-size: 1em;
-            text-align: center;
-            span{
-                margin-top: auto;
-                display: inline-block;
-            }
-        }
-        &:hover{
-            .phoneHolder {
-                border-bottom: solid 2px $dark-1-hover;
-                color: $dark-1-hover;
-            }
-        }
-    } 
+}
 
+.mainLogo{
+    min-width: 420px;
+    overflow: hidden;
+}
 
-    .menuButton{
-        grid-area: menu;
-
-        height: 4em;
-        background: $dark-1;
-        color:white;
-        border: none;
-        border-radius: 5%;
-        line-height: 1em;
-        .burgerBox {
-            font-size: 2em;
-            text-align: center;
-        }
-        .menuText{
-            font-size: 1em;
-        }
-
-        &:hover{
-            background: $dark-1-hover;
-            cursor: pointer;
-        }
+.phoneIcon{
+    margin: auto 0;
+    min-width: 5em;
+    .phoneHolder{
+        padding: $gutter;
+        color:$dark-1-hover;
     }
 
-    .searchBar{
-        grid-area: search;
-        background: chartreuse;
-        display: flex;
+    & .phoneHolder:hover{
+         color: $dark-1-hover;
+         border-bottom: solid $dark-1-hover;
+    }
+
+}
+
+.filler{
+    z-index: -1;
+    margin:0;
+    height: 4em;
+}
+.col{
+    z-index: 1;
+}
+
+.searchBar{
+    margin: $gutter;
+    display: flex;
+    height: 3em;
+    border: solid 2px #CECECE;
+    background: #E5E5E5;
+
+    .searchText{
+        flex:1;
+    }
+    .button{
         flex: 1;
-        align-items: center;
-        height: 3em;
-        align-items: stretch;
-        border: solid 1px #CECECE;
+    }
+
+    & .searchText:focus,& button:focus{
+        outline: none;
+    }
+
+    .searchText, button{
+        border: none;
+        margin:0;
         background: #E5E5E5;
-        input{
-            flex: 12;
-            margin-right: 0;
-            height: 100%;
-            border: none;
-            background: #E5E5E5;
-            padding: $gutter;
-            &:focus{
-                outline: none;
-            }
-        }
-        button{
-            flex-basis: 3em;
-            float: right;
-            border: none;
-            background: #E5E5E5;
-            font-size: 1.5em;
-            &:focus{
-                outline: none;
-            }
-        }
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+
+}
+
+.imageRow{
+    overflow: hidden;
+}
+
+.imageRow{
+    position: relative;
+    text-align: center;
+    .textHolder{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        display: block;
+        position: absolute;
+        color:white;
     }
 }
 
+.bgImage{
+    min-width: 100%;
+    background: red;
+    height: calc(100vh - 9em);
+    overflow: hidden;
+    margin: auto 0;
+
+    img{
+        min-width: 100%;
+        height: calc(100vh - 9em);
+
+    }
+
+    &:before {
+        position: absolute; 
+        z-index: 2;
+        display: block; 
+        content: "";
+        top: 0; right: 0; bottom: 0; left: 0;  
+        background: hsla(0,0%,0%,0.5);          /*adjust brightness here */
+    }
+}
