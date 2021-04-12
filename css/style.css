@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 nav {
@@ -18,6 +19,7 @@ nav .phoneIcon {
   margin-right: 1em;
 }
 nav .phoneIcon .phoneHolder {
+  color: #333645;
   padding: 0.1em;
   display: inline-block;
   font-size: 1em;
@@ -28,7 +30,8 @@ nav .phoneIcon .phoneHolder span {
   display: inline-block;
 }
 nav .phoneIcon:hover .phoneHolder {
-  border-bottom: solid 2px #333645;
+  border-bottom: solid 2px #22242E;
+  color: #22242E;
 }
 nav .menuButton {
   width: 5em;
@@ -38,6 +41,7 @@ nav .menuButton {
   border: none;
   border-radius: 5%;
   margin-right: 1em;
+  line-height: 1em;
 }
 nav .menuButton .burgerBox {
   font-size: 2em;
@@ -49,6 +53,24 @@ nav .menuButton .menuText {
 nav .menuButton:hover {
   background: #22242E;
   cursor: pointer;
+}
+
+.searchBar {
+  background: chartreuse;
+  margin: 0.5em;
+  display: flex;
+  align-items: center;
+  height: 3em;
+  align-items: stretch;
+}
+.searchBar input {
+  flex: 4;
+  margin-right: 0;
+  width: 80%;
+}
+.searchBar button {
+  flex: 1;
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */
