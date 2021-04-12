@@ -3,17 +3,48 @@
   box-sizing: border-box;
 }
 
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
 nav {
   margin: 0.5em 0.5em;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0px, 400px) auto 72px 80px;
+  grid-row: 5em 3em;
+  grid-template-areas: "logo . phone menu" "search search search search";
+  column-gap: 0.5em;
+  row-gap: 0.5em;
   padding: 0.25em;
   align-items: center;
+  flex-wrap: wrap;
+}
+nav .mainLogo {
+  grid-area: logo;
 }
 nav .mainLogo img {
   max-height: 5em;
   margin-top: 0.5em;
 }
 nav .phoneIcon {
+  grid-area: phone;
   color: #333645;
   margin-left: auto;
   margin-right: 1em;
@@ -34,13 +65,12 @@ nav .phoneIcon:hover .phoneHolder {
   color: #22242E;
 }
 nav .menuButton {
-  width: 5em;
+  grid-area: menu;
   height: 4em;
   background: #333645;
   color: white;
   border: none;
   border-radius: 5%;
-  margin-right: 1em;
   line-height: 1em;
 }
 nav .menuButton .burgerBox {
@@ -54,23 +84,37 @@ nav .menuButton:hover {
   background: #22242E;
   cursor: pointer;
 }
-
-.searchBar {
+nav .searchBar {
+  grid-area: search;
   background: chartreuse;
-  margin: 0.5em;
   display: flex;
+  flex: 1;
   align-items: center;
   height: 3em;
   align-items: stretch;
+  border: solid 1px #CECECE;
+  background: #E5E5E5;
 }
-.searchBar input {
-  flex: 4;
+nav .searchBar input {
+  flex: 12;
   margin-right: 0;
-  width: 80%;
+  height: 100%;
+  border: none;
+  background: #E5E5E5;
+  padding: 0.5em;
 }
-.searchBar button {
-  flex: 1;
+nav .searchBar input:focus {
+  outline: none;
+}
+nav .searchBar button {
+  flex-basis: 3em;
   float: right;
+  border: none;
+  background: #E5E5E5;
+  font-size: 1.5em;
+}
+nav .searchBar button:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */
