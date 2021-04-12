@@ -1,54 +1,61 @@
-header {
-    margin: .5em .5em .5em .5em;
+nav {
+    margin: .5em .5em;
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    width:100%;
-    background: red;
-    height: 4em;
+    // background: red;
     // overflow: hidden;
     padding: .25em;
+    align-items: center;
 
 
     .mainLogo{
-        margin-left: 1em;
         img {
-            height: 3em;
+            max-height: 5em;
             margin-top: .5em;
         }
     }
     
+    // Idk how to center this phone thing will come back to it later.
     .phoneIcon{
-        background:green;
+        color: $dark-1;
         margin-left: auto;
         margin-right: 1em;
         .phoneHolder {
+            padding: .1em;
             display: inline-block;
-            margin: auto;
-            font-size: 1.5em;
+            font-size: 1em;
             text-align: center;
-            background: chocolate;
             span{
-                margin: auto;
+                margin-top: auto;
                 display: inline-block;
             }
         }
+        &:hover{
+            .phoneHolder {
+                border-bottom: solid 2px $dark-1;
+            }
+        }
+    } 
 
-    }
 
     .menuButton{
         width: 5em;
+        height: 4em;
         background: $dark-1;
         color:white;
         border: none;
         border-radius: 5%;
         margin-right: 1em;
         .burgerBox {
-            font-size: 2.8em;
+            font-size: 2em;
             text-align: center;
         }
         .menuText{
             font-size: 1em;
+        }
+
+        &:hover{
+            background: $dark-1-hover;
+            cursor: pointer;
         }
     }
 }
