@@ -1,0 +1,37 @@
+.flexBR {
+  flex: 100%;
+}
+
+header {
+  margin: 0.5em 0.5em 0.5em 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 100%;
+  background: red;
+  height: 4em;
+  overflow: hidden;
+}
+header .mainLogo {
+  margin-left: 1em;
+}
+header .mainLogo img {
+  height: 3em;
+  margin-top: 0.5em;
+}
+header .phoneIcon {
+  background: green;
+  margin-left: auto;
+}
+header .phoneIcon i {
+  font-size: 3em;
+  text-align: center;
+  background: chocolate;
+}
+header .menuButton {
+  width: 4em;
+  background: green;
+  margin-left: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */
