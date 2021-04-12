@@ -3,10 +3,11 @@ header {
     display: flex;
     flex-direction: row;
     align-content: center;
-    width: 100%;
+    width:100%;
     background: red;
     height: 4em;
-    overflow: hidden;
+    // overflow: hidden;
+    padding: .25em;
 
 
     .mainLogo{
@@ -20,17 +21,34 @@ header {
     .phoneIcon{
         background:green;
         margin-left: auto;
-        i {
-            font-size: 3em;
+        margin-right: 1em;
+        .phoneHolder {
+            display: inline-block;
+            margin: auto;
+            font-size: 1.5em;
             text-align: center;
             background: chocolate;
+            span{
+                margin: auto;
+                display: inline-block;
+            }
         }
 
     }
 
     .menuButton{
-        width: 4em;
-        background: green;
-        margin-left: 1em;
+        width: 5em;
+        background: $dark-1;
+        color:white;
+        border: none;
+        border-radius: 5%;
+        margin-right: 1em;
+        .burgerBox {
+            font-size: 2.8em;
+            text-align: center;
+        }
+        .menuText{
+            font-size: 1em;
+        }
     }
 }

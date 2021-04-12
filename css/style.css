@@ -10,7 +10,7 @@ header {
   width: 100%;
   background: red;
   height: 4em;
-  overflow: hidden;
+  padding: 0.25em;
 }
 header .mainLogo {
   margin-left: 1em;
@@ -22,16 +22,33 @@ header .mainLogo img {
 header .phoneIcon {
   background: green;
   margin-left: auto;
+  margin-right: 1em;
 }
-header .phoneIcon i {
-  font-size: 3em;
+header .phoneIcon .phoneHolder {
+  display: inline-block;
+  margin: auto;
+  font-size: 1.5em;
   text-align: center;
   background: chocolate;
 }
+header .phoneIcon .phoneHolder span {
+  margin: auto;
+  display: inline-block;
+}
 header .menuButton {
-  width: 4em;
-  background: green;
-  margin-left: 1em;
+  width: 5em;
+  background: #333645;
+  color: white;
+  border: none;
+  border-radius: 5%;
+  margin-right: 1em;
+}
+header .menuButton .burgerBox {
+  font-size: 2.8em;
+  text-align: center;
+}
+header .menuButton .menuText {
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
