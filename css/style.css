@@ -134,6 +134,7 @@ nav {
   position: absolute;
   background: #2ECC71;
   color: white;
+  text-decoration: none;
 }
 .imageRow .HeroImageCTA a:hover {
   background: #25a25a;
@@ -450,9 +451,34 @@ nav {
   text-decoration: none;
   color: white;
 }
-.newsItem .thumbnail {
+.newsItem .thumbnail-holder {
+  display: block;
   background: red;
   width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.newsItem .thumbnail-holder:before {
+  position: absolute;
+  z-index: 20;
+  display: block;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background-color 200ms;
+  background: rgba(255, 255, 255, 0);
+}
+.newsItem .thumbnail-holder:hover:before {
+  background: rgba(255, 255, 255, 0.5);
+}
+.newsItem .thumbnail-holder:hover img {
+  transform: scale(1.1);
+}
+.newsItem .thumbnail-holder img {
+  position: relative;
+  transition: transform 200ms;
 }
 .newsItem .title {
   display: block;
@@ -494,6 +520,23 @@ nav {
   font-size: 0.8em;
 }
 
+.newsType-news {
+  position: relative;
+}
+.newsType-news .overlayBanner {
+  display: block;
+  width: 5em;
+  height: 1.5em;
+  background: #D64541;
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  z-index: 400;
+  text-align: center;
+}
+.newsType-news .overlayBanner:hover {
+  text-decoration: underline;
+}
 .newsType-news h3 {
   color: #D64541;
 }
@@ -504,6 +547,23 @@ nav {
   background: #bc2c28;
 }
 
+.newsType-carreers {
+  position: relative;
+}
+.newsType-carreers .overlayBanner {
+  display: block;
+  width: 5em;
+  height: 1.5em;
+  background: #4183D7;
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  z-index: 400;
+  text-align: center;
+}
+.newsType-carreers .overlayBanner:hover {
+  text-decoration: underline;
+}
 .newsType-carreers h3 {
   color: #4183D7;
 }

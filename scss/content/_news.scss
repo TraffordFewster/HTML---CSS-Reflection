@@ -42,10 +42,39 @@
         text-decoration: none;
         color: white;
     }
-    .thumbnail{
+    .thumbnail-holder{
+        display: block;
         background:red;
         width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        &:before {
+            position: absolute; 
+            z-index: 20;
+            display: block; 
+            content: "";
+            top: 0; right: 0; bottom: 0; left: 0;  
+            transition: background-color 200ms;
+            background: rgba($color: #ffffff, $alpha: 0);
+        }
+
+        &:hover{
+            &:before { 
+                background: rgba($color: #ffffff, $alpha: .5);
+            }
+
+            img{
+                transform: scale(1.1);
+            }
+        }
+        img{
+            position: relative;
+            transition: transform 200ms;
+        }
     }
+
+
 
     .title{
         display: block;
@@ -94,6 +123,23 @@
 
 @each $type,$color in $news-types {
     .newsType-#{$type} {
+        position: relative;
+        .overlayBanner{
+            display: block;
+            width: 5em;
+            height: 1.5em;
+            background: $color;
+            position: absolute;
+            top: 5%;
+            right:0%;
+            z-index: 400;
+            text-align: center;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
         h3{
             color:$color;
         }

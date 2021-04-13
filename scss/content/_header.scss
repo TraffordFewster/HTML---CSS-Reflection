@@ -103,6 +103,7 @@ nav{
         position: absolute;
         background: map-get($product-colors , "digitalmarketing");
         color:white;
+        text-decoration: none;
 
         &:hover{
             background: darken($color: map-get($product-colors , "digitalmarketing"), $amount: 10);
