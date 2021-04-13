@@ -13,9 +13,10 @@ nav{
     border:none;
     border-radius: 4px;
     color:white;
-    
-    .menuText{
-        margin-left: -.25em;
+    line-height: 1em;
+    padding: .3em;
+    .burgerBox{
+        font-size: 2em;
     }
 
     &:hover{
@@ -23,12 +24,6 @@ nav{
     }
     
 }
-
-.mainLogo{
-    min-width: 420px;
-    overflow: hidden;
-}
-
 .phoneIcon{
     margin: auto 0;
     min-width: 5em;
@@ -44,13 +39,8 @@ nav{
 
 }
 
-.filler{
-    z-index: -1;
-    margin:0;
-    height: 4em;
-}
-.col{
-    z-index: 1;
+.mainLogo{
+    margin-left: $gutter;
 }
 
 .searchBar{
@@ -125,13 +115,13 @@ nav{
 .bgImage{
     min-width: 100%;
     background: red;
-    height: calc(100vh - 9em);
+    height: calc(100vh - 11em);
     overflow: hidden;
     margin: auto 0;
 
     img{
         min-width: 100%;
-        height: calc(100vh - 9em);
+        height: calc(100vh - 11em);
 
     }
 

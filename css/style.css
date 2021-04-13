@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
@@ -24,6 +25,18 @@ input[type=search]::-webkit-search-results-decoration {
   display: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav {
   margin: 1em;
 }
@@ -39,17 +52,14 @@ nav {
   border: none;
   border-radius: 4px;
   color: white;
+  line-height: 1em;
+  padding: 0.3em;
 }
-.menuButton .menuText {
-  margin-left: -0.25em;
+.menuButton .burgerBox {
+  font-size: 2em;
 }
 .menuButton:hover {
   background: #22242E;
-}
-
-.mainLogo {
-  min-width: 420px;
-  overflow: hidden;
 }
 
 .phoneIcon {
@@ -65,14 +75,8 @@ nav {
   border-bottom: solid #22242E;
 }
 
-.filler {
-  z-index: -1;
-  margin: 0;
-  height: 4em;
-}
-
-.col {
-  z-index: 1;
+.mainLogo {
+  margin-left: 1em;
 }
 
 .searchBar {
@@ -139,13 +143,13 @@ nav {
 .bgImage {
   min-width: 100%;
   background: red;
-  height: calc(100vh - 9em);
+  height: calc(100vh - 11em);
   overflow: hidden;
   margin: auto 0;
 }
 .bgImage img {
   min-width: 100%;
-  height: calc(100vh - 9em);
+  height: calc(100vh - 11em);
 }
 .bgImage:before {
   position: absolute;
@@ -158,6 +162,202 @@ nav {
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   /*adjust brightness here */
+}
+
+.productOverviews {
+  background: #f2f2f2;
+  margin-top: -3em;
+  padding-top: 3em;
+}
+
+.productPanel {
+  padding: 1em;
+  display: block;
+  text-align: center;
+  margin: 1em;
+  margin-top: 3em;
+  border: dotted 1px black;
+  background: white;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.55);
+  text-decoration: none;
+  color: #333645;
+}
+.productPanel:hover {
+  color: white;
+}
+.productPanel i {
+  font-size: 1.5em;
+  border-radius: 50%;
+  padding: 0.5em;
+  color: white;
+}
+.productPanel h2 {
+  margin-top: 0.25em;
+}
+.productPanel .Spacer {
+  font-size: 4em;
+  color: #333645;
+  line-height: 0.2em;
+}
+.productPanel p {
+  margin-top: -0.5em;
+}
+.productPanel .readMore {
+  display: block;
+  width: 10em;
+  margin: 0 auto;
+  padding: 0.7em;
+  font-size: 1.2em;
+  border-radius: 0.2em;
+  color: white;
+}
+
+.prod-bespSoft i {
+  background: #67809F;
+}
+.prod-bespSoft .readMore {
+  background: #67809F;
+}
+.prod-bespSoft:hover {
+  background: #67809F;
+}
+.prod-bespSoft:hover .Spacer {
+  color: white;
+}
+.prod-bespSoft:hover i {
+  color: #67809F;
+  background: white;
+}
+.prod-bespSoft:hover .readMore {
+  color: #67809F;
+  background: white;
+}
+
+.prod-itSup i {
+  background: #4183D7;
+}
+.prod-itSup .readMore {
+  background: #4183D7;
+}
+.prod-itSup:hover {
+  background: #4183D7;
+}
+.prod-itSup:hover .Spacer {
+  color: white;
+}
+.prod-itSup:hover i {
+  color: #4183D7;
+  background: white;
+}
+.prod-itSup:hover .readMore {
+  color: #4183D7;
+  background: white;
+}
+
+.prod-digitalmarketing i {
+  background: #2ECC71;
+}
+.prod-digitalmarketing .readMore {
+  background: #2ECC71;
+}
+.prod-digitalmarketing:hover {
+  background: #2ECC71;
+}
+.prod-digitalmarketing:hover .Spacer {
+  color: white;
+}
+.prod-digitalmarketing:hover i {
+  color: #2ECC71;
+  background: white;
+}
+.prod-digitalmarketing:hover .readMore {
+  color: #2ECC71;
+  background: white;
+}
+
+.prod-telecoms i {
+  background: #D64541;
+}
+.prod-telecoms .readMore {
+  background: #D64541;
+}
+.prod-telecoms:hover {
+  background: #D64541;
+}
+.prod-telecoms:hover .Spacer {
+  color: white;
+}
+.prod-telecoms:hover i {
+  color: #D64541;
+  background: white;
+}
+.prod-telecoms:hover .readMore {
+  color: #D64541;
+  background: white;
+}
+
+.prod-webdesign i {
+  background: #926FB1;
+}
+.prod-webdesign .readMore {
+  background: #926FB1;
+}
+.prod-webdesign:hover {
+  background: #926FB1;
+}
+.prod-webdesign:hover .Spacer {
+  color: white;
+}
+.prod-webdesign:hover i {
+  color: #926FB1;
+  background: white;
+}
+.prod-webdesign:hover .readMore {
+  color: #926FB1;
+  background: white;
+}
+
+.prod-cybersecurity i {
+  background: #F62459;
+}
+.prod-cybersecurity .readMore {
+  background: #F62459;
+}
+.prod-cybersecurity:hover {
+  background: #F62459;
+}
+.prod-cybersecurity:hover .Spacer {
+  color: white;
+}
+.prod-cybersecurity:hover i {
+  color: #F62459;
+  background: white;
+}
+.prod-cybersecurity:hover .readMore {
+  color: #F62459;
+  background: white;
+}
+
+.prod-scs i {
+  background: #926FB1;
+}
+.prod-scs .readMore {
+  background: #926FB1;
+}
+.prod-scs:hover {
+  background: #926FB1;
+}
+.prod-scs:hover .Spacer {
+  color: white;
+}
+.prod-scs:hover i {
+  color: #926FB1;
+  background: white;
+}
+.prod-scs:hover .readMore {
+  color: #926FB1;
+  background: white;
 }
 
 /*# sourceMappingURL=style.css.map */

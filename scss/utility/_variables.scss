@@ -1,9 +1,17 @@
 $dark-1: #333645;
 $dark-1-hover: #22242E;
 
+$light-offset: darken(white, 5);
+
 $gutter: 1em;
 
 $product-colors: (
 
+    "bespSoft": #67809F,
+    "itSup":#4183D7,
     "digitalmarketing": #2ECC71,
+    "telecoms": #D64541,
+    "webdesign": #926FB1,
+    "cybersecurity":#F62459,
+    "scs": #926FB1,
 );

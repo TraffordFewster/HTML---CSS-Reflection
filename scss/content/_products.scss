@@ -1,0 +1,85 @@
+.productOverviews{
+    background: $light-offset;
+    margin-top: -3em;
+    padding-top: 3em;
+}
+
+.productPanel{
+    padding: $gutter;
+    display: block;
+    text-align: center;
+    margin: $gutter;
+    margin-top: ($gutter * 3);
+    border:dotted 1px black;
+    background: white;
+
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.55); 
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.55);
+    text-decoration: none;
+    color: $dark-1;
+
+    &:hover{
+        color:white
+    }
+
+    i{
+        font-size: 1.5em;
+        border-radius: 50%;
+        padding: .5em;
+        color: white;
+    }
+
+    h2{
+        margin-top: .25em;
+    }
+
+    .Spacer{
+        font-size: 4em;
+        color:$dark-1;
+        line-height: .2em;
+    }
+
+    p{
+        margin-top: -.5em;
+    }
+
+    .readMore{
+        display: block;
+        width: 10em;
+        margin: 0 auto;
+        padding: .7em;
+        font-size: 1.2em;
+        border-radius: .2em;
+        color: white;
+    }
+
+}
+
+@each $name, $color in $product-colors{
+    .prod-#{$name}{
+        i {
+            background: $color;
+        }
+
+        .readMore{
+            background: $color;
+        }
+
+        &:hover{
+            background: $color;
+            .Spacer{
+                color: white
+            }
+
+            i{
+                color: $color;
+                background: white;
+            }
+
+            .readMore{
+                color: $color;
+                background: white;
+            }
+        }
+    }
+}
