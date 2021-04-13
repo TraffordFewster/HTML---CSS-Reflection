@@ -109,13 +109,31 @@ nav {
   text-align: center;
 }
 .imageRow .textHolder {
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
   display: block;
   position: absolute;
   color: white;
+}
+.imageRow .HeroImageCTA a {
+  font-size: 1.5em;
+  width: 14em;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: block;
+  position: absolute;
+  background: #2ECC71;
+  color: white;
+}
+.imageRow .HeroImageCTA a:hover {
+  background: #25a25a;
+  text-decoration: none;
 }
 
 .bgImage {
