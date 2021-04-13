@@ -164,20 +164,23 @@ nav {
   /*adjust brightness here */
 }
 
-.productOverviews {
-  background: #f2f2f2;
+.productBG {
+  background: #e6e6e6;
   margin-top: -3em;
   padding-top: 3em;
 }
 
 .productPanel {
   padding: 1em;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin: 1em;
   margin-top: 3em;
   border: dotted 1px black;
   background: white;
+  font-size: 0.9em;
   -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.55);
   text-decoration: none;
@@ -187,12 +190,14 @@ nav {
   color: white;
 }
 .productPanel i {
+  align-self: center;
   font-size: 1.5em;
   border-radius: 50%;
   padding: 0.5em;
   color: white;
 }
 .productPanel h2 {
+  font-size: 1.8em;
   margin-top: 0.25em;
 }
 .productPanel .Spacer {
@@ -201,16 +206,28 @@ nav {
   line-height: 0.2em;
 }
 .productPanel p {
-  margin-top: -0.5em;
+  max-width: 90%;
+  overflow: hidden;
 }
 .productPanel .readMore {
   display: block;
   width: 10em;
   margin: 0 auto;
+  margin-top: auto;
   padding: 0.7em;
   font-size: 1.2em;
   border-radius: 0.2em;
   color: white;
+}
+@media screen and (min-width: 992px) {
+  .productPanel {
+    height: 21em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .productPanel {
+    height: 19em;
+  }
 }
 
 .prod-bespSoft i {
