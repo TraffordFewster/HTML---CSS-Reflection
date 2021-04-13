@@ -1,0 +1,32 @@
+.netmattersDesc{
+
+    .descText{
+        padding: $gutter;
+    }
+
+    font-size: 1.2em;
+    margin-top: 3em;
+    background: $dark-1;
+    color: white;
+
+    h2{
+        font-weight: bold;
+        letter-spacing: .05em;
+    }
+
+    .lead{
+        font-weight: bold;
+    }
+
+    p{
+        margin-top: $gutter * 1.5;
+    }
+}
+
+.logobg{
+    margin: 0;
+    @media screen and (min-width:992px) {
+        background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
+        background-position: center;
+    }
+}

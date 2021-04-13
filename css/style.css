@@ -377,4 +377,34 @@ nav {
   background: white;
 }
 
+.netmattersDesc {
+  font-size: 1.2em;
+  margin-top: 3em;
+  background: #333645;
+  color: white;
+}
+.netmattersDesc .descText {
+  padding: 1em;
+}
+.netmattersDesc h2 {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.netmattersDesc .lead {
+  font-weight: bold;
+}
+.netmattersDesc p {
+  margin-top: 1.5em;
+}
+
+.logobg {
+  margin: 0;
+}
+@media screen and (min-width: 992px) {
+  .logobg {
+    background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
+    background-position: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
