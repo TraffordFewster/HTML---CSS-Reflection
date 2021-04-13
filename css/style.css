@@ -397,6 +397,18 @@ nav {
 .netmattersDesc p {
   margin-top: 1.5em;
 }
+.netmattersDesc a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333645;
+  background: white;
+  padding: 0.75em;
+  border-radius: 0.25em;
+  margin-top: 1em;
+}
+.netmattersDesc a:hover {
+  background: #e6e6e6;
+}
 
 .logobg {
   margin: 0;
@@ -444,7 +456,7 @@ nav {
 }
 @media screen and (min-width: 1200px) {
   .newsItem {
-    max-width: calc(33% - 2em);
+    max-width: calc(33.333333333333% - 2em);
   }
 }
 .newsItem a {
@@ -479,6 +491,7 @@ nav {
 .newsItem .thumbnail-holder img {
   position: relative;
   transition: transform 200ms;
+  width: 100%;
 }
 .newsItem .title {
   display: block;
@@ -572,6 +585,35 @@ nav {
 }
 .newsType-carreers .readMore:hover {
   background: #286abd;
+}
+
+.clientsBG {
+  background: #cccccc;
+}
+
+.clientsContainer .list {
+  display: block;
+  padding: 1em;
+}
+.clientsContainer .clientsImage {
+  position: relative;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+.clientsContainer .clientsImage img {
+  max-width: 100%;
+  min-width: 0%;
+  height: auto;
+}
+.clientsContainer .clientsImage .colored {
+  display: none;
+}
+.clientsContainer .clientsImage:hover > img:first-of-type {
+  display: block;
+}
+.clientsContainer .clientsImage:hover > img:last-of-type {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
