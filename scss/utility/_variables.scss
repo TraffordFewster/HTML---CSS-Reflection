@@ -6,7 +6,6 @@ $light-offset: darken(white, 10);
 $gutter: 1em;
 
 $product-colors: (
-
     "bespSoft": #67809F,
     "itSup":#4183D7,
     "digitalmarketing": #2ECC71,
@@ -15,3 +14,8 @@ $product-colors: (
     "cybersecurity":#F62459,
     "scs": #926FB1,
 );
+
+$news-types:(
+    "news": #D64541,
+    "carreers" : #4183D7,
+)

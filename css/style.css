@@ -167,6 +167,7 @@ nav {
 .productBG {
   background: #e6e6e6;
   margin-top: -3em;
+  padding-bottom: 3em;
   padding-top: 3em;
 }
 
@@ -379,7 +380,6 @@ nav {
 
 .netmattersDesc {
   font-size: 1.2em;
-  margin-top: 3em;
   background: #333645;
   color: white;
 }
@@ -405,6 +405,113 @@ nav {
     background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
     background-position: center;
   }
+}
+
+.newsSelector {
+  padding-top: 2em;
+}
+.newsSelector h2 {
+  margin-left: 0.5em;
+  padding-bottom: 0.8em;
+  display: inline;
+  font-size: 2em;
+  min-height: 6em;
+  border-bottom: solid 0.2em #333645;
+}
+
+.newsContainerBG {
+  background: #e6e6e6;
+  margin-top: 2em;
+}
+
+.newsItem {
+  min-width: 0px;
+  max-width: calc(100% - 2em);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333645;
+  border-radius: 1em;
+  overflow: hidden;
+  color: #333645;
+  padding: 0;
+  margin: 1em;
+}
+@media screen and (min-width: 768px) {
+  .newsItem {
+    max-width: calc(50% - 2em);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .newsItem {
+    max-width: calc(33% - 2em);
+  }
+}
+.newsItem a {
+  text-decoration: none;
+  color: white;
+}
+.newsItem .thumbnail {
+  background: red;
+  width: 100%;
+}
+.newsItem .title {
+  display: block;
+  font-size: 1.3em;
+  min-height: 2.5em;
+}
+.newsItem .desc {
+  min-height: 5em;
+}
+.newsItem h3:hover {
+  text-decoration: underline;
+}
+.newsItem .newsItemText {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  min-height: 22em;
+}
+.newsItem .readMore {
+  margin-top: auto;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  text-align: center;
+  max-width: 7em;
+}
+.newsItem .give-hr-margin {
+  padding: 1em;
+}
+.newsItem .author {
+  line-height: 0.2em;
+}
+.newsItem .author img {
+  float: left;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+.newsItem .author h3 {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.newsType-news h3 {
+  color: #D64541;
+}
+.newsType-news .readMore {
+  background: #D64541;
+}
+.newsType-news .readMore:hover {
+  background: #bc2c28;
+}
+
+.newsType-carreers h3 {
+  color: #4183D7;
+}
+.newsType-carreers .readMore {
+  background: #4183D7;
+}
+.newsType-carreers .readMore:hover {
+  background: #286abd;
 }
 
 /*# sourceMappingURL=style.css.map */
