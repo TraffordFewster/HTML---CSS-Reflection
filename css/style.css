@@ -84,7 +84,7 @@ body {
 .search {
   margin-top: auto;
   margin-bottom: auto;
-  height: 3em;
+  height: 4em;
   display: flex;
   flex: 1;
   margin-bottom: 1em;
@@ -100,9 +100,14 @@ body {
 }
 .search button {
   color: white;
-  width: 2em;
+  width: 4em;
   background: #999AA2;
   border: solid 2px #999AA2;
+}
+@media screen and (min-width: 1400px) {
+  .search {
+    max-width: 20em;
+  }
 }
 
 .header-med {
@@ -169,7 +174,7 @@ body {
   margin-left: 1em;
 }
 .header-med .actions .search {
-  margin-left: 1em;
+  margin-left: 2em;
   margin-bottom: auto;
 }
 .header-med .actions .searchButton {
