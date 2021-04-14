@@ -183,6 +183,7 @@ nav {
   border: dotted 1px black;
   background: white;
   font-size: 0.9em;
+  height: 18em;
   -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.55);
   text-decoration: none;
@@ -443,7 +444,7 @@ nav {
   align-items: center;
   justify-content: center;
   border: 1px solid #333645;
-  border-radius: 1em;
+  border-radius: 0.25em;
   overflow: hidden;
   color: #333645;
   padding: 0;
@@ -591,13 +592,9 @@ nav {
   background: #cccccc;
 }
 
-.clientsContainer .list {
-  display: block;
-  padding: 1em;
-}
 .clientsContainer .clientsImage {
   position: relative;
-  padding: 1em;
+  padding: 3em 1em;
   text-align: center;
   vertical-align: middle;
 }
@@ -606,14 +603,134 @@ nav {
   min-width: 0%;
   height: auto;
 }
+.clientsContainer .clientsImage .hiddenDesc {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: #333645;
+  z-index: 5;
+  color: white;
+  padding: 1em;
+  transform: translateY();
+}
+.clientsContainer .clientsImage .hiddenDesc .textHolder {
+  margin: auto;
+  font-size: 1em;
+  display: block;
+}
+.clientsContainer .clientsImage .hiddenDesc .textHolder span {
+  display: block;
+  margin: 3rem auto;
+  font-size: 5em;
+  color: white;
+  line-height: 0;
+}
+.clientsContainer .clientsImage .hiddenDesc .textHolder h1 {
+  display: block;
+}
+.clientsContainer .clientsImage .hiddenDesc .textHolder p {
+  margin-top: -3.5em;
+  display: block;
+}
+.clientsContainer .clientsImage .hiddenDesc::after {
+  position: absolute;
+  bottom: -2.5em;
+  display: block;
+  left: calc(50% - 32px);
+  content: " ";
+  border-right: 32px double transparent;
+  border-left: 32px double transparent;
+  border-top: 48px solid #333645;
+  width: 0;
+  height: 0;
+  z-index: -1;
+}
 .clientsContainer .clientsImage .colored {
   display: none;
 }
-.clientsContainer .clientsImage:hover > img:first-of-type {
+.clientsContainer .clientsImage:hover > img:first-of-type, .clientsContainer .clientsImage a:hover > img:first-of-type {
   display: block;
 }
-.clientsContainer .clientsImage:hover > img:last-of-type {
+.clientsContainer .clientsImage:hover > img:last-of-type, .clientsContainer .clientsImage a:hover > img:last-of-type {
   display: none;
+}
+.clientsContainer .clientsImage:hover .hiddenDesc, .clientsContainer .clientsImage a:hover .hiddenDesc {
+  display: block;
+}
+
+.busseys {
+  height: 9em;
+  top: -9em;
+}
+
+.crane {
+  height: 14em;
+  top: -14em;
+}
+
+.beat {
+  height: 10em;
+  top: -10em;
+}
+
+.northerndri {
+  height: 10em;
+  top: -10em;
+}
+
+.emailBG {
+  background: #b3b3b3;
+}
+
+.emailContainer {
+  padding: 1em;
+}
+.emailContainer a {
+  color: #333645;
+}
+.emailContainer a:hover {
+  color: #1d1f28;
+}
+.emailContainer h2, .emailContainer label {
+  font-weight: bold;
+}
+.emailContainer input {
+  height: 3em;
+}
+.emailContainer .emailCol, .emailContainer .nameCol {
+  margin-top: 1em;
+}
+.emailContainer .checkMarketing {
+  margin: 0;
+  margin-top: 1em;
+  padding: 0;
+}
+.emailContainer .checkMarketing input {
+  width: 2em;
+  height: 2em;
+}
+.emailContainer .checkMarketing input:focus {
+  box-shadow: none;
+  border: none;
+}
+.emailContainer .checkMarketing input:checked {
+  background-color: #333645;
+  color: white;
+  border: none;
+}
+.emailContainer .checkMarketing label {
+  font-size: 1em;
+}
+.emailContainer .btn {
+  margin-top: 1em;
+  background: #333645;
+  color: white;
+  height: 3em;
+}
+.emailContainer .btn:hover {
+  background: #1d1f28;
 }
 
 /*# sourceMappingURL=style.css.map */

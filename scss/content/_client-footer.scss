@@ -3,13 +3,9 @@
 }
 
 .clientsContainer{
-    .list{
-        display: block;
-        padding: 1em;
-    }
     .clientsImage{
         position: relative;
-        padding: 1em;
+        padding: 3em 1em;
         text-align: center;
         vertical-align: middle;
         img{
@@ -31,19 +27,94 @@
             
         }
 
+        .hiddenDesc{
+            display: none;
+            position: absolute;
+            width: 100%;
+            left:0;
+            right: 0;
+            background: $dark-1;
+            z-index: 5;
+            color:white;
+            padding: $gutter;
+            transform: translateY();
+            .textHolder{
+                margin: auto;
+                font-size: 1em;
+                display: block;
+                span{
+                    display: block;
+                    margin: 3rem auto;
+                    font-size: 5em;
+                    color:white;
+                    line-height: 0;
+                }
+                h1{
+                    display: block;
+                }
+                p{
+                    margin-top: -3.5em;
+                    display: block;
+                }
+            }
+
+            @media screen and (min-width:992px){
+    
+            }
+            // clip-path: polygon(100% 0, 100% 80%, 65% 80%, 50% 100%, 35% 80%, 0 80%, 0 0);
+            // -ms-clip-path: polygon(100% 0, 100% 80%, 65% 80%, 50% 100%, 35% 80%, 0 80%, 0 0);
+            // Wanted todo this but IE :)
+            &::after{
+                position: absolute;
+                bottom:-2.5em;
+                display: block;
+                left:calc(50% - 32px);
+                content: " ";
+                border-right: 32px double transparent;
+                border-left: 32px double transparent;
+                border-top: 48px solid $dark-1;
+                width: 0;
+                height: 0;
+                z-index: -1;
+
+            }
+
+        }
+
         .colored{
             display: none;
         }
 
-        &:hover{
+        &:hover,a:hover{
             & > img:first-of-type{
                 display: block;
             }
             & > img:last-of-type{
                 display: none;
             }
+            .hiddenDesc{
+                display: block;
+            }
         }
 
     }
 
+}
+
+.busseys{
+    height: 9em;
+    top: -9em;
+}
+.crane{
+    height: 14em;
+    top: -14em;
+}
+.beat{
+    height: 10em;
+    top: -10em;
+}
+
+.northerndri{
+    height: 10em;
+    top: -10em;
 }
