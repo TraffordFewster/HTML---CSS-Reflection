@@ -785,4 +785,26 @@ nav {
   background: #2867b2;
 }
 
+.awardsContainer {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.awardsContainer .greyImage > img:last-of-type {
+  display: none;
+}
+.awardsContainer .greyImage:hover > img:first-of-type {
+  display: none;
+}
+.awardsContainer .greyImage:hover > img:last-of-type {
+  display: block;
+}
+.awardsContainer img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.awardsContainer .row {
+  margin-top: 1em;
+}
+
 /*# sourceMappingURL=style.css.map */

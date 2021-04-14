@@ -1,0 +1,28 @@
+.awardsContainer{
+    margin-top: ($gutter * 2);
+    margin-bottom: ($gutter * 2);
+    .greyImage{
+        & > img:last-of-type{
+            display: none;
+        }
+
+        &:hover{
+            & > img:first-of-type{
+                display: none;
+            }
+            & > img:last-of-type{
+                display: block;
+            }
+        }
+    }
+
+    img{
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .row{
+        margin-top: $gutter;
+    }
+}
