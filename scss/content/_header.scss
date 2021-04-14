@@ -1,137 +1,174 @@
-nav{
-    margin: $gutter;
-}
-
-.menuButton{
-    margin: auto 0;
-    margin-right: $gutter;
-    min-width: 4em;
-    max-width: 4em;
-    text-align: center;
-    text-transform: uppercase;
-    background: $dark-1;
-    border:none;
-    border-radius: 4px;
-    color:white;
-    line-height: 1em;
-    padding: .3em;
-    .burgerBox{
-        font-size: 2em;
-    }
-
-    &:hover{
-        background:$dark-1-hover;
-    }
-    
-}
-.phoneIcon{
-    margin: auto 0;
-    min-width: 5em;
-    .phoneHolder{
-        padding: $gutter;
-        color:$dark-1-hover;
-    }
-
-    & .phoneHolder:hover{
-         color: $dark-1-hover;
-         border-bottom: solid $dark-1-hover;
-    }
-
-}
-
-.mainLogo{
-    margin-left: $gutter;
-}
-
-.searchBar{
-    margin: $gutter;
+.header-mini{
     display: flex;
-    height: 3em;
-    border: solid 2px #CECECE;
-    background: #E5E5E5;
+    padding:$gutter;
 
-    .searchText{
-        flex:1;
-    }
-    .button{
-        flex: 1;
-    }
-
-    & .searchText:focus,& button:focus{
-        outline: none;
-    }
-
-    .searchText, button{
-        border: none;
-        margin:0;
-        background: #E5E5E5;
+    .phone{
+        margin-left: auto;
+        margin-right: $gutter;
+        a{
+            font-size: 2em;
+            color: $dark-1;
+            border-bottom: white solid 2px;
+        }
+        a:hover{
+            color: darken($color: $dark-1, $amount: 10);
+            text-decoration: underline;
+            border-bottom: darken($color: $dark-1, $amount: 10) solid 2px;
+        }
     }
 
-    button:hover{
-        cursor: pointer;
-    }
-
-}
-
-.imageRow{
-    overflow: hidden;
-}
-
-.imageRow{
-    position: relative;
-    text-align: center;
-    .textHolder{
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 3;
-        display: block;
-        position: absolute;
-        color:white;
-    }
-
-    .HeroImageCTA a{
-        font-size: 1.5em;
-        width: 14em;
-        padding: .25em;
+    .menu{
         border-radius: .25em;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 3;
-        display: block;
-        position: absolute;
-        background: map-get($product-colors , "digitalmarketing");
-        color:white;
-        text-decoration: none;
-
-        &:hover{
-            background: darken($color: map-get($product-colors , "digitalmarketing"), $amount: 10);
-            text-decoration: none;
+        text-align: center;
+        background: $dark-1;
+        color: white;
+        min-width: 4em;
+        max-width: 4em;
+        border: none;
+        height: 80%;
+        i{
+            font-size: 2.5em;
+        }
+        p{
+            line-height: .5em;
+            font-size: .8em;
+            margin-bottom: 0;
         }
 
+        &:hover{
+            background: darken($color: $dark-1, $amount: 10);
+        }
+    }
+
+    .phone,.menu{
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
 
-.bgImage{
-    min-width: 100%;
-    background: red;
-    height: calc(100vh - 11em);
-    overflow: hidden;
-    margin: auto 0;
 
-    img{
-        min-width: 100%;
-        height: calc(100vh - 11em);
-
+.search{
+    @include centerVert;
+    height: 3em;
+    display: flex;
+    flex: 1;
+    margin-bottom: $gutter;
+    input{
+        flex: 1;
+        background: white;
+        border:none;
+        border:solid 2px $light-offset-2;
     }
 
-    &:before {
-        position: absolute; 
-        z-index: 2;
-        display: block; 
-        content: "";
-        top: 0; right: 0; bottom: 0; left: 0;  
-        background: hsla(0,0%,0%,0.5);          /*adjust brightness here */
+    input:focus{
+        outline:none;
+    }
+
+    button{
+        color:white;
+        width: 2em;
+        background: $light-offset-2;
+        border:solid 2px $light-offset-2;
+    }
+}
+
+
+
+.header-med{
+    padding: $gutter;
+    overflow: hidden;
+    .logo{
+        display: block;
+        max-width: 100%;
+        overflow: hidden;
+        @include centerVert;
+        img{
+             max-width: 100%;
+        }
+  
+    }
+
+    .actions{
+        display: flex;
+
+        .smallButton{
+            @include centerVert;
+            min-width: 4em;
+            max-width: 4em;
+            height: 4em;
+            margin-left: $gutter * 2;
+            border-radius: .25em;
+            i{
+                font-size: 1.7em
+            }
+        }
+
+        .medButton{
+            @include centerVert;
+            min-width: 8em;
+            max-width: 8em;
+            height: 4em;
+            margin-left: $gutter * 2;
+            border-radius: .25em;
+            i{
+                font-size: 1.3em;
+            }
+        }
+
+        .menu{
+            background: $dark-1;
+            color: white;
+            border:none;
+
+            i{
+                margin-top: .05em;
+                font-size: 2.5em;
+            }
+            p{
+                margin-top: -.3em;
+                font-size: 1em;
+            }
+            &:hover{
+                background: darken($color: $light-offset-2, $amount: 10);
+            }
+        }
+
+        .phone{
+            @include centerVert;
+            font-size: 2em;
+            margin-left: $gutter;
+        }
+        .search{
+            margin-left: $gutter;
+            margin-bottom: auto;
+        }
+        .searchButton{
+            background: $light-offset-2;
+            color: white;
+            border: none;
+            &:hover{
+                background: darken($color: $light-offset-2, $amount: 10);
+            }
+        }
+
+        .contactButton{
+            background: $light-offset-2;
+            color: white;
+            border: none;
+            &:hover{
+                background: darken($color: $light-offset-2, $amount: 10);
+            }
+        }
+
+        .supportButton{
+            background: #4183D7;
+            color:white;
+            border: none;
+            margin-left: auto;
+            &:hover{
+                background: darken($color: #4183D7, $amount: 10);
+            }
+        }
+
     }
 }

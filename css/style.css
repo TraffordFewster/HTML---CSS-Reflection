@@ -37,71 +37,165 @@ body {
   box-sizing: border-box;
 }
 
-nav {
-  margin: 1em;
+.header-mini {
+  display: flex;
+  padding: 1em;
 }
-
-.menuButton {
-  margin: auto 0;
+.header-mini .phone {
+  margin-left: auto;
   margin-right: 1em;
+}
+.header-mini .phone a {
+  font-size: 2em;
+  color: #333645;
+  border-bottom: white solid 2px;
+}
+.header-mini .phone a:hover {
+  color: #1d1f28;
+  text-decoration: underline;
+  border-bottom: #1d1f28 solid 2px;
+}
+.header-mini .menu {
+  border-radius: 0.25em;
+  text-align: center;
+  background: #333645;
+  color: white;
   min-width: 4em;
   max-width: 4em;
-  text-align: center;
-  text-transform: uppercase;
-  background: #333645;
   border: none;
-  border-radius: 4px;
-  color: white;
-  line-height: 1em;
-  padding: 0.3em;
+  height: 80%;
 }
-.menuButton .burgerBox {
-  font-size: 2em;
+.header-mini .menu i {
+  font-size: 2.5em;
 }
-.menuButton:hover {
-  background: #22242E;
+.header-mini .menu p {
+  line-height: 0.5em;
+  font-size: 0.8em;
+  margin-bottom: 0;
 }
-
-.phoneIcon {
-  margin: auto 0;
-  min-width: 5em;
+.header-mini .menu:hover {
+  background: #1d1f28;
 }
-.phoneIcon .phoneHolder {
-  padding: 1em;
-  color: #22242E;
-}
-.phoneIcon .phoneHolder:hover {
-  color: #22242E;
-  border-bottom: solid #22242E;
+.header-mini .phone, .header-mini .menu {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.mainLogo {
-  margin-left: 1em;
-}
-
-.searchBar {
-  margin: 1em;
-  display: flex;
+.search {
+  margin-top: auto;
+  margin-bottom: auto;
   height: 3em;
-  border: solid 2px #CECECE;
-  background: #E5E5E5;
-}
-.searchBar .searchText {
+  display: flex;
   flex: 1;
+  margin-bottom: 1em;
 }
-.searchBar .button {
+.search input {
   flex: 1;
+  background: white;
+  border: none;
+  border: solid 2px #999AA2;
 }
-.searchBar .searchText:focus, .searchBar button:focus {
+.search input:focus {
   outline: none;
 }
-.searchBar .searchText, .searchBar button {
-  border: none;
-  margin: 0;
-  background: #E5E5E5;
+.search button {
+  color: white;
+  width: 2em;
+  background: #999AA2;
+  border: solid 2px #999AA2;
 }
-.searchBar button:hover {
-  cursor: pointer;
+
+.header-med {
+  padding: 1em;
+  overflow: hidden;
+}
+.header-med .logo {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header-med .logo img {
+  max-width: 100%;
+}
+.header-med .actions {
+  display: flex;
+}
+.header-med .actions .smallButton {
+  margin-top: auto;
+  margin-bottom: auto;
+  min-width: 4em;
+  max-width: 4em;
+  height: 4em;
+  margin-left: 2em;
+  border-radius: 0.25em;
+}
+.header-med .actions .smallButton i {
+  font-size: 1.7em;
+}
+.header-med .actions .medButton {
+  margin-top: auto;
+  margin-bottom: auto;
+  min-width: 8em;
+  max-width: 8em;
+  height: 4em;
+  margin-left: 2em;
+  border-radius: 0.25em;
+}
+.header-med .actions .medButton i {
+  font-size: 1.3em;
+}
+.header-med .actions .menu {
+  background: #333645;
+  color: white;
+  border: none;
+}
+.header-med .actions .menu i {
+  margin-top: 0.05em;
+  font-size: 2.5em;
+}
+.header-med .actions .menu p {
+  margin-top: -0.3em;
+  font-size: 1em;
+}
+.header-med .actions .menu:hover {
+  background: #7e808a;
+}
+.header-med .actions .phone {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2em;
+  margin-left: 1em;
+}
+.header-med .actions .search {
+  margin-left: 1em;
+  margin-bottom: auto;
+}
+.header-med .actions .searchButton {
+  background: #999AA2;
+  color: white;
+  border: none;
+}
+.header-med .actions .searchButton:hover {
+  background: #7e808a;
+}
+.header-med .actions .contactButton {
+  background: #999AA2;
+  color: white;
+  border: none;
+}
+.header-med .actions .contactButton:hover {
+  background: #7e808a;
+}
+.header-med .actions .supportButton {
+  background: #4183D7;
+  color: white;
+  border: none;
+  margin-left: auto;
+}
+.header-med .actions .supportButton:hover {
+  background: #286abd;
 }
 
 .imageRow {

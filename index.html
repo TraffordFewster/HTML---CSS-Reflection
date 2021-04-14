@@ -17,31 +17,69 @@
 </head>
 <body>
     <header>
-        <nav class="container-md">
-            <div class="row align-middle">
-                <a href="https://www.netmatters.co.uk/" class="mainLogo col-1 col-md-6">
-                    <img src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="netmatters logo">
-                </a>
-                <div class="col filler"></div>
-                <div class="phoneIcon col-1 align-self-end">
-                    <a class="phoneHolder" href="tel:01603704020">
-                        <span class="fas fa-phone-alt fa-2x"></span>
+        <div class="container-md d-md-none">
+            <div class="row">
+                <div class="col-12 header-mini">
+                    <a href="https://www.netmatters.co.uk/">
+                        <img src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters logo">
+                    </a>
+                    <div class="phone">
+                        <a href="tel:01603704020"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                    <button class="menu">
+                        <i class="fas fa-bars"></i>
+                        <p class="text-uppercase">Menu</p>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 search">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="container-lg d-none d-md-block">
+            <div class="row header-med">
+                <div class="logo col-6">
+                    <a href="https://www.netmatters.co.uk/">
+                        <img src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters logo">
                     </a>
                 </div>
-                <button class="menuButton col-1 align-self-end text-center">
-                    <span class="burgerBox">
-                        <span class="fas fa-bars"></span>
-                    </span> <br>
-                    <span class="menuText">Menu</span>
-                </button>
-            </div>
-            <div class="row d-md-none">
-                <div class="searchBar col">
-                    <input class="searchText" type="search" placeholder="Search..." aria-label="Search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                <div class="actions col-6">
+                    <div class="search d-xl-none">
+                        <input type="text" placeholder=" Search...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <button class="supportButton medButton d-none d-xl-block"  onclick="location.href='https://support.netmatters.com/'">
+                            <i class="fas fa-mouse"> Support</i>
+                    </button>
+                    <button class="contactButton medButton d-none d-xl-block"  onclick="location.href='https://www.netmatters.co.uk/contact-us'">
+                            <i class="fas fa-paper-plane"> Contact</i>
+                    </button>
+                    <button class="searchButton smallButton d-none d-xl-block">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="menu smallButton">
+                        <i class="fas fa-bars"></i>
+                        <p class="text-uppercase">Menu</p>
+                    </button>
                 </div>
             </div>
-        </nav>
+        </div>
+
+
+
+
+
         <div class="row imageRow">
             <div class="bgImage">
                 <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-JQsO.jpg">
