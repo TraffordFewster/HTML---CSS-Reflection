@@ -946,10 +946,10 @@ body {
   padding-top: 32px;
 }
 .newsSelector h2 {
-  margin-left: 8px;
+  margin-left: 24px;
   padding-bottom: calc( $gutter - .2em);
   display: inline;
-  font-size: 2em;
+  font-size: 1.5em;
   min-height: 6em;
   border-bottom: solid 0.2em #333645;
 }
@@ -957,7 +957,9 @@ body {
 .newsContainerBG {
   background: #e6e6e6;
   background: linear-gradient(180deg, #efefef 0%, white 12%);
-  margin-top: 32px;
+  margin-top: 0.4em;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .newsItem {

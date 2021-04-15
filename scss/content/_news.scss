@@ -1,10 +1,10 @@
 .newsSelector{
     padding-top: $gutter * 2;
     h2{
-        margin-left: $gutter /2;
+        margin-left: $gutter * 1.5;
         padding-bottom: calc( $gutter - .2em) ;
         display: inline;
-        font-size: 2em;
+        font-size: 1.5em;
         min-height: 6em;
         border-bottom: solid .2em $dark-1;
     }
@@ -13,7 +13,9 @@
 .newsContainerBG{
     background:$light-offset;
     background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(255,255,255,1) 12%);
-    margin-top: $gutter * 2;
+    margin-top: .4em;
+    padding-top: $gutter;
+    padding-bottom: $gutter;
 }
 
 
