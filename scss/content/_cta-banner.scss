@@ -8,12 +8,31 @@
     text-align: center;
     .textHolder{
         top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        left: 0%;
+
+        //transform: translate(-50%, -50%);
         z-index: 3;
         display: block;
         position: absolute;
         color:white;
+        h1{
+            font-size: 4em;
+        }
+        .col-12{
+            margin: auto;
+
+            @media screen and (min-width:992px){
+                max-width: 	960px;
+                text-align: left;
+            }
+            @media screen and (min-width:1200px){
+                max-width: 	1140px;
+            }
+            @media screen and (min-width:1400px){
+                max-width: 	1320px;
+            }
+
+        }
     }
 
     .HeroImageCTA a{
@@ -21,12 +40,10 @@
         width: 14em;
         padding: .25em;
         border-radius: .25em;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+
+        //transform: translate(-50%, -50%);
         z-index: 3;
-        display: block;
-        position: absolute;
+
         background: map-get($product-colors , "digitalmarketing");
         color:white;
         text-decoration: none;
@@ -49,7 +66,13 @@
     img{
         min-width: 100%;
         height: calc(100vh - 11em);
+    }
 
+    @media screen and (max-width:992px) {
+        height: calc(100vh - 5em);
+        img{
+            height: calc(100vh - 5em);
+        }
     }
 
     &:before {

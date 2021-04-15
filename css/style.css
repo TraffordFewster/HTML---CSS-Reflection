@@ -599,24 +599,40 @@ body {
 }
 .imageRow .textHolder {
   top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0%;
   z-index: 3;
   display: block;
   position: absolute;
   color: white;
+}
+.imageRow .textHolder h1 {
+  font-size: 4em;
+}
+.imageRow .textHolder .col-12 {
+  margin: auto;
+}
+@media screen and (min-width: 992px) {
+  .imageRow .textHolder .col-12 {
+    max-width: 960px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .imageRow .textHolder .col-12 {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .imageRow .textHolder .col-12 {
+    max-width: 1320px;
+  }
 }
 .imageRow .HeroImageCTA a {
   font-size: 1.5em;
   width: 14em;
   padding: 0.25em;
   border-radius: 0.25em;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 3;
-  display: block;
-  position: absolute;
   background: #2ECC71;
   color: white;
   text-decoration: none;
@@ -636,6 +652,14 @@ body {
 .bgImage img {
   min-width: 100%;
   height: calc(100vh - 11em);
+}
+@media screen and (max-width: 992px) {
+  .bgImage {
+    height: calc(100vh - 5em);
+  }
+  .bgImage img {
+    height: calc(100vh - 5em);
+  }
 }
 .bgImage:before {
   position: absolute;
