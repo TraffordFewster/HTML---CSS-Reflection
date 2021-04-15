@@ -39,9 +39,11 @@ body {
 
 .header-mini {
   display: flex;
-  padding: 1em;
+  padding: 1.5em;
+  text-align: center;
 }
 .header-mini .phone {
+  margin-top: 0.6em;
   margin-left: auto;
   margin-right: 1em;
 }
@@ -55,63 +57,74 @@ body {
   text-decoration: underline;
   border-bottom: #1d1f28 solid 2px;
 }
-.header-mini .menu {
-  border-radius: 0.25em;
-  text-align: center;
+.header-mini .search {
+  margin-top: -2em;
+  padding: 0;
+}
+
+.menu {
   background: #333645;
   color: white;
-  min-width: 4em;
-  max-width: 4em;
   border: none;
-  height: 80%;
-}
-.header-mini .menu i {
-  font-size: 2.5em;
-}
-.header-mini .menu p {
-  line-height: 0.5em;
-  font-size: 0.8em;
-  margin-bottom: 0;
-}
-.header-mini .menu:hover {
-  background: #1d1f28;
-}
-.header-mini .phone, .header-mini .menu {
   margin-top: auto;
   margin-bottom: auto;
+  width: 4em;
+  height: 3.5em;
+  margin-left: 2em;
+  border-radius: 0.25em;
+}
+.menu .menuText {
+  margin-top: -0.3em;
+  font-size: 1em;
+}
+.menu:hover {
+  background: #1d1f28;
+}
+.menu .burgerHolder {
+  margin-bottom: 0;
+}
+.menu .burgerHolder .burgerLines {
+  display: block;
+  width: 75%;
+  background: white;
+  height: 0.25em;
+  margin: 0.3em auto 0 auto;
 }
 
 .search {
   margin-top: auto;
   margin-bottom: auto;
-  height: 4em;
+  height: 3.5em;
   display: flex;
   flex: 1;
-  margin-bottom: 1em;
 }
 .search input {
   flex: 1;
+  min-width: 8em;
   background: white;
   border: none;
-  border: solid 2px #999AA2;
+  border: solid 1px #999AA2;
+}
+@media screen and (min-width: 992px) {
+  .search input {
+    min-width: 12em;
+  }
 }
 .search input:focus {
   outline: none;
 }
 .search button {
   color: white;
-  width: 4em;
+  width: 3em;
   background: #999AA2;
   border: solid 2px #999AA2;
 }
-@media screen and (min-width: 1400px) {
-  .search {
-    max-width: 20em;
-  }
+.search button:hover {
+  background: #7e808a;
 }
 
 .header-med {
-  padding: 1em;
+  padding: 1.5em;
   overflow: hidden;
 }
 .header-med .logo {
@@ -127,12 +140,15 @@ body {
 .header-med .actions {
   display: flex;
 }
+.header-med .actions > * {
+  flex: 0 1 auto;
+}
 .header-med .actions .smallButton {
   margin-top: auto;
   margin-bottom: auto;
   min-width: 4em;
   max-width: 4em;
-  height: 4em;
+  height: 3.5em;
   margin-left: 2em;
   border-radius: 0.25em;
 }
@@ -144,28 +160,17 @@ body {
   margin-bottom: auto;
   min-width: 8em;
   max-width: 8em;
-  height: 4em;
+  flex-basis: 8em;
+  height: 3.5em;
   margin-left: 2em;
   border-radius: 0.25em;
+  text-align: center;
 }
 .header-med .actions .medButton i {
+  display: inline-block;
+  margin-top: 0.8em;
   font-size: 1.3em;
-}
-.header-med .actions .menu {
-  background: #333645;
-  color: white;
-  border: none;
-}
-.header-med .actions .menu i {
-  margin-top: 0.05em;
-  font-size: 2.5em;
-}
-.header-med .actions .menu p {
-  margin-top: -0.3em;
-  font-size: 1em;
-}
-.header-med .actions .menu:hover {
-  background: #7e808a;
+  text-decoration: none;
 }
 .header-med .actions .phone {
   margin-top: auto;
@@ -176,6 +181,17 @@ body {
 .header-med .actions .search {
   margin-left: 2em;
   margin-bottom: auto;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .header-med .actions .search {
+    max-width: 20em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header-med .actions .search {
+    width: 20em;
+  }
 }
 .header-med .actions .searchButton {
   background: #999AA2;

@@ -2,3 +2,10 @@
     margin-top: auto;
     margin-bottom: auto;
 }
+
+@mixin menuLine{
+    display: block;
+    width: 80%;
+    background: white;
+    height: .25em;
+}

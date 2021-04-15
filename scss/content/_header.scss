@@ -1,8 +1,10 @@
 .header-mini{
     display: flex;
-    padding:$gutter;
+    padding: $gutter * 1.5;
+    text-align: center;
 
     .phone{
+        margin-top: .6em;
         margin-left: auto;
         margin-right: $gutter;
         a{
@@ -17,47 +19,83 @@
         }
     }
 
-    .menu{
-        border-radius: .25em;
-        text-align: center;
-        background: $dark-1;
-        color: white;
-        min-width: 4em;
-        max-width: 4em;
-        border: none;
-        height: 80%;
-        i{
-            font-size: 2.5em;
-        }
-        p{
-            line-height: .5em;
-            font-size: .8em;
-            margin-bottom: 0;
-        }
+    // .menu{
+    //     border-radius: .25em;
+    //     text-align: center;
+    //     background: $dark-1;
+    //     color: white;
+    //     min-width: 4em;
+    //     max-width: 4em;
+    //     border: none;
+    //     height: 80%;
+    //     i{
+    //         font-size: 2.5em;
+    //     }
+    //     p{
+    //         line-height: .5em;
+    //         font-size: .8em;
+    //         margin-bottom: 0;
+    //     }
 
-        &:hover{
-            background: darken($color: $dark-1, $amount: 10);
-        }
-    }
+    //     &:hover{
+    //         background: darken($color: $dark-1, $amount: 10);
+    //     }
+    // }
 
-    .phone,.menu{
-        margin-top: auto;
-        margin-bottom: auto;
+    // .phone,.menu{
+    //     margin-top: auto;
+    //     margin-bottom: auto;
+    // }
+    .search{
+        margin-top: - $gutter * 2;
+        padding: 0;
     }
 }
 
 
+.menu{
+    background: $dark-1;
+    color: white;
+    border:none;
+    @include centerVert;
+    width: 4em;
+    height: 3.5em;
+    margin-left: $gutter * 2;
+    border-radius: .25em;
+    .menuText{
+        margin-top: -.3em;
+        font-size: 1em;
+    }
+    &:hover{
+        background: darken($color: $dark-1, $amount: 10);
+    }
+
+    .burgerHolder{
+        .burgerLines{
+            display: block;
+            width: 75%;
+            background: white;
+            height: .25em;
+            margin: .3em auto 0 auto
+        }
+        margin-bottom: 0;
+    }
+}
+
 .search{
     @include centerVert;
-    height: 4em;
+    height: 3.5em;
     display: flex;
     flex: 1;
-    margin-bottom: $gutter;
     input{
         flex: 1;
+        min-width: 8em;
         background: white;
         border:none;
-        border:solid 2px $light-offset-2;
+        border:solid 1px $light-offset-2;
+        @media screen and (min-width:992px){
+            min-width: 12em;
+        }
     }
 
     input:focus{
@@ -66,22 +104,22 @@
 
     button{
         color:white;
-        width: 4em;
+        width: 3em;
         background: $light-offset-2;
         border:solid 2px $light-offset-2;
-    }
 
-    @media screen and (min-width:1400px){
-        max-width: 20em;
-
+        &:hover{
+            background: darken($color: $light-offset-2, $amount: 10);
+        }
     }
 }
 
 
 
 .header-med{
-    padding: $gutter;
+    padding: $gutter * 1.5;
     overflow: hidden;
+
     .logo{
         display: block;
         max-width: 100%;
@@ -96,11 +134,15 @@
     .actions{
         display: flex;
 
+        & > * {
+            flex: 0 1 auto;
+        }
+
         .smallButton{
             @include centerVert;
             min-width: 4em;
             max-width: 4em;
-            height: 4em;
+            height: 3.5em;
             margin-left: $gutter * 2;
             border-radius: .25em;
             i{
@@ -112,31 +154,37 @@
             @include centerVert;
             min-width: 8em;
             max-width: 8em;
-            height: 4em;
+            flex-basis: 8em;
+            height: 3.5em;
             margin-left: $gutter * 2;
             border-radius: .25em;
+            text-align: center;
             i{
+                display: inline-block;
+                margin-top: .8em;
                 font-size: 1.3em;
+                text-decoration: none;
             }
         }
 
-        .menu{
-            background: $dark-1;
-            color: white;
-            border:none;
+        // .menu{
+        //     background: $dark-1;
+        //     color: white;
+        //     border:none;
 
-            i{
-                margin-top: .05em;
-                font-size: 2.5em;
-            }
-            p{
-                margin-top: -.3em;
-                font-size: 1em;
-            }
-            &:hover{
-                background: darken($color: $light-offset-2, $amount: 10);
-            }
-        }
+        //     i{
+        //         margin-top: .05em;
+        //         font-size: 2.5em;
+
+        //     }
+        //     p{
+        //         margin-top: -.3em;
+        //         font-size: 1em;
+        //     }
+        //     &:hover{
+        //         background: darken($color: $light-offset-2, $amount: 10);
+        //     }
+        // }
 
         .phone{
             @include centerVert;
@@ -146,6 +194,14 @@
         .search{
             margin-left: $gutter * 2;
             margin-bottom: auto;
+            overflow: hidden;
+            @media screen and (min-width:768px){
+                max-width: 20em;
+            }
+
+            @media screen and (min-width:1400px){
+                width: 20em;
+            }
         }
         .searchButton{
             background: $light-offset-2;
@@ -175,7 +231,6 @@
             }
         }
 
-        
 
     }
 }

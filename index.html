@@ -17,25 +17,33 @@
 </head>
 <body>
     <header>
-        <div class="container-md d-md-none">
+        <div class="container-md d-md-none header-mini-container">
             <div class="row">
                 <div class="col-12 header-mini">
                     <a href="https://www.netmatters.co.uk/">
                         <img src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters logo">
                     </a>
+
                     <div class="phone">
                         <a href="tel:01603704020"><i class="fas fa-phone-alt"></i></a>
                     </div>
                     <button class="menu">
-                        <i class="fas fa-bars"></i>
-                        <p class="text-uppercase">Menu</p>
+                        <div class="burgerHolder">
+                            <span class="burgerLines"></span>
+                            <span class="burgerLines"></span>
+                            <span class="burgerLines"></span>
+                        </div>
+                        <span class="text-uppercase menuText">Menu</span>
                     </button>
+
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 search">
-                    <input type="text" placeholder="Search...">
-                    <button><i class="fas fa-search"></i></button>
+                <div class="col-12 header-mini">
+                    <div class="search">
+                        <input type="text" placeholder="Search...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,7 +55,7 @@
 
 
 
-        <div class="container-lg d-none d-md-block">
+        <div class="container-md d-none d-md-block">
             <div class="row header-med">
                 <div class="logo col-6 col-xxl-4">
                     <a href="https://www.netmatters.co.uk/">
@@ -55,12 +63,12 @@
                     </a>
                 </div>
                 <div class="actions col-6 col-xxl-8">
-                    <button class="supportButton medButton d-none d-xl-block"  onclick="location.href='https://support.netmatters.com/'">
-                            <i class="fas fa-mouse"> Support</i>
-                    </button>
-                    <button class="contactButton medButton d-none d-xl-block"  onclick="location.href='https://www.netmatters.co.uk/contact-us'">
-                            <i class="fas fa-paper-plane"> Contact</i>
-                    </button>
+                    <a class="supportButton medButton d-none d-xl-block"  href="https://support.netmatters.com/">
+                            <i class="fas fa-mouse"> <span class="fw-normal">Support</span></i>
+                    </a>
+                    <a class="contactButton medButton d-none d-xl-block"  href="https://www.netmatters.co.uk/contact-us">
+                            <i class="fas fa-paper-plane"> <span class="fw-normal">Contact</span></i>
+                    </a>
                     <div class="search d-xl-none d-xxl-flex">
                         <input type="text" placeholder=" Search...">
                         <button><i class="fas fa-search"></i></button>
@@ -69,8 +77,12 @@
                         <i class="fas fa-search"></i>
                     </button>
                     <button class="menu smallButton">
-                        <i class="fas fa-bars"></i>
-                        <p class="text-uppercase">Menu</p>
+                        <div class="burgerHolder">
+                            <span class="burgerLines"></span>
+                            <span class="burgerLines"></span>
+                            <span class="burgerLines"></span>
+                        </div>
+                        <span class="text-uppercase menuText">Menu</span>
                     </button>
                 </div>
             </div>
@@ -100,7 +112,7 @@
     </header>
     <main>
         <div class="productBG">
-            <section class="productOverviews container-lg">
+            <section class="productOverviews container-md">
                 <div class="row align-items-stretch">
                     <div class="col-12 col-lg-4">
                         <a href="https://www.netmatters.co.uk/bespoke-software" class="productPanel prod-bespSoft">
