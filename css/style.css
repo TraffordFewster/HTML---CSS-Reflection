@@ -643,15 +643,17 @@ body {
 }
 
 .bgImage {
-  min-width: 100%;
-  background: red;
-  height: calc(100vh - 11em);
+  position: relative;
   overflow: hidden;
-  margin: auto 0;
+  height: calc(100vh - 11em);
 }
 .bgImage img {
-  min-width: 100%;
-  height: calc(100vh - 11em);
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
 }
 @media screen and (max-width: 992px) {
   .bgImage {
@@ -944,6 +946,7 @@ body {
 
 .newsContainerBG {
   background: #e6e6e6;
+  background: linear-gradient(180deg, #efefef 0%, white 12%);
   margin-top: 32px;
 }
 
@@ -1098,7 +1101,8 @@ body {
 }
 
 .clientsBG {
-  background: #cccccc;
+  background: white;
+  background: linear-gradient(180deg, #efefef 0%, white 12%);
 }
 
 .clientsContainer .clientsImage {
@@ -1190,7 +1194,9 @@ body {
 }
 
 .emailBG {
-  background: #b3b3b3;
+  background: #DDDDDD;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emailContainer {

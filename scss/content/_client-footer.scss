@@ -1,7 +1,8 @@
 .clientsBG{
-    background: darken($light-offset, 10);
+    
+    background: white;
+    background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(255,255,255,1) 12%);
 }
-
 .clientsContainer{
     .clientsImage{
         position: relative;

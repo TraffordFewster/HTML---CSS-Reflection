@@ -1,5 +1,7 @@
 .emailBG{
-    background: darken($light-offset, 20);
+    background: #DDDDDD;
+    padding-top: $gutter * 2;
+    padding-bottom: $gutter * 2;
 }
 
 .emailContainer{

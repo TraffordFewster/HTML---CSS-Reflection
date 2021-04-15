@@ -57,15 +57,17 @@
 }
 
 .bgImage{
-    min-width: 100%;
-    background: red;
-    height: calc(100vh - 11em);
+    position: relative;
     overflow: hidden;
-    margin: auto 0;
+    height: calc(100vh - 11em);
 
     img{
-        min-width: 100%;
-        height: calc(100vh - 11em);
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
     }
 
     @media screen and (max-width:992px) {
