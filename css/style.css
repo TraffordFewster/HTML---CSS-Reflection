@@ -1228,7 +1228,6 @@ body {
 }
 .emailContainer h2, .emailContainer label {
   padding: 0;
-  font-weight: bold;
 }
 .emailContainer .row > * {
   padding: 0;
