@@ -6,7 +6,6 @@
     .phone{
         margin-top: .6em;
         margin-left: auto;
-        margin-right: $gutter;
         a{
             font-size: 2em;
             color: $dark-1;
@@ -19,33 +18,9 @@
         }
     }
 
-    // .menu{
-    //     border-radius: .25em;
-    //     text-align: center;
-    //     background: $dark-1;
-    //     color: white;
-    //     min-width: 4em;
-    //     max-width: 4em;
-    //     border: none;
-    //     height: 80%;
-    //     i{
-    //         font-size: 2.5em;
-    //     }
-    //     p{
-    //         line-height: .5em;
-    //         font-size: .8em;
-    //         margin-bottom: 0;
-    //     }
-
-    //     &:hover{
-    //         background: darken($color: $dark-1, $amount: 10);
-    //     }
-    // }
-
-    // .phone,.menu{
-    //     margin-top: auto;
-    //     margin-bottom: auto;
-    // }
+    .menu{
+        margin-left: 1em;
+    }
     .search{
         margin-top: - $gutter * 2;
         padding: 0;
@@ -166,25 +141,6 @@
                 text-decoration: none;
             }
         }
-
-        // .menu{
-        //     background: $dark-1;
-        //     color: white;
-        //     border:none;
-
-        //     i{
-        //         margin-top: .05em;
-        //         font-size: 2.5em;
-
-        //     }
-        //     p{
-        //         margin-top: -.3em;
-        //         font-size: 1em;
-        //     }
-        //     &:hover{
-        //         background: darken($color: $light-offset-2, $amount: 10);
-        //     }
-        // }
 
         .phone{
             @include centerVert;

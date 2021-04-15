@@ -1,0 +1,87 @@
+$productNav-bg: #333645;
+.productNavBG{
+    background: $productNav-bg;
+    border-bottom: solid 1px white;
+    position: relative;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.productNav{
+    text-align: center;
+    border-left: solid 1px #484A58;
+    border-right: solid 1px #484A58;
+    padding: 0;
+    a{
+        padding: 1em 0;
+        display: block;
+    }
+    i {
+        font-size: 1em;
+        margin-bottom: .25em;
+    }
+    h6{
+        font-size: .8em;
+    }
+    h4{
+        line-height: .5em;
+        font-size: 1.3em;
+    }
+}
+
+@each $type, $color in $product-colors{
+    .prodNav-#{$type}{
+        i{
+            color: $color;
+        }
+
+        &:hover{
+            background: $color;
+            i{
+                color: white;
+            }
+            .hoverNavProd{
+                text-align: center;
+                z-index: 200;
+                position: absolute;
+                display: block !important;
+                background: darken($color,5);
+                width: 100%;
+                left:0;
+                .container{
+                    padding: ($gutter / 4) ($gutter /2);
+                }
+                ul{
+                    list-style-type: none;
+                    -webkit-padding-start: 0;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                }
+                li{
+                    list-style-image: url(data:0);
+                    font-size: .8em;
+                    float: left;
+                    letter-spacing: 1px;
+                    a{
+                        padding: $gutter / 2;
+                    }
+                    &:not(:last-child) a{
+                        &::after{
+                            content: "-";
+                            font-weight: bold;
+                            margin-left: 15px;
+                        }
+                    }
+
+                    @media screen and (min-width:1200px) {
+                        font-size: 1em;
+                    }
+                }
+            }
+        };
+    };
+
+}
