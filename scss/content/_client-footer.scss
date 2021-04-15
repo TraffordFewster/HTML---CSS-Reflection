@@ -30,8 +30,8 @@
         .hiddenDesc{
             display: none;
             position: absolute;
-            width: 100%;
-            left:0;
+            width: 260px;
+            left: calc(50% - (260px / 2)) ;
             right: 0;
             background: $dark-1;
             z-index: 5;
@@ -102,12 +102,12 @@
 }
 
 .busseys{
-    height: 9em;
-    top: -9em;
+    height: 10em;
+    top: -10em;
 }
 .crane{
-    height: 14em;
-    top: -14em;
+    height: 15em;
+    top: -15em;
 }
 .beat{
     height: 10em;
@@ -115,6 +115,6 @@
 }
 
 .northerndri{
-    height: 10em;
-    top: -10em;
+    height: 13em;
+    top: -13em;
 }
