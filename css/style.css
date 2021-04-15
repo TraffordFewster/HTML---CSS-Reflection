@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
@@ -26,7 +26,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Poppins, sans-serif;
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
 }
@@ -1140,12 +1140,14 @@ body {
   color: white;
   line-height: 0;
 }
-.clientsContainer .clientsImage .hiddenDesc .textHolder h1 {
+.clientsContainer .clientsImage .hiddenDesc .textHolder h2 {
   display: block;
+  font-size: 1.2em;
 }
 .clientsContainer .clientsImage .hiddenDesc .textHolder p {
   margin-top: -3.5em;
   display: block;
+  font-size: 0.9em;
 }
 .clientsContainer .clientsImage .hiddenDesc::after {
   position: absolute;
@@ -1174,23 +1176,23 @@ body {
 }
 
 .busseys {
-  height: 10em;
-  top: -10em;
+  height: 9rem;
+  top: -9rem;
 }
 
 .crane {
-  height: 15em;
-  top: -15em;
+  height: 12rem;
+  top: -12rem;
 }
 
 .beat {
-  height: 10em;
-  top: -10em;
+  height: 9rem;
+  top: -9rem;
 }
 
 .northerndri {
-  height: 13em;
-  top: -13em;
+  height: 12rem;
+  top: -12rem;
 }
 
 .emailBG {
