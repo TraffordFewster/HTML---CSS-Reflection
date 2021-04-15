@@ -77,7 +77,7 @@ body {
 }
 .menu .menuText {
   margin-top: -0.3em;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 .menu:hover {
   background: #1d1f28;
@@ -87,7 +87,7 @@ body {
 }
 .menu .burgerHolder .burgerLines {
   display: block;
-  width: 75%;
+  width: 55%;
   background: white;
   height: 0.25em;
   margin: 0.3em auto 0 auto;
@@ -594,11 +594,12 @@ body {
 }
 
 .imageRow {
+  background: none;
   position: relative;
   text-align: center;
 }
 .imageRow .textHolder {
-  top: 40%;
+  top: 20%;
   left: 0%;
   z-index: 3;
   display: block;
@@ -607,6 +608,10 @@ body {
 }
 .imageRow .textHolder h1 {
   font-size: 4em;
+  margin-bottom: 32px;
+}
+.imageRow .textHolder p {
+  margin-bottom: 32px;
 }
 .imageRow .textHolder .col-12 {
   margin: auto;
@@ -615,6 +620,8 @@ body {
   .imageRow .textHolder .col-12 {
     max-width: 960px;
     text-align: left;
+    left: 10%;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -629,8 +636,8 @@ body {
 }
 .imageRow .HeroImageCTA a {
   font-size: 1.5em;
-  width: 14em;
-  padding: 0.25em;
+  width: 16em;
+  padding: 0.5em;
   border-radius: 0.25em;
   z-index: 3;
   background: #2ECC71;
@@ -654,6 +661,7 @@ body {
   left: -9999px;
   right: -9999px;
   margin: auto;
+  height: calc(100vh - 11em);
 }
 @media screen and (max-width: 992px) {
   .bgImage {
@@ -677,7 +685,6 @@ body {
 }
 
 .productBG {
-  background: #e6e6e6;
   margin-top: -3em;
   padding-bottom: 3em;
   padding-top: 3em;
@@ -691,7 +698,6 @@ body {
   text-align: center;
   margin: 16px;
   margin-top: 48px;
-  border: dotted 1px black;
   background: white;
   font-size: 0.9em;
   height: 18em;
@@ -898,6 +904,8 @@ body {
 }
 .netmattersDesc .descText {
   padding: 16px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .netmattersDesc h2 {
   font-weight: bold;
@@ -929,6 +937,8 @@ body {
   .logobg {
     background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -1115,6 +1125,10 @@ body {
   max-width: 100%;
   min-width: 0%;
   height: auto;
+  margin: auto;
+}
+.clientsContainer .clientsImage a {
+  margin: auto;
 }
 .clientsContainer .clientsImage .hiddenDesc {
   display: none;
@@ -1135,8 +1149,10 @@ body {
 }
 .clientsContainer .clientsImage .hiddenDesc .textHolder span {
   display: block;
-  margin: 3rem auto;
-  font-size: 5em;
+  background: white;
+  height: 0.25rem;
+  width: 20%;
+  margin: 1rem auto 4rem auto;
   color: white;
   line-height: 0;
 }
@@ -1176,23 +1192,23 @@ body {
 }
 
 .busseys {
-  height: 9rem;
-  top: -9rem;
+  height: 8rem;
+  top: -8rem;
 }
 
 .crane {
-  height: 12rem;
-  top: -12rem;
+  height: 11rem;
+  top: -11rem;
 }
 
 .beat {
-  height: 9rem;
-  top: -9rem;
+  height: 8rem;
+  top: -8rem;
 }
 
 .northerndri {
-  height: 12rem;
-  top: -12rem;
+  height: 11rem;
+  top: -11rem;
 }
 
 .emailBG {
@@ -1230,34 +1246,71 @@ body {
 .emailContainer .emailCol, .emailContainer .nameCol {
   margin-top: 16px;
 }
-.emailContainer .nameCol > * {
-  margin-right: 8px;
-}
-.emailContainer .emailCol > * {
-  margin-left: 8px;
+@media screen and (min-width: 1200px) {
+  .emailContainer .nameCol > * {
+    margin-right: 8px;
+  }
+  .emailContainer .emailCol > * {
+    margin-left: 8px;
+  }
 }
 .emailContainer .checkMarketing {
   display: flex;
   margin: 0;
-  margin-top: 16px;
+  margin-top: 8px;
   padding: 0;
+  position: relative;
 }
-.emailContainer .checkMarketing input {
+.emailContainer .checkMarketing .checkHolder {
   width: 2em;
   height: 2em;
-  display: inline-block;
+  position: relative;
 }
-.emailContainer .checkMarketing input:focus {
-  box-shadow: none;
-  border: none;
+.emailContainer .checkMarketing .checkHolder .holderThing {
+  content: "1";
+  opacity: 1;
+  width: 2em;
+  height: 2em;
+  background: none;
+  border: 3px solid #333645;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 4px;
+  bottom: 0;
+  right: 0;
+  text-align: center;
 }
-.emailContainer .checkMarketing input:checked {
+.emailContainer .checkMarketing .checkHolder .holderThing .fa-check {
+  margin-top: 8px;
+  opacity: 0;
+}
+.emailContainer .checkMarketing .checkHolder input {
+  position: absolute;
+  z-index: 12;
+  opacity: 0;
+  width: 2em;
+  height: 2em;
+}
+.emailContainer .checkMarketing .checkHolder input:hover {
+  cursor: pointer;
+}
+.emailContainer .checkMarketing .checkHolder input:checked {
   background-color: #333645;
   color: white;
   border: none;
 }
+.emailContainer .checkMarketing .checkHolder input:checked ~ .holderThing {
+  background-color: #333645;
+  color: white;
+  border: none;
+}
+.emailContainer .checkMarketing .checkHolder input:checked ~ .holderThing .fa-check {
+  opacity: 1;
+  color: white;
+}
 .emailContainer .checkMarketing label {
-  margin-left: 16px;
+  padding-left: 32px;
 }
 .emailContainer .btn {
   margin-top: 16px;
@@ -1271,16 +1324,14 @@ body {
 
 .mainFooterBG {
   background: #333645;
+  padding: 16px;
   color: white;
 }
 
 .footerContainer {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-.footerContainer h4 {
-  margin-top: 16px;
-  font-size: 1.3em;
+  padding: 48px 16px h4;
+  padding-margin-top: 16px;
+  padding-font-size: 1.3em;
 }
 .footerContainer ul {
   padding: 0;

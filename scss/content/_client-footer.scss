@@ -14,6 +14,7 @@
             max-width: 100%;
             min-width: 0%;
             height: auto;
+            margin:auto;
             // -webkit-filter: grayscale(100%);
             // filter: grayscale(100%);
             // filter: url(desaturate.svg#greyscale);
@@ -24,10 +25,13 @@
             //     -webkit-filter: grayscale(0%);
             // }
 
-            // Didn't realise the website was using two images so was trying this at first but IE is IE
+            // Didn't realise the website was using two images so was trying this at first but Internet explorer exists.
             
         }
 
+        a{
+            margin:auto;
+        }
         .hiddenDesc{
             display: none;
             position: absolute;
@@ -45,8 +49,10 @@
                 display: block;
                 span{
                     display: block;
-                    margin: 3rem auto;
-                    font-size: 5em;
+                    background: white;
+                    height: .25rem;
+                    width: 20%;
+                    margin: 1rem auto 4rem auto;
                     color:white;
                     line-height: 0;
                 }
@@ -105,19 +111,19 @@
 }
 
 .busseys{
-    height: 9rem;
-    top: -9rem;
+    height: 8rem;
+    top: -8rem;
 }
 .crane{
-    height: 12rem;
-    top: -12rem;
+    height: 11rem;
+    top: -11rem;
 }
 .beat{
-    height: 9rem;
-    top: -9rem;
+    height: 8rem;
+    top: -8rem;
 }
 
 .northerndri{
-    height: 12rem;
-    top: -12rem;
+    height: 11rem;
+    top: -11rem;
 }

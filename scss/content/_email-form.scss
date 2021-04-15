@@ -39,12 +39,13 @@
     .emailCol, .nameCol{
         margin-top: $gutter;
     }
-
-    .nameCol > *{
-        margin-right: $gutter/2;
-    }
-    .emailCol > *{
-        margin-left: $gutter/2;
+    @media screen and (min-width:1200px) {
+        .nameCol > *{
+            margin-right: $gutter/2;
+        }
+        .emailCol > *{
+            margin-left: $gutter/2;
+        }
     }
 
 
@@ -52,29 +53,75 @@
 
         display: flex;
         margin: 0;
-        margin-top: $gutter;
+        margin-top: $gutter / 2;
         padding: 0;
-        input{
+        position: relative;
+
+
+        // This is a mess but it works so im not touching it anymore.
+        .checkHolder{
             width: 2em;
             height: 2em;
-            display: inline-block;
 
-            &:focus{
-                box-shadow: none;
-                border:none
+            position: relative;
+            .holderThing{
+                content: "1";
+                opacity: 1;
+                width: 2em;
+                height: 2em;
+                background: none;
+                border: 3px solid $dark-1;
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                top: 4px;
+                bottom: 0;
+                right:0;
+                text-align:center;
+                .fa-check{
+                    margin-top: 8px;
+                    opacity: 0;
+                }
+            }
+            input{
+                position: absolute;
+                z-index: 12;
+                opacity: 0;
+                width: 2em;
+                height: 2em;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+
+                &:checked{
+                    background-color: $dark-1;
+                    color: white;
+                    border: none
+                }
             }
 
-            &:checked{
+            input:checked ~ .holderThing{
+
                 background-color: $dark-1;
                 color: white;
-                border: none
+                border: none;
+
+                .fa-check{
+                    opacity: 1;
+                    color: white;
+                }
+
+
             }
 
         }
         label{
-            margin-left: $gutter;
+            padding-left: $gutter * 2;
         }
     }
+
 
     .btn{
         margin-top: $gutter;

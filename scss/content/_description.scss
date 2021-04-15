@@ -2,6 +2,8 @@
 
     .descText{
         padding: $gutter;
+        padding-top: $gutter * 3;
+        padding-bottom: $gutter * 3;
     }
 
     font-size: 1.2em;
@@ -42,5 +44,7 @@
     @media screen and (min-width:992px) {
         background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 }

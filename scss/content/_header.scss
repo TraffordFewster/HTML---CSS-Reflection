@@ -39,7 +39,7 @@
     border-radius: .25em;
     .menuText{
         margin-top: -.3em;
-        font-size: 1em;
+        font-size: .8em;
     }
     &:hover{
         background: darken($color: $dark-1, $amount: 10);
@@ -48,7 +48,7 @@
     .burgerHolder{
         .burgerLines{
             display: block;
-            width: 75%;
+            width: 55%;
             background: white;
             height: .25em;
             margin: .3em auto 0 auto

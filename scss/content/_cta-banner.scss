@@ -4,10 +4,11 @@
 }
 
 .imageRow{
+    background: none;
     position: relative;
     text-align: center;
     .textHolder{
-        top: 40%;
+        top: 20%;
         left: 0%;
 
         //transform: translate(-50%, -50%);
@@ -17,6 +18,10 @@
         color:white;
         h1{
             font-size: 4em;
+            margin-bottom: $gutter * 2;
+        }
+        p{
+            margin-bottom: $gutter * 2;
         }
         .col-12{
             margin: auto;
@@ -24,6 +29,8 @@
             @media screen and (min-width:992px){
                 max-width: 	960px;
                 text-align: left;
+                left: 10%;
+                display: block;
             }
             @media screen and (min-width:1200px){
                 max-width: 	1140px;
@@ -37,8 +44,9 @@
 
     .HeroImageCTA a{
         font-size: 1.5em;
-        width: 14em;
-        padding: .25em;
+        width: 16em;
+        //display: block;
+        padding: .5em;
         border-radius: .25em;
 
         //transform: translate(-50%, -50%);
@@ -68,6 +76,7 @@
         left: -9999px;
         right: -9999px;
         margin: auto;
+        height: calc(100vh - 11em);
     }
 
     @media screen and (max-width:992px) {
