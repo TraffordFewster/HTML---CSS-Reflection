@@ -6,6 +6,9 @@
     .phone{
         margin-top: .6em;
         margin-left: auto;
+        flex: 5 4em;
+        max-width: 4em;
+        min-width: 4em;
         a{
             font-size: 2em;
             color: $dark-1;
@@ -20,10 +23,35 @@
 
     .menu{
         margin-left: 1em;
+        flex: 5 4em;
+        max-width: 4em;
+        min-width: 4em;
     }
     .search{
         margin-top: - $gutter * 2;
         padding: 0;
+    }
+
+    .imgHolder{
+        flex: 1 0;
+        min-width: 0;
+        display: block;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: fit-content;
+
+        img{
+            display: block;
+            margin-right:auto;
+            max-width: 100%;
+        }
+
+        a{
+            margin-right:auto;
+            display: block;
+        }
+
     }
 }
 

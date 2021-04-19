@@ -53,6 +53,9 @@ body {
 .header-mini .phone {
   margin-top: 0.6em;
   margin-left: auto;
+  flex: 5 4em;
+  max-width: 4em;
+  min-width: 4em;
 }
 .header-mini .phone a {
   font-size: 2em;
@@ -66,10 +69,31 @@ body {
 }
 .header-mini .menu {
   margin-left: 1em;
+  flex: 5 4em;
+  max-width: 4em;
+  min-width: 4em;
 }
 .header-mini .search {
   margin-top: -32px;
   padding: 0;
+}
+.header-mini .imgHolder {
+  flex: 1 0;
+  min-width: 0;
+  display: block;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: fit-content;
+}
+.header-mini .imgHolder img {
+  display: block;
+  margin-right: auto;
+  max-width: 100%;
+}
+.header-mini .imgHolder a {
+  margin-right: auto;
+  display: block;
 }
 
 .menu {
