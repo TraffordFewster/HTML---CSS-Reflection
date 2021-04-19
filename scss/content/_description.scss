@@ -1,23 +1,29 @@
 .netmattersDesc{
 
+    margin-left: - $gutter * 2;
+
     .descText{
         padding: $gutter;
         padding-top: $gutter * 3;
         padding-bottom: $gutter * 3;
+        @media screen and (max-width: map-get($map: $breakpoints , $key: "md" )){
+            margin-left: $gutter * 2;
+            width: 95%;
+        }
     }
 
-    font-size: 1.2em;
+    font-size: 1em;
 
     background: $dark-1;
     color: white;
 
     h2{
-        font-weight: bold;
-        letter-spacing: .05em;
+        font-weight: 500;
     }
 
     .lead{
-        font-weight: bold;
+        font-weight: 500;
+        font-size: 1em;
     }
 
     p{
@@ -43,8 +49,8 @@
     margin: 0;
     @media screen and (min-width:992px) {
         background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
-        background-position: center;
+        background-position: right;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 105%;
     }
 }

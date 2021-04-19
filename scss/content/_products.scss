@@ -6,8 +6,8 @@
 }
 
 .productOverviews .row{
-    margin-left: - $gutter* 2;
-    margin-right: - $gutter* 2;
+    margin-left: - $gutter * 1.8;
+    margin-right: - $gutter * 1.8;
 }
 
 .productPanel{
@@ -56,8 +56,8 @@
     .Spacer{
         content: "";
         background: $dark-1;
-        width: 20%;
-        min-height: 4px;
+        width: 10%;
+        min-height: 3px;
         margin-top: .75em;
         margin-bottom: .75em;
     }
@@ -92,14 +92,21 @@
         min-height: 20em;
     }
 
+
     .productExtraHelp{
         min-height: 25em;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
     .productPanel{
         min-height: 25em;
+    }
+}
+
+@media screen and (max-width:768px){
+    .productPanel{
+        margin: $gutter $gutter*2.5;
     }
 }
 
@@ -116,7 +123,7 @@
         &:hover{
             background: $color;
             .Spacer{
-                color: white
+                background: white
             }
 
             .iContainer{
