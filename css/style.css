@@ -1120,7 +1120,7 @@ body {
 }
 .newsItem .desc {
   font-size: 0.9em;
-  min-height: 4em;
+  min-height: 5em;
 }
 .newsItem h3:hover {
   text-decoration: underline;
@@ -1216,30 +1216,40 @@ body {
 
 .clientsContainer .clientsImage {
   position: relative;
-  padding: 3em 1em;
+  padding: 3em 0.5em;
   text-align: center;
   vertical-align: middle;
+  height: 12em;
 }
-.clientsContainer .clientsImage img {
-  max-width: 100%;
-  min-width: 0%;
-  height: auto;
-  margin: auto;
+.clientsContainer .clientsImage .clientsImageTwo {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 6em;
+  display: block;
 }
-.clientsContainer .clientsImage a {
-  margin: auto;
+.clientsContainer .clientsImage .clientsImageTwo a {
+  display: block;
+  top: 50%;
+  width: 100%;
+  font-size: 3.75em;
+  vertical-align: middle;
+}
+.clientsContainer .clientsImage .clientsImageTwo img {
+  margin-top: auto;
+  width: 100%;
+  max-height: 100%;
 }
 .clientsContainer .clientsImage .hiddenDesc {
   display: none;
   position: absolute;
   width: 260px;
-  left: calc(50% - (260px / 2));
-  right: 0;
+  left: calc(50% - 130px);
   background: #333645;
   z-index: 5;
   color: white;
   padding: 16px;
-  transform: translateY();
+  transform: translateY(-3em);
 }
 .clientsContainer .clientsImage .hiddenDesc .textHolder {
   margin: auto;
@@ -1268,10 +1278,10 @@ body {
   position: absolute;
   bottom: -2.5em;
   display: block;
-  left: calc(50% - 32px);
+  left: calc(50% - 50px);
   content: " ";
-  border-right: 32px double transparent;
-  border-left: 32px double transparent;
+  border-right: 50px double transparent;
+  border-left: 50px double transparent;
   border-top: 48px solid #333645;
   width: 0;
   height: 0;
@@ -1280,14 +1290,17 @@ body {
 .clientsContainer .clientsImage .colored {
   display: none;
 }
-.clientsContainer .clientsImage:hover > img:first-of-type, .clientsContainer .clientsImage a:hover > img:first-of-type {
-  display: block;
+.clientsContainer .clientsImage .grey {
+  display: inline;
 }
-.clientsContainer .clientsImage:hover > img:last-of-type, .clientsContainer .clientsImage a:hover > img:last-of-type {
+.clientsContainer .clientsImage .clientsImageTwo:hover > img:first-of-type, .clientsContainer .clientsImage a:hover > img:first-of-type {
+  display: inline;
+}
+.clientsContainer .clientsImage .clientsImageTwo:hover > img:last-of-type, .clientsContainer .clientsImage a:hover > img:last-of-type {
   display: none;
 }
-.clientsContainer .clientsImage:hover .hiddenDesc, .clientsContainer .clientsImage a:hover .hiddenDesc {
-  display: block;
+.clientsContainer .clientsImage .clientsImageTwo:hover .hiddenDesc, .clientsContainer .clientsImage a:hover .hiddenDesc {
+  display: inline;
 }
 
 .busseys {
