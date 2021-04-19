@@ -6,17 +6,21 @@
 
 .footerContainer{
 
-    padding: ($gutter * 3) $gutter
+    padding: ($gutter * 3) $gutter;
 
     h4{
         margin-top: $gutter;
-        font-size: 1.3em;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .col-12{
+        padding: 0;
     }
 
     ul{
-        padding: 0;
         list-style: none;
-        padding: 1em 0;
+        padding: 0 0;
     }
 
     a{
@@ -30,12 +34,14 @@
 
     li{
         padding: 2px 0;
+        font-size: .8em;
+        font-weight: 400;
     }
 
     i{
-        margin-top: $gutter / 3;
+        margin-top: $gutter * 2;
         background: darken($color: $dark-1, $amount: 10);
-        width: 90%;
+        width: calc(100% - 3rem);
         text-align: center;
         font-size: 2em;
         padding: .5em 1em;
