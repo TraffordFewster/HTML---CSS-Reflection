@@ -1028,12 +1028,18 @@ body {
   padding-top: 32px;
 }
 .newsSelector h2 {
-  margin-left: 24px;
-  padding-bottom: calc( $gutter - .2em);
-  display: inline;
+  margin-left: 4px;
+  padding-bottom: 24px;
+  margin-bottom: -6.4px;
+  display: block;
+  width: 3.5em;
   font-size: 1.5em;
-  min-height: 6em;
   border-bottom: solid 0.2em #333645;
+}
+@media screen and (min-width: 768px) {
+  .newsSelector h2 {
+    margin-left: -16px;
+  }
 }
 
 .newsContainerBG {
@@ -1042,6 +1048,13 @@ body {
   margin-top: 0.4em;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .newsContainer .row {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
 }
 
 .newsItem {
@@ -1061,7 +1074,7 @@ body {
     max-width: calc(50% - 32px);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .newsItem {
     max-width: calc(33.333333333333% - 32px);
   }
@@ -1102,11 +1115,12 @@ body {
 }
 .newsItem .title {
   display: block;
-  font-size: 1.3em;
-  min-height: 2.5em;
+  font-size: 1em;
+  min-height: 2em;
 }
 .newsItem .desc {
-  min-height: 5em;
+  font-size: 0.9em;
+  min-height: 4em;
 }
 .newsItem h3:hover {
   text-decoration: underline;
@@ -1115,7 +1129,7 @@ body {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  min-height: 22em;
+  min-height: 20em;
 }
 .newsItem .readMore {
   margin-top: auto;
@@ -1135,9 +1149,10 @@ body {
   border-radius: 50%;
   margin-right: 16px;
 }
-.newsItem .author h3 {
+.newsItem .author h4 {
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .newsType-news {

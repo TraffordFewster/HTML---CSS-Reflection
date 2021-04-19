@@ -1,11 +1,16 @@
 .newsSelector{
     padding-top: $gutter * 2;
     h2{
-        margin-left: $gutter * 1.5;
-        padding-bottom: calc( $gutter - .2em) ;
-        display: inline;
+        @media screen and (min-width: map-get($map: $breakpoints, $key:md )){
+            margin-left: - $gutter
+        }
+        margin-left: $gutter * .25;
+        padding-bottom: ($gutter * 1.5);
+        margin-bottom:- $gutter * 0.4;
+        display: block;
+        width: 3.5em;
         font-size: 1.5em;
-        min-height: 6em;
+        //min-height: 10em;
         border-bottom: solid .2em $dark-1;
     }
 }
@@ -17,18 +22,23 @@
     padding-top: $gutter;
     padding-bottom: $gutter;
 }
-
+.newsContainer .row{
+    @media screen and (min-width: map-get($map: $breakpoints, $key:md )){
+        margin-left: - $gutter * 2;
+        margin-right: - $gutter * 2;
+    }
+}
 
 .newsItem{
     min-width: 0px;
     //max-width: calc(33% - #{$gutter * 2});
     max-width: calc(100% - #{$gutter*2});
 
-    @media screen and (min-width:768px){
+    @media screen and (min-width:map-get($map: $breakpoints, $key:md )){
         max-width: calc(50% - #{$gutter * 2});
     }
 
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:map-get($map: $breakpoints, $key:xl )){
         max-width: calc(33.333333333333% - #{$gutter * 2});
     }
     // display: flex;
@@ -82,12 +92,13 @@
 
     .title{
         display: block;
-        font-size: 1.3em;
-        min-height: 2.5em;
+        font-size: 1em;
+        min-height: 2em;
     }
 
     .desc{
-        min-height: 5em;
+        font-size: .9em;
+        min-height: 4em;
     }
 
     h3:hover{
@@ -97,7 +108,7 @@
         padding: $gutter;
         display: flex;
         flex-direction: column;
-        min-height: 22em;
+        min-height: 20em;
     }
 
     .readMore{
@@ -118,9 +129,10 @@
             border-radius: 50%;
             margin-right: $gutter;
         }
-        h3{
+        h4{
             font-weight: bold;
-            font-size: .8em;
+            font-size: 1rem;
+            margin-bottom: .75rem;
         }
     }
 }
