@@ -1329,17 +1329,28 @@ body {
   padding-bottom: 32px;
 }
 
-.emailContainer {
-  padding: 16px;
-}
 .emailContainer a {
   color: #333645;
 }
 .emailContainer a:hover {
   color: #1d1f28;
 }
+.emailContainer .row {
+  margin-left: 5.3333333333px;
+  margin-right: 5.3333333333px;
+}
+@media screen and (min-width: 768px) {
+  .emailContainer .row {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
 .emailContainer h2, .emailContainer label {
   padding: 0;
+  font-weight: 500;
+}
+.emailContainer h2 {
+  font-weight: 400;
 }
 .emailContainer .row > * {
   padding: 0;
@@ -1357,7 +1368,7 @@ body {
 .emailContainer .emailCol, .emailContainer .nameCol {
   margin-top: 16px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .emailContainer .nameCol > * {
     margin-right: 8px;
   }
@@ -1368,12 +1379,12 @@ body {
 .emailContainer .checkMarketing {
   display: flex;
   margin: 0;
-  margin-top: 8px;
+  margin-top: 16px;
   padding: 0;
   position: relative;
 }
 .emailContainer .checkMarketing .checkHolder {
-  width: 2em;
+  min-width: 2em;
   height: 2em;
   position: relative;
 }
@@ -1421,10 +1432,12 @@ body {
   color: white;
 }
 .emailContainer .checkMarketing label {
-  padding-left: 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 8px;
 }
 .emailContainer .btn {
-  margin-top: 16px;
+  margin-top: 32px;
   background: #333645;
   color: white;
   height: 3em;
