@@ -641,7 +641,9 @@ body {
 }
 .imageRow .textHolder h1 {
   font-size: 4em;
+  font-weight: 400;
   margin-bottom: 32px;
+  letter-spacing: -1px;
 }
 .imageRow .textHolder p {
   margin-bottom: 48px;
@@ -1020,7 +1022,7 @@ body {
     background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 105%;
+    background-size: auto 100%;
   }
 }
 

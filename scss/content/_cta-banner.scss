@@ -18,7 +18,9 @@
         color:white;
         h1{
             font-size: 4em;
+            font-weight: 400;
             margin-bottom: $gutter * 2;
+            letter-spacing: -1px;
         }
         p{
             margin-bottom: $gutter * 3;
