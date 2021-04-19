@@ -644,7 +644,7 @@ body {
   margin-bottom: 32px;
 }
 .imageRow .textHolder p {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 .imageRow .textHolder .col-12 {
   margin: auto;
@@ -653,25 +653,19 @@ body {
   .imageRow .textHolder .col-12 {
     max-width: 960px;
     text-align: left;
-    left: 10%;
     display: block;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .imageRow .textHolder .col-12 {
     max-width: 1140px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .imageRow .textHolder .col-12 {
-    max-width: 1320px;
   }
 }
 .imageRow .HeroImageCTA a {
   font-size: 1.5em;
   width: 16em;
   padding: 0.5em;
-  border-radius: 0.25em;
+  border-radius: 0.1em;
   z-index: 3;
   background: #2ECC71;
   color: white;
@@ -694,14 +688,15 @@ body {
   left: -9999px;
   right: -9999px;
   margin: auto;
-  height: calc(100vh - 11em);
+  min-height: calc(100vh - 11em);
+  min-width: 100%;
 }
 @media screen and (max-width: 992px) {
   .bgImage {
     height: calc(100vh - 5em);
   }
   .bgImage img {
-    height: calc(100vh - 5em);
+    min-height: calc(100vh - 5em);
   }
 }
 .bgImage:before {
@@ -713,7 +708,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8015581232) 0%, rgba(0, 0, 0, 0.3393732493) 50%, rgba(0, 0, 0, 0.7987570028) 100%);
   /*adjust brightness here */
 }
 
