@@ -699,6 +699,11 @@ body {
   padding-top: 3em;
 }
 
+.productOverviews .row {
+  margin-left: -32px;
+  margin-right: -32px;
+}
+
 .productPanel {
   padding: 16px;
   display: flex;
@@ -709,32 +714,46 @@ body {
   margin-top: 48px;
   background: white;
   font-size: 0.9em;
-  height: 18em;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.55);
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.55);
+  min-height: 20em;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.55);
   text-decoration: none;
   color: #333645;
 }
 .productPanel:hover {
   color: white;
 }
-.productPanel i {
-  align-self: center;
-  font-size: 1.5em;
+.productPanel .iContainer {
+  position: relative;
+  min-width: 5em;
+  min-height: 5em;
   border-radius: 50%;
-  padding: 0.5em;
+}
+.productPanel i {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto 0;
+  font-size: 1.5em;
+  height: 1em;
   color: white;
 }
 .productPanel h2 {
-  font-size: 1.8em;
-  margin-top: 0.25em;
+  font-size: 1.4em;
+  margin-top: 1em;
 }
 .productPanel .Spacer {
-  font-size: 4em;
-  color: #333645;
-  line-height: 0.2em;
+  content: "";
+  background: #333645;
+  width: 20%;
+  min-height: 4px;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
 }
 .productPanel p {
+  font-size: 0.8;
   max-width: 90%;
   overflow: hidden;
 }
@@ -748,18 +767,27 @@ body {
   border-radius: 0.2em;
   color: white;
 }
+
+@media screen and (min-width: 768px) {
+  .productExtraHelp2 {
+    min-height: 22em;
+  }
+}
 @media screen and (min-width: 992px) {
   .productPanel {
-    height: 21em;
+    min-height: 20em;
   }
-}
-@media screen and (min-width: 1400px) {
-  .productPanel {
-    height: 19em;
-  }
-}
 
-.prod-bespSoft i {
+  .productExtraHelp {
+    min-height: 25em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .productPanel {
+    min-height: 25em;
+  }
+}
+.prod-bespSoft .iContainer {
   background: #67809F;
 }
 .prod-bespSoft .readMore {
@@ -771,16 +799,18 @@ body {
 .prod-bespSoft:hover .Spacer {
   color: white;
 }
-.prod-bespSoft:hover i {
-  color: #67809F;
+.prod-bespSoft:hover .iContainer {
   background: white;
+}
+.prod-bespSoft:hover .iContainer i {
+  color: #67809F;
 }
 .prod-bespSoft:hover .readMore {
   color: #67809F;
   background: white;
 }
 
-.prod-itSup i {
+.prod-itSup .iContainer {
   background: #4183D7;
 }
 .prod-itSup .readMore {
@@ -792,16 +822,18 @@ body {
 .prod-itSup:hover .Spacer {
   color: white;
 }
-.prod-itSup:hover i {
-  color: #4183D7;
+.prod-itSup:hover .iContainer {
   background: white;
+}
+.prod-itSup:hover .iContainer i {
+  color: #4183D7;
 }
 .prod-itSup:hover .readMore {
   color: #4183D7;
   background: white;
 }
 
-.prod-digitalmarketing i {
+.prod-digitalmarketing .iContainer {
   background: #2ECC71;
 }
 .prod-digitalmarketing .readMore {
@@ -813,16 +845,18 @@ body {
 .prod-digitalmarketing:hover .Spacer {
   color: white;
 }
-.prod-digitalmarketing:hover i {
-  color: #2ECC71;
+.prod-digitalmarketing:hover .iContainer {
   background: white;
+}
+.prod-digitalmarketing:hover .iContainer i {
+  color: #2ECC71;
 }
 .prod-digitalmarketing:hover .readMore {
   color: #2ECC71;
   background: white;
 }
 
-.prod-telecoms i {
+.prod-telecoms .iContainer {
   background: #D64541;
 }
 .prod-telecoms .readMore {
@@ -834,16 +868,18 @@ body {
 .prod-telecoms:hover .Spacer {
   color: white;
 }
-.prod-telecoms:hover i {
-  color: #D64541;
+.prod-telecoms:hover .iContainer {
   background: white;
+}
+.prod-telecoms:hover .iContainer i {
+  color: #D64541;
 }
 .prod-telecoms:hover .readMore {
   color: #D64541;
   background: white;
 }
 
-.prod-webdesign i {
+.prod-webdesign .iContainer {
   background: #926FB1;
 }
 .prod-webdesign .readMore {
@@ -855,16 +891,18 @@ body {
 .prod-webdesign:hover .Spacer {
   color: white;
 }
-.prod-webdesign:hover i {
-  color: #926FB1;
+.prod-webdesign:hover .iContainer {
   background: white;
+}
+.prod-webdesign:hover .iContainer i {
+  color: #926FB1;
 }
 .prod-webdesign:hover .readMore {
   color: #926FB1;
   background: white;
 }
 
-.prod-cybersecurity i {
+.prod-cybersecurity .iContainer {
   background: #F62459;
 }
 .prod-cybersecurity .readMore {
@@ -876,16 +914,18 @@ body {
 .prod-cybersecurity:hover .Spacer {
   color: white;
 }
-.prod-cybersecurity:hover i {
-  color: #F62459;
+.prod-cybersecurity:hover .iContainer {
   background: white;
+}
+.prod-cybersecurity:hover .iContainer i {
+  color: #F62459;
 }
 .prod-cybersecurity:hover .readMore {
   color: #F62459;
   background: white;
 }
 
-.prod-scs i {
+.prod-scs .iContainer {
   background: #926FB1;
 }
 .prod-scs .readMore {
@@ -897,9 +937,11 @@ body {
 .prod-scs:hover .Spacer {
   color: white;
 }
-.prod-scs:hover i {
-  color: #926FB1;
+.prod-scs:hover .iContainer {
   background: white;
+}
+.prod-scs:hover .iContainer i {
+  color: #926FB1;
 }
 .prod-scs:hover .readMore {
   color: #926FB1;

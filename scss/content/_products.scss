@@ -5,6 +5,11 @@
     padding-top: 3em;
 }
 
+.productOverviews .row{
+    margin-left: - $gutter* 2;
+    margin-right: - $gutter* 2;
+}
+
 .productPanel{
     padding: $gutter;
     display: flex;
@@ -16,10 +21,10 @@
     //border:dotted 1px black;
     background: white;
     font-size: .9em;
-    height: 18em;
+    min-height: 20em;
 
-    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.55); 
-    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.55); 
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.55);
     text-decoration: none;
     color: $dark-1;
 
@@ -27,26 +32,38 @@
         color:white
     }
 
-    i{
-        align-self: center;
-        font-size: 1.5em;
+    .iContainer{
+        position: relative;
+        min-width: 5em;
+        min-height: 5em;
         border-radius: 50%;
-        padding: .5em;
+    }
+
+    i{
+        left: 0; right: 0; top: 0; bottom: 0;
+        position: absolute;
+        margin: auto 0;
+        font-size: 1.5em;
+        height: 1em;
         color: white;
     }
 
     h2{
-        font-size: 1.8em;
-        margin-top: .25em;
+        font-size: 1.4em;
+        margin-top: 1em;
     }
 
     .Spacer{
-        font-size: 4em;
-        color:$dark-1;
-        line-height: .2em;
+        content: "";
+        background: $dark-1;
+        width: 20%;
+        min-height: 4px;
+        margin-top: .75em;
+        margin-bottom: .75em;
     }
 
     p{
+        font-size: .8;
         max-width: 90%;
         overflow: hidden;
     }
@@ -62,19 +79,33 @@
         color: white;
     }
 
-    @media screen and (min-width: 992px) {
-        height: 21em;
+
+}
+@media screen and (min-width: 768px){
+    .productExtraHelp2{
+        min-height: 22em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .productPanel{
+        min-height: 20em;
     }
 
-    @media screen and (min-width: 1400px) {
-        height: 19em;
+    .productExtraHelp{
+        min-height: 25em;
     }
+}
 
+@media screen and (min-width: 1200px) {
+    .productPanel{
+        min-height: 25em;
+    }
 }
 
 @each $name, $color in $product-colors{
     .prod-#{$name}{
-        i {
+        .iContainer {
             background: $color;
         }
 
@@ -88,9 +119,11 @@
                 color: white
             }
 
-            i{
-                color: $color;
+            .iContainer{
                 background: white;
+                i{
+                    color: $color;
+                }
             }
 
             .readMore{
