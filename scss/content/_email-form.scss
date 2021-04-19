@@ -18,8 +18,8 @@
         margin-right: ($gutter /3);
 
         @media screen and (min-width: map-get($map: $breakpoints, $key:md )) {
-            margin-left: -$gutter;
-            margin-right: -$gutter;
+            margin-left: -$gutter * 0.7;
+            margin-right: -$gutter * 0.7;
         }
     }
 

@@ -1,6 +1,6 @@
 .header-mini{
     display: flex;
-    padding: $gutter * 1.5;
+    padding: $gutter;
     text-align: center;
 
     .phone{
@@ -28,7 +28,7 @@
         min-width: 4em;
     }
     .search{
-        margin-top: - $gutter * 2;
+        margin-top: -$gutter;
         padding: 0;
     }
 

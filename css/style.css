@@ -47,7 +47,7 @@ body {
 
 .header-mini {
   display: flex;
-  padding: 24px;
+  padding: 16px;
   text-align: center;
 }
 .header-mini .phone {
@@ -74,7 +74,7 @@ body {
   min-width: 4em;
 }
 .header-mini .search {
-  margin-top: -32px;
+  margin-top: -16px;
   padding: 0;
 }
 .header-mini .imgHolder {
@@ -1341,8 +1341,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .emailContainer .row {
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-left: -11.2px;
+    margin-right: -11.2px;
   }
 }
 .emailContainer h2, .emailContainer label {
