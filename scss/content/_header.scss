@@ -33,10 +33,12 @@
         background: #E5E5E5;
         border: #CECECE 3px solid;
         height: 3rem;
+        min-width: 0;
 
         input{
             background: none;
             border: none;
+            min-width: 0;
         }
 
         button{
@@ -50,6 +52,7 @@
             i{
                 color: #333645;
                 font-size: 1.4rem;
+                min-width: 3rem;
             }
         }
     }

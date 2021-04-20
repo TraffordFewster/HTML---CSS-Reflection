@@ -81,10 +81,12 @@ body {
   background: #E5E5E5;
   border: #CECECE 3px solid;
   height: 3rem;
+  min-width: 0;
 }
 .header-mini .search input {
   background: none;
   border: none;
+  min-width: 0;
 }
 .header-mini .search button {
   background: none;
@@ -96,6 +98,7 @@ body {
 .header-mini .search button i {
   color: #333645;
   font-size: 1.4rem;
+  min-width: 3rem;
 }
 .header-mini .imgHolder {
   flex: 1 0;
