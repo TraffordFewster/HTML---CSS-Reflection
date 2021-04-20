@@ -1148,7 +1148,8 @@ body {
   padding: 16px;
 }
 .newsItem .author {
-  line-height: 0.2em;
+  font-size: 0.87rem;
+  line-height: 0.2rem;
 }
 .newsItem .author img {
   float: left;
@@ -1156,8 +1157,9 @@ body {
   margin-right: 16px;
 }
 .newsItem .author h4 {
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 0.87rem;
+  margin-top: 0.15rem;
   margin-bottom: 0.75rem;
 }
 
