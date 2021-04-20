@@ -227,11 +227,6 @@ body {
     max-width: 20em;
   }
 }
-@media screen and (min-width: 1400px) {
-  .header-med .actions .search {
-    width: 20em;
-  }
-}
 .header-med .actions .searchButton {
   background: #999AA2;
   color: white;
