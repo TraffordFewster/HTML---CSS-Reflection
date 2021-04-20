@@ -17,7 +17,7 @@
     align-items: center;
     text-align: center;
     margin: $gutter;
-    margin-top: ($gutter * 3);
+    margin-top: ($gutter * 2);
     //border:dotted 1px black;
     background: white;
     font-size: .9em;
@@ -60,7 +60,7 @@
     .Spacer{
         content: "";
         background: $dark-1;
-        width: 10%;
+        width: 30px;
         min-height: 3px;
         margin-top: .75em;
         margin-bottom: .75em;
@@ -104,7 +104,7 @@
 
 @media screen and (min-width: 1260px) {
     .productPanel{
-        min-height: 25em;
+        min-height: 23em;
     }
 }
 

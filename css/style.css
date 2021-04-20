@@ -734,7 +734,7 @@ body {
   align-items: center;
   text-align: center;
   margin: 16px;
-  margin-top: 48px;
+  margin-top: 32px;
   background: white;
   font-size: 0.9em;
   min-height: 20em;
@@ -773,7 +773,7 @@ body {
 .productPanel .Spacer {
   content: "";
   background: #333645;
-  width: 10%;
+  width: 30px;
   min-height: 3px;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
@@ -809,7 +809,7 @@ body {
 }
 @media screen and (min-width: 1260px) {
   .productPanel {
-    min-height: 25em;
+    min-height: 23em;
   }
 }
 @media screen and (max-width: 768px) {
