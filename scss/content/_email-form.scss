@@ -15,13 +15,8 @@
     }
     
     .row{
-        margin-left: $gutter;
-        margin-right: $gutter;
-
-        @media screen and (min-width: map-get($map: $breakpoints, $key:md )) {
-            margin-left: -2px;
-            margin-right: -2px;
-        }
+        margin-left: $gutter * 2;
+        margin-right: $gutter * 2;
     }
 
     h2, label{
@@ -52,7 +47,7 @@
     .emailCol, .nameCol{
         margin-top: $gutter;
     }
-    @media screen and (min-width:1260px) {
+    @media screen and (min-width:map-get($map: $breakpoints, $key:lg )) {
         .nameCol > *{
             margin-right: $gutter/2;
         }

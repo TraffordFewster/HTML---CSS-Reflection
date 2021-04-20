@@ -1396,14 +1396,8 @@ body {
   color: #08080a;
 }
 .emailContainer .row {
-  margin-left: 16px;
-  margin-right: 16px;
-}
-@media screen and (min-width: 768px) {
-  .emailContainer .row {
-    margin-left: -2px;
-    margin-right: -2px;
-  }
+  margin-left: 32px;
+  margin-right: 32px;
 }
 .emailContainer h2, .emailContainer label {
   padding: 0;
@@ -1428,7 +1422,7 @@ body {
 .emailContainer .emailCol, .emailContainer .nameCol {
   margin-top: 16px;
 }
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 992px) {
   .emailContainer .nameCol > * {
     margin-right: 8px;
   }
