@@ -6,6 +6,7 @@
 
 .emailContainer{
 
+    padding: 0;
     a{
         color: $dark-1;
         &:hover{
@@ -14,12 +15,12 @@
     }
     
     .row{
-        margin-left: ($gutter /3);
-        margin-right: ($gutter /3);
+        margin-left: $gutter;
+        margin-right: $gutter;
 
         @media screen and (min-width: map-get($map: $breakpoints, $key:md )) {
-            margin-left: -$gutter * 0.7;
-            margin-right: -$gutter * 0.7;
+            margin-left: -2px;
+            margin-right: -2px;
         }
     }
 

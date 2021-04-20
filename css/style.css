@@ -1334,6 +1334,9 @@ body {
   padding-bottom: 32px;
 }
 
+.emailContainer {
+  padding: 0;
+}
 .emailContainer a {
   color: #333645;
 }
@@ -1341,13 +1344,13 @@ body {
   color: #08080a;
 }
 .emailContainer .row {
-  margin-left: 5.3333333333px;
-  margin-right: 5.3333333333px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 @media screen and (min-width: 768px) {
   .emailContainer .row {
-    margin-left: -11.2px;
-    margin-right: -11.2px;
+    margin-left: -2px;
+    margin-right: -2px;
   }
 }
 .emailContainer h2, .emailContainer label {
