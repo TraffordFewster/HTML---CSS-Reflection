@@ -1,5 +1,7 @@
 .newsSelector{
     padding-top: $gutter * 2;
+    padding-left: $gutter;
+    padding-right: 0;
     h2{
         @media screen and (min-width: map-get($map: $breakpoints, $key:md )){
             margin-left: - $gutter
@@ -22,10 +24,13 @@
     padding-top: $gutter;
     padding-bottom: $gutter;
 }
+.newsContainer{
+    padding: 0;
+}
 .newsContainer .row{
     @media screen and (min-width: map-get($map: $breakpoints, $key:md )){
-        margin-left: - $gutter * 2;
-        margin-right: - $gutter * 2;
+        margin-left: - $gutter;
+        margin-right: - $gutter;
     }
 }
 

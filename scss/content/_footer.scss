@@ -6,7 +6,11 @@
 
 .footerContainer{
 
-    padding: ($gutter * 3) $gutter;
+    padding: ($gutter * 3) 0;
+
+    .row{
+        margin: 0;
+    }
 
     h4{
         margin-top: $gutter;

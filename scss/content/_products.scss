@@ -5,9 +5,13 @@
     padding-top: 3em;
 }
 
+
+.productOverviews{
+    padding: 0;
+}
 .productOverviews .row{
-    margin-left: - $gutter * 1.8;
-    margin-right: - $gutter * 1.8;
+    margin-left: - $gutter;
+    margin-right: - $gutter;
 }
 
 .productPanel{

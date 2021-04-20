@@ -29,6 +29,8 @@ body {
   font-family: Poppins, sans-serif;
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -719,9 +721,13 @@ body {
   padding-top: 3em;
 }
 
+.productOverviews {
+  padding: 0;
+}
+
 .productOverviews .row {
-  margin-left: -28.8px;
-  margin-right: -28.8px;
+  margin-left: -16px;
+  margin-right: -16px;
 }
 
 .productPanel {
@@ -1029,6 +1035,8 @@ body {
 
 .newsSelector {
   padding-top: 32px;
+  padding-left: 16px;
+  padding-right: 0;
 }
 .newsSelector h2 {
   margin-left: 4px;
@@ -1053,10 +1061,14 @@ body {
   padding-bottom: 16px;
 }
 
+.newsContainer {
+  padding: 0;
+}
+
 @media screen and (min-width: 768px) {
   .newsContainer .row {
-    margin-left: -32px;
-    margin-right: -32px;
+    margin-left: -16px;
+    margin-right: -16px;
   }
 }
 
@@ -1461,7 +1473,10 @@ body {
 }
 
 .footerContainer {
-  padding: 48px 16px;
+  padding: 48px 0;
+}
+.footerContainer .row {
+  margin: 0;
 }
 .footerContainer h4 {
   margin-top: 16px;
