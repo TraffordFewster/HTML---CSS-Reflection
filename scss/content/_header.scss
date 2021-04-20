@@ -30,6 +30,28 @@
     .search{
         margin-top: -$gutter;
         padding: 0;
+        background: #E5E5E5;
+        border: #CECECE 3px solid;
+        height: 3rem;
+
+        input{
+            background: none;
+            border: none;
+        }
+
+        button{
+            background: none;
+            border: none;
+
+            &:hover{
+                background: none;
+            }
+
+            i{
+                color: #333645;
+                font-size: 1.4rem;
+            }
+        }
     }
 
     .imgHolder{
@@ -189,11 +211,15 @@
             margin-left: $gutter;
         }
         .search{
-            margin-left: $gutter * 2;
+            //margin-left: $gutter * 2;
             margin-bottom: auto;
             overflow: hidden;
             @media screen and (min-width:768px){
-                max-width: 20em;
+                max-width: 30em;
+            }
+
+            @media screen and (min-width: map-get($map: $breakpoints, $key:lg )){
+                margin-left: $gutter * 2;
             }
 
         }
