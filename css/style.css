@@ -1488,7 +1488,7 @@ body {
 .footerContainer i {
   margin-top: 32px;
   background: #1d1f28;
-  width: calc(100% - 3rem);
+  width: 98%;
   text-align: center;
   font-size: 2em;
   padding: 0.5em 1em;
