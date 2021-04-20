@@ -1121,7 +1121,7 @@ body {
   max-width: calc(100% - 32px);
   align-items: center;
   justify-content: center;
-  border: 1px solid #333645;
+  border: 1px solid #CBCBCB;
   border-radius: 0.25em;
   overflow: hidden;
   color: #333645;
@@ -1175,7 +1175,7 @@ body {
 .newsItem .title {
   display: block;
   font-size: 1em;
-  min-height: 2em;
+  min-height: 3em;
 }
 .newsItem .desc {
   font-size: 0.9em;
@@ -1188,7 +1188,6 @@ body {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  min-height: 20em;
 }
 .newsItem .readMore {
   margin-top: auto;
@@ -1196,9 +1195,6 @@ body {
   border-radius: 0.2em;
   text-align: center;
   max-width: 7em;
-}
-.newsItem .give-hr-margin {
-  padding: 16px;
 }
 .newsItem .author {
   font-size: 0.87rem;

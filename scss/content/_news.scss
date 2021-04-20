@@ -50,7 +50,7 @@
     // flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid $dark-1;
+    border: 1px solid #CBCBCB;
     border-radius: .25em;
     overflow: hidden;
     color:$dark-1;
@@ -98,7 +98,7 @@
     .title{
         display: block;
         font-size: 1em;
-        min-height: 2em;
+        min-height: 3em;
     }
 
     .desc{
@@ -113,7 +113,6 @@
         padding: $gutter;
         display: flex;
         flex-direction: column;
-        min-height: 20em;
     }
 
     .readMore{
@@ -122,9 +121,6 @@
         border-radius: .2em;
         text-align: center;
         max-width: 7em;
-    }
-    .give-hr-margin{
-        padding: $gutter;
     }
 
     .author{
