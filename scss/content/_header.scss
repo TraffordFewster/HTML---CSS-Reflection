@@ -123,9 +123,9 @@
     padding-top: $gutter * 1.5;
     padding-bottom: $gutter * 1.5;
     overflow: hidden;
-    .menu{
-        margin-right: -$gutter/2;
-    }
+    // .menu{
+    //     margin-right: -$gutter/2;
+    // }
 
     .logo{
         display: block;
@@ -141,6 +141,7 @@
     .actions{
         display: flex;
         padding-left: 70px;
+        padding-right: 0;
 
         & > * {
             flex: 0 1 auto;
