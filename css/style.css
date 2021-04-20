@@ -162,6 +162,9 @@ body {
   padding-bottom: 24px;
   overflow: hidden;
 }
+.header-med .menu {
+  margin-right: -8px;
+}
 .header-med .logo {
   display: block;
   max-width: 100%;

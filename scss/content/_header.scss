@@ -123,6 +123,9 @@
     padding-top: $gutter * 1.5;
     padding-bottom: $gutter * 1.5;
     overflow: hidden;
+    .menu{
+        margin-right: -$gutter/2;
+    }
 
     .logo{
         display: block;
