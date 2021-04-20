@@ -262,11 +262,15 @@ body {
   text-decoration: none;
   color: white;
 }
+.productNavBG .row {
+  border-left: solid 1px #484A58;
+  border-right: solid 1px #262834;
+}
 
 .productNav {
   text-align: center;
   border-left: solid 1px #484A58;
-  border-right: solid 1px #484A58;
+  border-right: solid 1px #262834;
   padding: 0;
 }
 .productNav a {
@@ -285,6 +289,14 @@ body {
   line-height: 0.5em;
   font-size: 1.12em;
   margin-top: -0.2em;
+}
+
+.prodNav-webdesign {
+  border-left: solid 1px #262834;
+}
+
+.prodNav-cybersecurity {
+  border-right: solid 1px #484A58;
 }
 
 .prodNav-bespSoft i {

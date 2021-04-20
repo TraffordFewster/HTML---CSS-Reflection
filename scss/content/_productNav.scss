@@ -7,12 +7,17 @@ $productNav-bg: #333645;
         text-decoration: none;
         color: white;
     }
+
+    .row{
+        border-left: solid 1px #484A58;
+        border-right: solid 1px #262834;
+    }
 }
 
 .productNav{
     text-align: center;
     border-left: solid 1px #484A58;
-    border-right: solid 1px #484A58;
+    border-right: solid 1px #262834;
     padding: 0;
     a{
         padding: 1em 0;
@@ -32,7 +37,13 @@ $productNav-bg: #333645;
         margin-top: -.2em
     };
 }
+.prodNav-webdesign{
+    border-left: solid 1px #262834;
+}
 
+.prodNav-cybersecurity{
+    border-right: solid 1px #484A58;
+}
 @each $type, $color in $product-colors{
     .prodNav-#{$type}{
         i{
