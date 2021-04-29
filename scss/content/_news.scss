@@ -98,6 +98,7 @@
     .title{
         display: block;
         font-size: 1em;
+        font-weight: 600;
         min-height: 3em;
     }
 
@@ -110,17 +111,21 @@
         text-decoration: underline;
     }
     .newsItemText{
-        padding: $gutter;
+        padding: $gutter * 2;
         display: flex;
         flex-direction: column;
+
+        .give-hr-margin{
+            margin: $gutter 0 ;
+        }
     }
 
     .readMore{
         margin-top: auto;
-        padding: $gutter / 2;
+        padding: ($gutter / 1.5) ($gutter /4);
         border-radius: .2em;
         text-align: center;
-        max-width: 7em;
+        max-width: 7.5rem;
     }
 
     .author{
@@ -145,9 +150,10 @@
         position: relative;
         .overlayBanner{
             display: block;
-            width: 5em;
-            height: 1.5em;
+            padding: .2rem .5rem;
             background: $color;
+            font-size: .75rem;
+            font-weight: 600;
             position: absolute;
             top: 5%;
             right:0%;
