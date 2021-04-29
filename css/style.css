@@ -707,8 +707,10 @@ body {
   text-align: center;
 }
 .imageRow .textHolder {
-  top: 20%;
+  top: 50%;
   left: 0%;
+  padding-bottom: 32px;
+  transform: translateY(-50%);
   z-index: 3;
   display: block;
   position: absolute;
