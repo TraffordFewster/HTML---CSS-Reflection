@@ -14,6 +14,7 @@
 
     h4{
         margin-top: $gutter;
+        margin-bottom: $gutter * 1.5;
         font-size: 1em;
         font-weight: 400;
     }
@@ -43,15 +44,18 @@
     }
 
     i{
-        margin-top: $gutter * 2;
         background: darken($color: $dark-1, $amount: 10);
-        width: 98%;
+        width: 100%;
         text-align: center;
         font-size: 2em;
         padding: .5em 1em;
     }
 
-
+    .row > *{
+        padding: $gutter;
+        padding-left: 0;
+        padding-top: 0;
+    }
     .socialMediaContainer{
         padding: 0;
     }

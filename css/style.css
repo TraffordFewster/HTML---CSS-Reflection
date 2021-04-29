@@ -1469,6 +1469,10 @@ body {
 .emailContainer input {
   height: 3em;
 }
+.emailContainer input:focus {
+  border-color: #5bc0de;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
+}
 .emailContainer .emailCol, .emailContainer .nameCol {
   margin-top: 16px;
 }
@@ -1499,6 +1503,7 @@ body {
   height: 2em;
   background: none;
   border: 3px solid #333645;
+  border-radius: 3px;
   position: absolute;
   z-index: 1;
   left: 0;
@@ -1564,6 +1569,7 @@ body {
 }
 .footerContainer h4 {
   margin-top: 16px;
+  margin-bottom: 24px;
   font-size: 1em;
   font-weight: 400;
 }
@@ -1587,12 +1593,16 @@ body {
   font-weight: 400;
 }
 .footerContainer i {
-  margin-top: 32px;
   background: #1d1f28;
-  width: 98%;
+  width: 100%;
   text-align: center;
   font-size: 2em;
   padding: 0.5em 1em;
+}
+.footerContainer .row > * {
+  padding: 16px;
+  padding-left: 0;
+  padding-top: 0;
 }
 .footerContainer .socialMediaContainer {
   padding: 0;
