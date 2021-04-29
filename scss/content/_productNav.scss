@@ -65,7 +65,11 @@ $productNav-bg: #333645;
                 width: 100%;
                 left:0;
                 .container{
-                    padding: ($gutter / 4) ($gutter /2);
+                    padding: ($gutter / 4) 0;
+                }
+
+                .col-12{
+                    margin-left: -.3rem;
                 }
                 ul{
                     list-style-type: none;

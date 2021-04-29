@@ -359,7 +359,10 @@ body {
   left: 0;
 }
 .prodNav-bespSoft:hover .hoverNavProd .container {
-  padding: 4px 8px;
+  padding: 4px 0;
+}
+.prodNav-bespSoft:hover .hoverNavProd .col-12 {
+  margin-left: -0.3rem;
 }
 .prodNav-bespSoft:hover .hoverNavProd ul {
   list-style-type: none;
@@ -407,7 +410,10 @@ body {
   left: 0;
 }
 .prodNav-itSup:hover .hoverNavProd .container {
-  padding: 4px 8px;
+  padding: 4px 0;
+}
+.prodNav-itSup:hover .hoverNavProd .col-12 {
+  margin-left: -0.3rem;
 }
 .prodNav-itSup:hover .hoverNavProd ul {
   list-style-type: none;
@@ -455,7 +461,10 @@ body {
   left: 0;
 }
 .prodNav-digitalmarketing:hover .hoverNavProd .container {
-  padding: 4px 8px;
+  padding: 4px 0;
+}
+.prodNav-digitalmarketing:hover .hoverNavProd .col-12 {
+  margin-left: -0.3rem;
 }
 .prodNav-digitalmarketing:hover .hoverNavProd ul {
   list-style-type: none;
@@ -503,7 +512,10 @@ body {
   left: 0;
 }
 .prodNav-telecoms:hover .hoverNavProd .container {
-  padding: 4px 8px;
+  padding: 4px 0;
+}
+.prodNav-telecoms:hover .hoverNavProd .col-12 {
+  margin-left: -0.3rem;
 }
 .prodNav-telecoms:hover .hoverNavProd ul {
   list-style-type: none;
@@ -551,7 +563,10 @@ body {
   left: 0;
 }
 .prodNav-webdesign:hover .hoverNavProd .container {
-  padding: 4px 8px;
+  padding: 4px 0;
+}
+.prodNav-webdesign:hover .hoverNavProd .col-12 {
+  margin-left: -0.3rem;
 }
 .prodNav-webdesign:hover .hoverNavProd ul {
   list-style-type: none;
@@ -599,7 +614,10 @@ body {
   left: 0;
 }
 .prodNav-cybersecurity:hover .hoverNavProd .container {
-  padding: 4px 8px;
+  padding: 4px 0;
+}
+.prodNav-cybersecurity:hover .hoverNavProd .col-12 {
+  margin-left: -0.3rem;
 }
 .prodNav-cybersecurity:hover .hoverNavProd ul {
   list-style-type: none;
@@ -647,7 +665,10 @@ body {
   left: 0;
 }
 .prodNav-scs:hover .hoverNavProd .container {
-  padding: 4px 8px;
+  padding: 4px 0;
+}
+.prodNav-scs:hover .hoverNavProd .col-12 {
+  margin-left: -0.3rem;
 }
 .prodNav-scs:hover .hoverNavProd ul {
   list-style-type: none;
