@@ -218,6 +218,17 @@
             //margin-left: $gutter * 2;
             margin-bottom: auto;
             overflow: hidden;
+            border-radius: 0 3px 3px 0;
+
+            input{
+                box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+                transition: border-color 150ms ,box-shadow 150ms;
+                &:focus{
+                    border-color: #5bc0de;
+                    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
+                }
+            }
+
             @media screen and (min-width:768px){
                 max-width: 30em;
             }
@@ -231,6 +242,7 @@
             background: $light-offset-2;
             color: white;
             border: none;
+            border-radius: 3px;
             &:hover{
                 background: darken($color: $light-offset-2, $amount: 10);
             }

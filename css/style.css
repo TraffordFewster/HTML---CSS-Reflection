@@ -248,6 +248,15 @@ body {
 .header-med .actions .search {
   margin-bottom: auto;
   overflow: hidden;
+  border-radius: 0 3px 3px 0;
+}
+.header-med .actions .search input {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+  transition: border-color 150ms, box-shadow 150ms;
+}
+.header-med .actions .search input:focus {
+  border-color: #5bc0de;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 @media screen and (min-width: 768px) {
   .header-med .actions .search {
@@ -263,6 +272,7 @@ body {
   background: #999AA2;
   color: white;
   border: none;
+  border-radius: 3px;
 }
 .header-med .actions .searchButton:hover {
   background: #7e808a;
