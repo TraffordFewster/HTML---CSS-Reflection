@@ -172,7 +172,7 @@
 
     .actions{
         display: flex;
-        padding-left: 70px;
+        padding-left: 40px;
         padding-right: 0;
 
         & > * {
@@ -193,8 +193,8 @@
 
         .medButton{
             @include centerVert;
-            min-width: 8em;
-            max-width: 8em;
+            min-width: 9em;
+            max-width: 9em;
             flex-basis: 8em;
             height: 3.5em;
             margin-left: $gutter * 2;
