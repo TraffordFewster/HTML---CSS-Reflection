@@ -133,7 +133,7 @@ body {
 .menu .menuText {
   margin-top: -0.3em;
   font-size: 0.8em;
-  font-weight: 300;
+  font-weight: 400;
 }
 .menu:hover {
   background: #1d1f28;
@@ -331,6 +331,7 @@ body {
   line-height: 0.5em;
   font-size: 1.12em;
   margin-top: -0.2em;
+  font-weight: 400;
 }
 
 .prodNav-webdesign {
