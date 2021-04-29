@@ -133,6 +133,7 @@ body {
 .menu .menuText {
   margin-top: -0.3em;
   font-size: 0.8em;
+  font-weight: 300;
 }
 .menu:hover {
   background: #1d1f28;
