@@ -792,7 +792,6 @@ body {
 }
 
 .productBG {
-  margin-top: -3em;
   padding-bottom: 3em;
   padding-top: 3em;
 }
@@ -813,10 +812,12 @@ body {
   align-items: center;
   text-align: center;
   margin: 16px;
-  margin-top: 32px;
+  margin-top: 16px;
   background: white;
   font-size: 0.9em;
-  min-height: 20em;
+  min-height: 21em;
+  max-height: 50em;
+  height: auto;
   -webkit-box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border: #cccccc solid 1px;
@@ -827,13 +828,16 @@ body {
   color: white;
 }
 .productPanel .spreader {
-  margin-top: auto;
+  flex-grow: 1;
+  width: 10px;
+  background: red;
 }
 .productPanel .iContainer {
   position: relative;
   min-width: 5em;
   min-height: 5em;
   border-radius: 50%;
+  margin-top: 16px;
 }
 .productPanel i {
   left: 0;
@@ -860,13 +864,15 @@ body {
 }
 .productPanel p {
   font-size: 0.8;
-  max-width: 90%;
+  max-width: 97%;
+  font-weight: 400;
   overflow: hidden;
 }
 .productPanel .readMore {
   display: block;
-  width: 10em;
+  width: 8em;
   margin: 0 auto;
+  margin-bottom: 16px;
   padding: 0.7em;
   font-size: 1.2em;
   border-radius: 0.2em;
@@ -875,12 +881,17 @@ body {
 
 @media screen and (min-width: 768px) {
   .productExtraHelp2 {
-    min-height: 22em;
+    min-height: 23em;
   }
 }
 @media screen and (min-width: 992px) {
   .productPanel {
-    min-height: 20em;
+    min-height: 21em;
+    height: 0;
+  }
+
+  .productExtraHelp2 {
+    min-height: 22.4em;
   }
 
   .productExtraHelp {
@@ -889,7 +900,7 @@ body {
 }
 @media screen and (min-width: 1260px) {
   .productPanel {
-    min-height: 23em;
+    min-height: 24em;
   }
 }
 @media screen and (max-width: 768px) {
