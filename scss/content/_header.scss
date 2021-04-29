@@ -121,8 +121,7 @@
         flex: 1;
         min-width: 8em;
         background: white;
-        border:none;
-        border:solid 1px $light-offset-2;
+        border:solid 1px #CCCCCC;
         @media screen and (min-width:992px){
             min-width: 12em;
         }
@@ -217,7 +216,6 @@
         .search{
             //margin-left: $gutter * 2;
             margin-bottom: auto;
-            overflow: hidden;
             border-radius: 0 3px 3px 0;
 
             input{
@@ -227,15 +225,15 @@
                     border-color: #5bc0de;
                     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(91 192 222 / 60%);
                 }
-            }
+            };
 
             @media screen and (min-width:768px){
                 max-width: 30em;
-            }
+            };
 
             @media screen and (min-width: map-get($map: $breakpoints, $key:lg )){
                 margin-left: $gutter * 2;
-            }
+            };
 
         }
         .searchButton{

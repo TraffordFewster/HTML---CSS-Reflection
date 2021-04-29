@@ -161,8 +161,7 @@ body {
   flex: 1;
   min-width: 8em;
   background: white;
-  border: none;
-  border: solid 1px #999AA2;
+  border: solid 1px #CCCCCC;
 }
 @media screen and (min-width: 992px) {
   .search input {
@@ -247,7 +246,6 @@ body {
 }
 .header-med .actions .search {
   margin-bottom: auto;
-  overflow: hidden;
   border-radius: 0 3px 3px 0;
 }
 .header-med .actions .search input {
