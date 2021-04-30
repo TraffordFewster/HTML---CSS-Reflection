@@ -33,6 +33,18 @@ body {
   padding: 0;
 }
 
+header {
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+footer {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -258,7 +270,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header-med .actions .search {
-    max-width: 30em;
+    max-width: 14em;
   }
 }
 @media screen and (min-width: 992px) {
@@ -316,10 +328,11 @@ body {
 .productNav a {
   padding: 1em 0;
   display: block;
+  letter-spacing: 0.04rem;
 }
 .productNav i {
   font-size: 1.12em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 .productNav h6 {
   font-size: 0.65em;
@@ -830,7 +843,6 @@ body {
 .productPanel .spreader {
   flex-grow: 1;
   width: 10px;
-  background: red;
 }
 .productPanel .iContainer {
   position: relative;
@@ -1083,6 +1095,7 @@ body {
 @media screen and (max-width: 768px) {
   .netmattersDesc .descText {
     margin-left: 32px;
+    padding-right: 32px;
     width: 95%;
   }
 }

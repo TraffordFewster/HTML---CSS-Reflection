@@ -18,6 +18,18 @@ body{
     padding: 0;
 }
 
+header{
+    overflow-x: hidden;
+}
+
+main{
+    overflow-x: hidden;
+}
+
+footer{
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -30,4 +42,8 @@ body{
 
 .removeColPadding{
     padding: 0;
+}
+
+.container-md{
+    
 }

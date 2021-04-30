@@ -8,6 +8,7 @@
         padding-bottom: $gutter * 3;
         @media screen and (max-width: map-get($map: $breakpoints , $key: "md" )){
             margin-left: $gutter * 2;
+            padding-right: $gutter * 2;
             width: 95%;
         }
     }
