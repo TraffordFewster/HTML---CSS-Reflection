@@ -27,8 +27,8 @@
     min-height: 21em; max-height: 50em;
     height: auto; // Why does this fix flex grow on IE :)
 
-    -webkit-box-shadow: 0 3px 35px rgb(0 0 0 / 10%); 
-    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+    -webkit-box-shadow: 0 3px 35px rgb(0, 0, 0 / 10%); 
+    box-shadow: 0 3px 35px rgb(0, 0, 0 / 10%);
     border: rgb(204, 204, 204) solid 1px;
     text-decoration: none;
     color: $dark-1;
