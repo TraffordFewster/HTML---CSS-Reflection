@@ -12,7 +12,7 @@ gulp.task('sass', function () {
 });
  
 gulp.task('css', function () {
-  gulp.src('./css/*.css')
+  return gulp.src('css/*.css')
     .pipe(uglifycss({
       "uglyComments": true
     }))

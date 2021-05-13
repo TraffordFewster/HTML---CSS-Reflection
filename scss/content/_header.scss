@@ -219,11 +219,11 @@
             border-radius: 0 3px 3px 0;
 
             input{
-                box-shadow: inset 0 1px 1px rgb(0, 0, 0 / 8%);
+                box-shadow: inset 0 1px 1px rgba($color: black, $alpha: .6);
                 transition: border-color 150ms ,box-shadow 150ms;
                 &:focus{
                     border-color: #5bc0de;
-                    box-shadow: inset 0 1px 1px rgb(0, 0, 0 / 8%), 0 0 8px rgb(91, 192, 222 / 60%);
+                    box-shadow: inset 0 1px 1px rgba($color: black, $alpha: .6), 0 0 8px #5bc0de;
                 }
             };
 
