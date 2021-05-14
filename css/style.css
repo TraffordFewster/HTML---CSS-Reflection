@@ -599,17 +599,14 @@ main {
     padding: .7em;
     border-radius: .1em;
     z-index: 3;
-    background: #2ECC71;
     color: white;
     text-decoration: none; }
-    .imageRow .HeroImageCTA a:hover {
-      background: #25a25a;
-      text-decoration: none; }
 
 .bgImage {
   position: relative;
   overflow: hidden;
-  height: calc(100vh - 11em); }
+  height: calc(100vh - 12rem);
+  padding: 0; }
   .bgImage img {
     position: absolute;
     top: -9999px;
@@ -617,13 +614,24 @@ main {
     left: -9999px;
     right: -9999px;
     margin: auto;
-    min-height: calc(100vh - 11em);
-    min-width: 100%; }
+    min-height: calc(100vh - 12rem);
+    min-width: 100%;
+    width: auto !important; }
   @media screen and (max-width: 992px) {
     .bgImage {
-      height: calc(100vh - 5em); }
+      height: calc(100vh - 6em); }
       .bgImage img {
-        min-height: calc(100vh - 5em); } }
+        min-height: calc(100vh - 6em); } }
+  @media screen and (max-width: 768px) {
+    .bgImage {
+      height: calc(100vh - 10em); }
+      .bgImage img {
+        min-height: calc(100vh - 10em); } }
+  @media screen and (max-width: 576px) {
+    .bgImage {
+      height: calc(100vh - 9em); }
+      .bgImage img {
+        min-height: calc(100vh - 9em); } }
   .bgImage:before {
     position: absolute;
     z-index: 2;
@@ -635,6 +643,78 @@ main {
     left: 0;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.801558) 0%, rgba(0, 0, 0, 0.339373) 50%, rgba(0, 0, 0, 0.798757) 100%);
     /*adjust brightness here */ }
+
+.productBG-bespSoft {
+  background: #67809F; }
+  .productBG-bespSoft:hover {
+    background: #526781; }
+
+.productBG-itSup {
+  background: #4183D7; }
+  .productBG-itSup:hover {
+    background: #286abd; }
+
+.productBG-digitalmarketing {
+  background: #2ECC71; }
+  .productBG-digitalmarketing:hover {
+    background: #25a25a; }
+
+.productBG-telecoms {
+  background: #D64541; }
+  .productBG-telecoms:hover {
+    background: #bc2c28; }
+
+.productBG-webdesign {
+  background: #926FB1; }
+  .productBG-webdesign:hover {
+    background: #79539a; }
+
+.productBG-cybersecurity {
+  background: #F62459; }
+  .productBG-cybersecurity:hover {
+    background: #de093f; }
+
+.productBG-scs {
+  background: #926FB1; }
+  .productBG-scs:hover {
+    background: #79539a; }
+
+.owl-dots {
+  position: absolute;
+  display: block;
+  z-index: 10000;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%); }
+  .owl-dots .owl-dot {
+    border-radius: 50%;
+    background: #C7C7C7 !important;
+    width: 14px;
+    height: 14px;
+    margin: 8px; }
+    .owl-dots .owl-dot:hover {
+      background: #869791 !important; }
+  .owl-dots .active {
+    border-radius: 50%;
+    background: white !important;
+    width: 14px;
+    height: 14px;
+    margin: 8px;
+    position: relative; }
+    .owl-dots .active::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: -5px;
+      left: -5px;
+      border-radius: 50%;
+      border: 2px white solid; }
+    .owl-dots .active:hover {
+      background: white !important; }
+
+.owl-item {
+  overflow: hidden; }
 
 .productBG {
   padding-bottom: 3em;
