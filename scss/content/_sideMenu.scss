@@ -1,0 +1,124 @@
+.mainPage{
+    overflow-y: auto;
+    left: 0;
+    transition: transform 200ms;
+    transform: translateX(-350px);
+    height: 100vh;
+
+    @media screen and (max-width: map-get($map:$breakpoints , $key: "lg" )) {
+        transform: translateX(-260px);
+    }
+}
+.sideMenu{
+    transition: width 200ms;
+    position: fixed;
+    background: #333645;
+    overflow-y: auto;
+    height: 100vh;
+    width: 350px;
+    min-height: 100vh;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+
+    .productSideNav{ display: none; };
+
+    @media screen and (max-width: map-get($map:$breakpoints , $key: "lg" )) {
+        .productSideNav{ display: block; };
+        width: 260px;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: block;
+        padding: 0 $gutter;
+        background: #262834;
+        list-style-position: inside;
+        list-style-type: "»";
+        font-size: 1rem;
+        color: white;
+        border-top: solid 1px #484A58;
+        border-bottom: solid 1px #1C1E26;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        
+    }
+
+    li a{
+        padding-top: $gutter;
+        padding-bottom: $gutter;
+    }
+
+    h3 a{
+        padding-top: $gutter * 1.2;
+        padding-bottom: $gutter * 1.2;
+    }
+
+    h3{
+        display: block;
+        font-size: 1.1rem;
+        padding: 0 $gutter;
+        margin: 0;
+        border-top: solid 1px #484A58;
+        border-bottom: solid 1px #1C1E26;
+    }
+
+    .sideNav > div:hover{
+        h3{
+            background: #3D404E;
+        }
+    }
+}
+
+
+.productSideNav{
+
+    .titleBox:hover .sideMenuLabel{
+        background: lighten($color: #333645, $amount: 5);
+    }
+    .sideMenuLabel{
+        transition: background-color 200ms;
+        text-align: center;
+        margin: $gutter;
+        padding: $gutter;
+        border: 1px solid hsla(0,0%,100%,.1);
+        i,h6,h4,h3{
+            margin: 0;
+            display: block;
+        }
+
+        i{
+            font-size: 1.4rem;
+        }
+        h6{
+            margin-top: .4rem;
+            margin-bottom: -.2rem;
+            font-size: .6rem;
+        }
+        h4{
+            font-size: 1.2rem;
+        }
+
+        h3{
+            display: block;
+            font-size: 1.1rem;
+            padding: 0;
+            margin: 0;
+            border-top: none;
+            border-bottom: none;
+        }
+    }
+
+    ul{
+        padding: $gutter;
+        padding-top: 0;
+    }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
 * {
   margin: 0;
@@ -25,6 +26,7 @@ body {
   font-family: Poppins,sans-serif;
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
+  overflow-y: hidden;
   margin: 0;
   padding: 0; }
 
@@ -44,6 +46,62 @@ main {
 
 .removeColPadding {
   padding: 0; }
+
+.productBG-bespSoft {
+  background: #67809F; }
+  .productBG-bespSoft:hover {
+    background: #526781; }
+
+.productBG-itSup {
+  background: #4183D7; }
+  .productBG-itSup:hover {
+    background: #286abd; }
+
+.productBG-digitalmarketing {
+  background: #2ECC71; }
+  .productBG-digitalmarketing:hover {
+    background: #25a25a; }
+
+.productBG-telecoms {
+  background: #D64541; }
+  .productBG-telecoms:hover {
+    background: #bc2c28; }
+
+.productBG-webdesign {
+  background: #926FB1; }
+  .productBG-webdesign:hover {
+    background: #79539a; }
+
+.productBG-cybersecurity {
+  background: #F62459; }
+  .productBG-cybersecurity:hover {
+    background: #de093f; }
+
+.productBG-scs {
+  background: #926FB1; }
+  .productBG-scs:hover {
+    background: #79539a; }
+
+.color-bespSoft {
+  color: #67809F; }
+
+.color-itSup {
+  color: #4183D7; }
+
+.color-digitalmarketing {
+  color: #2ECC71; }
+
+.color-telecoms {
+  color: #D64541; }
+
+.color-webdesign {
+  color: #926FB1; }
+
+.color-cybersecurity {
+  color: #F62459; }
+
+.color-scs {
+  color: #926FB1; }
 
 .header-mini {
   display: flex;
@@ -643,41 +701,6 @@ main {
     left: 0;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.801558) 0%, rgba(0, 0, 0, 0.339373) 50%, rgba(0, 0, 0, 0.798757) 100%);
     /*adjust brightness here */ }
-
-.productBG-bespSoft {
-  background: #67809F; }
-  .productBG-bespSoft:hover {
-    background: #526781; }
-
-.productBG-itSup {
-  background: #4183D7; }
-  .productBG-itSup:hover {
-    background: #286abd; }
-
-.productBG-digitalmarketing {
-  background: #2ECC71; }
-  .productBG-digitalmarketing:hover {
-    background: #25a25a; }
-
-.productBG-telecoms {
-  background: #D64541; }
-  .productBG-telecoms:hover {
-    background: #bc2c28; }
-
-.productBG-webdesign {
-  background: #926FB1; }
-  .productBG-webdesign:hover {
-    background: #79539a; }
-
-.productBG-cybersecurity {
-  background: #F62459; }
-  .productBG-cybersecurity:hover {
-    background: #de093f; }
-
-.productBG-scs {
-  background: #926FB1; }
-  .productBG-scs:hover {
-    background: #79539a; }
 
 .owl-dots {
   position: absolute;
@@ -1392,3 +1415,96 @@ main {
     margin: 0 auto; }
   .awardsContainer .row {
     margin-top: 16px; }
+
+.mainPage {
+  overflow-y: auto;
+  left: 0;
+  transition: transform 200ms;
+  transform: translateX(-350px);
+  height: 100vh; }
+  @media screen and (max-width: 992px) {
+    .mainPage {
+      transform: translateX(-260px); } }
+
+.sideMenu {
+  transition: width 200ms;
+  position: fixed;
+  background: #333645;
+  overflow-y: auto;
+  height: 100vh;
+  width: 350px;
+  min-height: 100vh;
+  right: 0;
+  bottom: 0;
+  z-index: 20; }
+  .sideMenu .productSideNav {
+    display: none; }
+  @media screen and (max-width: 992px) {
+    .sideMenu {
+      width: 260px; }
+      .sideMenu .productSideNav {
+        display: block; } }
+  .sideMenu ul {
+    padding: 0;
+    margin: 0; }
+  .sideMenu li {
+    display: block;
+    padding: 0 16px;
+    background: #262834;
+    list-style-position: inside;
+    list-style-type: "»";
+    font-size: 1rem;
+    color: white;
+    border-top: solid 1px #484A58;
+    border-bottom: solid 1px #1C1E26; }
+  .sideMenu a {
+    color: white;
+    text-decoration: none;
+    display: block; }
+  .sideMenu li a {
+    padding-top: 16px;
+    padding-bottom: 16px; }
+  .sideMenu h3 a {
+    padding-top: 19.2px;
+    padding-bottom: 19.2px; }
+  .sideMenu h3 {
+    display: block;
+    font-size: 1.1rem;
+    padding: 0 16px;
+    margin: 0;
+    border-top: solid 1px #484A58;
+    border-bottom: solid 1px #1C1E26; }
+  .sideMenu .sideNav > div:hover h3 {
+    background: #3D404E; }
+
+.productSideNav .titleBox:hover .sideMenuLabel {
+  background: #3e4154; }
+
+.productSideNav .sideMenuLabel {
+  transition: background-color 200ms;
+  text-align: center;
+  margin: 16px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1); }
+  .productSideNav .sideMenuLabel i, .productSideNav .sideMenuLabel h6, .productSideNav .sideMenuLabel h4, .productSideNav .sideMenuLabel h3 {
+    margin: 0;
+    display: block; }
+  .productSideNav .sideMenuLabel i {
+    font-size: 1.4rem; }
+  .productSideNav .sideMenuLabel h6 {
+    margin-top: .4rem;
+    margin-bottom: -.2rem;
+    font-size: .6rem; }
+  .productSideNav .sideMenuLabel h4 {
+    font-size: 1.2rem; }
+  .productSideNav .sideMenuLabel h3 {
+    display: block;
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+    border-top: none;
+    border-bottom: none; }
+
+.productSideNav ul {
+  padding: 16px;
+  padding-top: 0; }

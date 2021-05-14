@@ -107,15 +107,6 @@
     }
 }
 
-@each $name, $color in $product-colors {
-    .productBG-#{$name} {
-        background: $color;
-        &:hover{
-            background: darken($color: $color, $amount: 10)
-        }
-    }
-}
-
 .owl-dots{
     position: absolute;
     display: block;
