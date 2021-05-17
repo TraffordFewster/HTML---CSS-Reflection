@@ -171,21 +171,53 @@ main {
   width: 4em;
   height: 3.5em;
   margin-left: 32px;
-  border-radius: .25em; }
+  border-radius: .25em;
+  position: relative; }
   .menu .menuText {
-    margin-top: -.3em;
+    display: block;
+    margin-top: 2rem;
     font-size: .8em;
     font-weight: 400; }
   .menu:hover {
     background: #1d1f28; }
   .menu .burgerHolder {
+    position: absolute;
+    height: 2rem;
+    width: 100%;
+    display: block;
+    line-height: 1px;
     margin-bottom: 0; }
     .menu .burgerHolder .burgerLines {
       display: block;
-      width: 55%;
+      position: absolute;
+      width: 2.5rem;
+      left: 0;
+      right: 0;
       background: white;
+      margin: auto;
       height: .2em;
-      margin: .3em auto 0 auto; }
+      z-index: 10;
+      transform: rotate(0deg);
+      transition: margin-top 200ms 400ms linear,transform 400ms linear; }
+    .menu .burgerHolder .bl1 {
+      margin-top: 5px; }
+    .menu .burgerHolder .bl2 {
+      margin-top: 15px; }
+    .menu .burgerHolder .bl3 {
+      margin-top: 25px; }
+
+.menuTog .burgerHolder .burgerLines {
+  margin-top: 15px;
+  transition: margin-top 200ms,transform 400ms 200ms; }
+
+.menuTog .burgerHolder .bl1 {
+  transform: rotate(225deg); }
+
+.menuTog .burgerHolder .bl2 {
+  transform: rotate(-225deg); }
+
+.menuTog .burgerHolder .bl3 {
+  transform: rotate(225deg); }
 
 .search {
   margin-top: auto;
@@ -1417,17 +1449,19 @@ main {
     margin-top: 16px; }
 
 .mainPage {
+  transition: transform 400ms;
+  height: 100vh;
   overflow-y: auto;
-  left: 0;
-  transition: transform 200ms;
-  transform: translateX(-350px);
-  height: 100vh; }
+  left: 0; }
+
+.mPExpanded {
+  transform: translateX(-350px); }
   @media screen and (max-width: 992px) {
-    .mainPage {
+    .mPExpanded {
       transform: translateX(-260px); } }
 
 .sideMenu {
-  transition: width 200ms;
+  transition: width 400ms, transform 400ms;
   position: fixed;
   background: #333645;
   overflow-y: auto;
@@ -1436,12 +1470,14 @@ main {
   min-height: 100vh;
   right: 0;
   bottom: 0;
-  z-index: 20; }
+  z-index: 20;
+  transform: translateX(350px); }
   .sideMenu .productSideNav {
     display: none; }
   @media screen and (max-width: 992px) {
     .sideMenu {
-      width: 260px; }
+      width: 260px;
+      transform: translateX(260px); }
       .sideMenu .productSideNav {
         display: block; } }
   .sideMenu ul {
@@ -1481,7 +1517,7 @@ main {
   background: #3e4154; }
 
 .productSideNav .sideMenuLabel {
-  transition: background-color 200ms;
+  transition: background-color 400ms;
   text-align: center;
   margin: 16px;
   padding: 16px;
@@ -1508,3 +1544,20 @@ main {
 .productSideNav ul {
   padding: 16px;
   padding-top: 0; }
+
+.sMExpanded {
+  transform: translateX(0px); }
+
+.mainPageCover {
+  transition: opacity 400ms;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: black;
+  opacity: 0;
+  z-index: 10; }
+
+.mPCExpanded {
+  opacity: .5; }

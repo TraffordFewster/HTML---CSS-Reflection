@@ -1,16 +1,19 @@
 .mainPage{
+    transition: transform 400ms;
+    height: 100vh;
     overflow-y: auto;
     left: 0;
-    transition: transform 200ms;
+}
+
+.mPExpanded{
     transform: translateX(-350px);
-    height: 100vh;
 
     @media screen and (max-width: map-get($map:$breakpoints , $key: "lg" )) {
         transform: translateX(-260px);
     }
 }
 .sideMenu{
-    transition: width 200ms;
+    transition: width 400ms, transform 400ms;
     position: fixed;
     background: #333645;
     overflow-y: auto;
@@ -20,12 +23,14 @@
     right: 0;
     bottom: 0;
     z-index: 20;
+    transform: translateX(350px);
 
     .productSideNav{ display: none; };
 
     @media screen and (max-width: map-get($map:$breakpoints , $key: "lg" )) {
         .productSideNav{ display: block; };
         width: 260px;
+        transform: translateX(260px);
     }
 
     ul{
@@ -85,7 +90,7 @@
         background: lighten($color: #333645, $amount: 5);
     }
     .sideMenuLabel{
-        transition: background-color 200ms;
+        transition: background-color 400ms;
         text-align: center;
         margin: $gutter;
         padding: $gutter;
@@ -121,4 +126,24 @@
         padding: $gutter;
         padding-top: 0;
     }
+}
+
+.sMExpanded{
+    transform: translateX(0px);
+}
+
+.mainPageCover{
+    transition: opacity 400ms;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: black;
+    opacity: 0;
+    z-index: 10;
+}
+
+.mPCExpanded{
+    opacity: .5;
 }

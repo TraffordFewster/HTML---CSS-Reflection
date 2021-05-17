@@ -21,9 +21,11 @@
     <link rel="stylesheet" href="jqueryPlugins/owl.carousel.js/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="jqueryPlugins/owl.carousel.js/assets/owl.theme.default.min.css">
     <script src="jqueryPlugins/owl.carousel.js/owl.carousel.min.js" defer></script>
+    <!-- mobileMenu -->
+    <script src="dist/mobileMenu.js" defer></script>
 </head>
 <body>
-    <div class="sideMenu">
+    <div id="sideMenu" class="sideMenu">
 
         <div class="productSideNav">
             <div class="titleBox">
@@ -206,9 +208,12 @@
             </div>
         </div>
 
-
     </div>
-    <div class="mainPage">
+
+    <div id="mainPageCover" class="mainPageCover d-none">
+    </div>
+
+    <div id="mainPage" class="mainPage">
         <header>
             <div class="container-md d-md-none header-mini-container">
                 <div class="row">
@@ -224,9 +229,9 @@
                         </div>
                         <button class="menu">
                             <span class="burgerHolder">
-                                <span class="burgerLines"></span>
-                                <span class="burgerLines"></span>
-                                <span class="burgerLines"></span>
+                                <span class="burgerLines bl1"></span>
+                                <span class="burgerLines bl2"></span>
+                                <span class="burgerLines bl3"></span>
                             </span>
                             <span class="text-uppercase menuText">Menu</span>
                         </button>
@@ -273,9 +278,9 @@
                         </button>
                         <button class="menu smallButton">
                             <span class="burgerHolder">
-                                <span class="burgerLines"></span>
-                                <span class="burgerLines"></span>
-                                <span class="burgerLines"></span>
+                                <span class="burgerLines bl1"></span>
+                                <span class="burgerLines bl2"></span>
+                                <span class="burgerLines bl3"></span>
                             </span>
                             <span class="text-uppercase menuText">Menu</span>
                         </button>

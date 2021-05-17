@@ -90,8 +90,10 @@
     height: 3.5em;
     margin-left: $gutter * 2;
     border-radius: .25em;
+    position: relative;
     .menuText{
-        margin-top: -.3em;
+        display: block;
+        margin-top: 2rem;
         font-size: .8em;
         font-weight: 400;
     }
@@ -100,17 +102,51 @@
     }
 
     .burgerHolder{
+        position: absolute;
+        height: 2rem;
+        width: 100%;
+        display: block;
+        line-height: 1px;
         .burgerLines{
             display: block;
-            width: 55%;
+            position: absolute;
+            width: 2.5rem;
+            left: 0; right: 0;
             background: white;
+            margin: auto;
             height: .2em;
-            margin: .3em auto 0 auto
+            z-index: 10;
+            transform: rotate(0deg);
+            transition: margin-top 200ms 400ms linear,transform 400ms linear;
         }
+        .bl1{
+            margin-top: 5px;
+        };
+        .bl2{
+            margin-top: 15px;
+        };
+        .bl3{
+            margin-top: 25px;
+        };
         margin-bottom: 0;
     }
 }
 
+.menuTog .burgerHolder{
+    .burgerLines{
+        margin-top: 15px;
+        transition: margin-top 200ms,transform 400ms 200ms;
+    }
+    .bl1{
+        transform: rotate(225deg)
+    };
+    .bl2{
+        transform: rotate(-225deg)
+    };
+    .bl3{
+        transform: rotate(225deg)
+    };
+}
 .search{
     @include centerVert;
     height: 3.5em;
