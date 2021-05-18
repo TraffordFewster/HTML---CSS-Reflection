@@ -332,6 +332,15 @@ main {
       .header-med .actions .supportButton:hover {
         background: #286abd; }
 
+header {
+  overflow: visible;
+  position: relative;
+  z-index: 50000;
+  background: white; }
+
+.haveTransition {
+  transition: transform 200ms; }
+
 .productNavBG {
   background: #333645;
   border-bottom: solid 1px white;
@@ -1561,3 +1570,61 @@ main {
 
 .mPCExpanded {
   opacity: .5; }
+
+#cookiePopup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100000; }
+  #cookiePopup .cookieBox {
+    position: absolute;
+    width: 37rem;
+    background: white;
+    border-radius: 5px;
+    opacity: 10;
+    z-index: 200000;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); }
+    #cookiePopup .cookieBox > *:not(hr) {
+      padding: 16px;
+      padding-bottom: 0;
+      padding-top: 0; }
+    #cookiePopup .cookieBox h1 {
+      padding-top: 16px;
+      font-size: 1.8rem;
+      font-weight: 400; }
+    #cookiePopup .cookieBox p {
+      color: #666666;
+      font-size: 1;
+      line-height: 1.875rem;
+      letter-spacing: .4px; }
+    #cookiePopup .cookieBox .cookieButHolder {
+      padding-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap; }
+      #cookiePopup .cookieBox .cookieButHolder > button {
+        flex: 1;
+        padding: 8px;
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 5px; }
+      #cookiePopup .cookieBox .cookieButHolder div {
+        width: 16px; }
+        @media screen and (max-width: 768px) {
+          #cookiePopup .cookieBox .cookieButHolder div {
+            width: 100%;
+            height: 16px; } }
+      #cookiePopup .cookieBox .cookieButHolder .settingButton {
+        background: #999AA2; }
+        #cookiePopup .cookieBox .cookieButHolder .settingButton:hover {
+          background: #7e808a; }
+      #cookiePopup .cookieBox .cookieButHolder .acceptButton {
+        background: #926FB1; }
+        #cookiePopup .cookieBox .cookieButHolder .acceptButton:hover {
+          background: #79539a; }
+    @media screen and (max-width: 768px) {
+      #cookiePopup .cookieBox {
+        width: 85%; } }

@@ -23,6 +23,8 @@
     <script src="jqueryPlugins/owl.carousel.js/owl.carousel.min.js" defer></script>
     <!-- mobileMenu -->
     <script src="dist/mobileMenu.js" defer></script>
+    <!-- stickyHeader -->
+    <script src="dist/stickyHeader.js" defer></script>
 </head>
 <body>
     <div id="sideMenu" class="sideMenu">
@@ -213,8 +215,57 @@
     <div id="mainPageCover" class="mainPageCover d-none">
     </div>
 
+
+
+
+
+
+
+
+
+
+    <div id="cookiePopup">
+
+        <div class="cookieBox">
+
+            <h1>Cookies Policy</h1>
+            <hr>
+            <p>We use cookies to obtain aggregate data regarding site traffic and interaction, in order to identify user trends and obtain insights in order to continually improve our site. These cookies enable us to improve your customer experience as you use our site and help provide you with relevant online marketing.</p>
+            <p>You can see a list of the other companies who use cookies on this website, by visiting cookie settings at the bottom of each page. For full details of how we use your personal information, and your rights in relation to it, view our privacy policy.</p>
+            <hr>
+            <div class="cookieButHolder">
+                <button class="text-uppercase settingButton">Change Settings</button>
+                <div></div>
+                <button class="text-uppercase acceptButton">Accept Cookies</button>
+            </div>
+
+
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="mainPage" class="mainPage">
-        <header>
+        <header class="haveTransition">
             <div class="container-md d-md-none header-mini-container">
                 <div class="row">
                     <div class="col-12 header-mini">
@@ -440,6 +491,7 @@
                     </div>
                 </div>
             </div>
+        </header>
 
 
 
@@ -459,121 +511,121 @@
 
 
 
-            <div class="owl-carousel">
-                <!-- WebDesign -->
-                <div class="row imageRow">
-                    <div class="bgImage">
-                        <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg">
-                    </div>
-                    <div class="textHolder container-lg">
-                        <div class="col-12">
-                            <h1 class="display-1 text-uppercase">Web Design</h1>
-                            <p class="lead">For businesses looking to make a strong
-                                <br>
-                                and effective first impression.
-                            </p>
-                            <div class="HeroImageCTA text-uppercase">
-                                <a class="productBG-webdesign" href="https://www.netmatters.co.uk/web-design">Find out more <i class="fas fa-arrow-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="owl-carousel">
+            <!-- WebDesign -->
+            <div class="row imageRow">
+                <div class="bgImage">
+                    <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg">
                 </div>
-
-                <!-- IT Support -->
-                <div class="row imageRow">
-                    <div class="bgImage">
-                        <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.jpg">
-                    </div>
-                    <div class="textHolder container-lg">
-                        <div class="col-12">
-                            <h1 class="display-1 text-uppercase">IT Support</h1>
-                            <p class="lead">Fast and cost-effective IT support
-                                <br>
-                                services for your business
-                            </p>
-                            <div class="HeroImageCTA text-uppercase">
-                                <a class="productBG-itSup" href="https://www.netmatters.co.uk/it-support">Find out more <i class="fas fa-arrow-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Telecoms -->
-                <div class="row imageRow">
-                    <div class="bgImage">
-                        <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-5yqm.jpg">
-                    </div>
-                    <div class="textHolder container-lg">
-                        <div class="col-12">
-                            <h1 class="display-1 text-uppercase">Telecoms Services</h1>
-                            <p class="lead">A new approach to connectivity, see how
-                                <br>
-                                we can help your business.
-                            </p>
-                            <div class="HeroImageCTA text-uppercase">
-                                <a class="productBG-telecoms" href="https://www.netmatters.co.uk/telecoms-services">Find out more <i class="fas fa-arrow-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bespoke Software -->
-                <div class="row imageRow">
-                    <div class="bgImage">
-                        <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-sqvx.jpg">
-                    </div>
-                    <div class="textHolder container-lg">
-                        <div class="col-12">
-                            <h1 class="display-1 text-uppercase">Bespoke Software</h1>
-                            <p class="lead">Bring your business together
-                                <br>
-                                with solutions that grow with you.
-                            </p>
-                            <div class="HeroImageCTA text-uppercase">
-                                <a class="productBG-bespSoft" href="https://www.netmatters.co.uk/bespoke-software">Find out more <i class="fas fa-arrow-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Digital Marketing -->
-                <div class="row imageRow">
-                    <div class="bgImage">
-                        <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-JQsO.jpg">
-                    </div>
-                    <div class="textHolder container-lg">
-                        <div class="col-12">
-                            <h1 class="display-1 text-uppercase">Digital Marketing</h1>
-                            <p class="lead">Generating you new business through
-                                <br>
-                                results-driven marketing activities.
-                            </p>
-                            <div class="HeroImageCTA text-uppercase">
-                                <a class="productBG-digitalmarketing" href="https://www.netmatters.co.uk/digital-marketing">See how we can help you <i class="fas fa-arrow-right"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- cyberSec -->
-                <div class="row imageRow">
-                    <div class="bgImage">
-                        <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-lQs1.jpg">
-                    </div>
-                    <div class="textHolder container-lg">
-                        <div class="col-12">
-                            <h1 class="display-1 text-uppercase">Cyber Security</h1>
-                            <p class="lead">Keeping businesses and their customers
-                                <br>
-                                sensitive information protected.
-                            </p>
-                            <div class="HeroImageCTA text-uppercase">
-                                <a class="productBG-cybersecurity" href="https://www.netmatters.co.uk/cyber-security">Find out more <i class="fas fa-arrow-right"></i> </a>
-                            </div>
+                <div class="textHolder container-lg">
+                    <div class="col-12">
+                        <h1 class="display-1 text-uppercase">Web Design</h1>
+                        <p class="lead">For businesses looking to make a strong
+                            <br>
+                            and effective first impression.
+                        </p>
+                        <div class="HeroImageCTA text-uppercase">
+                            <a class="productBG-webdesign" href="https://www.netmatters.co.uk/web-design">Find out more <i class="fas fa-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- IT Support -->
+            <div class="row imageRow">
+                <div class="bgImage">
+                    <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.jpg">
+                </div>
+                <div class="textHolder container-lg">
+                    <div class="col-12">
+                        <h1 class="display-1 text-uppercase">IT Support</h1>
+                        <p class="lead">Fast and cost-effective IT support
+                            <br>
+                            services for your business
+                        </p>
+                        <div class="HeroImageCTA text-uppercase">
+                            <a class="productBG-itSup" href="https://www.netmatters.co.uk/it-support">Find out more <i class="fas fa-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Telecoms -->
+            <div class="row imageRow">
+                <div class="bgImage">
+                    <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-5yqm.jpg">
+                </div>
+                <div class="textHolder container-lg">
+                    <div class="col-12">
+                        <h1 class="display-1 text-uppercase">Telecoms Services</h1>
+                        <p class="lead">A new approach to connectivity, see how
+                            <br>
+                            we can help your business.
+                        </p>
+                        <div class="HeroImageCTA text-uppercase">
+                            <a class="productBG-telecoms" href="https://www.netmatters.co.uk/telecoms-services">Find out more <i class="fas fa-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bespoke Software -->
+            <div class="row imageRow">
+                <div class="bgImage">
+                    <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-sqvx.jpg">
+                </div>
+                <div class="textHolder container-lg">
+                    <div class="col-12">
+                        <h1 class="display-1 text-uppercase">Bespoke Software</h1>
+                        <p class="lead">Bring your business together
+                            <br>
+                            with solutions that grow with you.
+                        </p>
+                        <div class="HeroImageCTA text-uppercase">
+                            <a class="productBG-bespSoft" href="https://www.netmatters.co.uk/bespoke-software">Find out more <i class="fas fa-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="row imageRow">
+                <div class="bgImage">
+                    <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-JQsO.jpg">
+                </div>
+                <div class="textHolder container-lg">
+                    <div class="col-12">
+                        <h1 class="display-1 text-uppercase">Digital Marketing</h1>
+                        <p class="lead">Generating you new business through
+                            <br>
+                            results-driven marketing activities.
+                        </p>
+                        <div class="HeroImageCTA text-uppercase">
+                            <a class="productBG-digitalmarketing" href="https://www.netmatters.co.uk/digital-marketing">See how we can help you <i class="fas fa-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cyberSec -->
+            <div class="row imageRow">
+                <div class="bgImage">
+                    <img class="imageHolder" alt="" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-lQs1.jpg">
+                </div>
+                <div class="textHolder container-lg">
+                    <div class="col-12">
+                        <h1 class="display-1 text-uppercase">Cyber Security</h1>
+                        <p class="lead">Keeping businesses and their customers
+                            <br>
+                            sensitive information protected.
+                        </p>
+                        <div class="HeroImageCTA text-uppercase">
+                            <a class="productBG-cybersecurity" href="https://www.netmatters.co.uk/cyber-security">Find out more <i class="fas fa-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
             <script>
@@ -589,7 +641,6 @@
             </script>
             <div class="filler"></div>
             
-        </header>
 
 
 

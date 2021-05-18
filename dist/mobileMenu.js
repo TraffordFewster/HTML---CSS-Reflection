@@ -15,9 +15,7 @@ var mobileMenuElements = [{
 }];
 
 var toggleMobileMenu = function toggleMobileMenu() {
-  console.log("GETY");
   mobileMenuElements.forEach(function (v, i) {
-    console.log(v);
     v.element.toggleClass(v.toggle);
 
     if (v.toggle === "mPCExpanded") {
@@ -34,6 +32,3 @@ var toggleMobileMenu = function toggleMobileMenu() {
 
 $(".menu").click(toggleMobileMenu);
 $(".mainPageCover").click(toggleMobileMenu);
-$(document).click(function (e) {
-  console.log(e);
-});

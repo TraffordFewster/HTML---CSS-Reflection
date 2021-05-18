@@ -304,3 +304,14 @@
 
     }
 }
+
+header{
+    overflow: visible;
+    position: relative;
+    z-index: 50000;
+    background: white;
+}
+
+.haveTransition{
+    transition: transform 200ms;
+}

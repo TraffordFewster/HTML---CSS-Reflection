@@ -18,9 +18,7 @@ const mobileMenuElements = [
 ]
 
 const toggleMobileMenu = () => {
-    console.log("GETY")
     mobileMenuElements.forEach( (v,i) => {
-        console.log(v)
         v.element.toggleClass(v.toggle)
 
         if (v.toggle === "mPCExpanded"){
@@ -38,6 +36,3 @@ const toggleMobileMenu = () => {
 
 $(".menu").click(toggleMobileMenu)
 $(".mainPageCover").click(toggleMobileMenu)
-$(document).click((e) => {
-    console.log(e)
-})
