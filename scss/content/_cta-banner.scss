@@ -50,14 +50,9 @@
         //transform: translate(-50%, -50%);
         z-index: 3;
 
-        background: map-get($product-colors , "digitalmarketing");
         color:white;
         text-decoration: none;
 
-        &:hover{
-            background: darken($color: map-get($product-colors , "digitalmarketing"), $amount: 10);
-            text-decoration: none;
-        }
 
     }
 }
@@ -65,7 +60,8 @@
 .bgImage{
     position: relative;
     overflow: hidden;
-    height: calc(100vh - 11em);
+    height: calc(100vh - 12rem);
+    padding: 0;
 
 
     img{
@@ -75,14 +71,29 @@
         left: -9999px;
         right: -9999px;
         margin: auto;
-        min-height: calc(100vh - 11em);
+        min-height: calc(100vh - 12rem);
         min-width: 100%;
+        width: auto !important;
     }
 
     @media screen and (max-width:992px) {
-        height: calc(100vh - 5em);
+        height: calc(100vh - 6em);
         img{
-            min-height: calc(100vh - 5em);
+            min-height: calc(100vh - 6em);
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        height: calc(100vh - 10em);
+        img{
+            min-height: calc(100vh - 10em);
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        height: calc(100vh - 9em);
+        img{
+            min-height: calc(100vh - 9em);
         }
     }
 
@@ -94,4 +105,53 @@
         top: 0; right: 0; bottom: 0; left: 0;  
         background: linear-gradient(90deg, rgba(0,0,0,0.8015581232492998) 0%, rgba(0,0,0,0.3393732492997199) 50%, rgba(0,0,0,0.7987570028011204) 100%);          /*adjust brightness here */
     }
+}
+
+.owl-dots{
+    position: absolute;
+    display: block;
+    z-index: 10000;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    .owl-dot{
+        border-radius: 50%;
+        background: #C7C7C7 !important;
+        width: 14px;
+        height: 14px;
+        margin: $gutter /2;
+        &:hover{
+            background: #869791 !important;
+        }
+    }
+
+    .active{
+        border-radius: 50%;
+        background: white !important;
+        width: 14px;
+        height: 14px;
+        margin: $gutter /2;
+        position: relative;
+        overflow : visible;
+        &::before{
+            display: block;
+            content: "";
+            position: absolute;
+            //background: white !important;
+            width: 24px;
+            height: 24px;
+            top: -5px;
+            left: -5px;
+            border-radius: 50%;
+            border: 2px white solid;
+            
+        }
+        &:hover{
+            background: white !important;
+        }
+    }
+}
+
+.owl-item{
+    overflow: hidden;
 }

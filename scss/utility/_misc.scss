@@ -14,6 +14,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 body{
     font-family: Poppins,sans-serif;
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: hidden;
     margin: 0;
     padding: 0;
 }
@@ -44,6 +45,17 @@ main{
     padding: 0;
 }
 
-.container-md{
-    
+@each $name, $color in $product-colors {
+    .productBG-#{$name} {
+        background: $color;
+        &:hover{
+            background: darken($color: $color, $amount: 10)
+        }
+    }
+}
+
+@each $name, $color in $product-colors {
+    .color-#{$name} {
+        color: $color;
+    }
 }
