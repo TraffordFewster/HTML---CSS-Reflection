@@ -1609,13 +1609,13 @@ main {
   font-size: 2em;
   padding: 0.5em 1em;
 }
-.footerContainer .row > * {
+.footerContainer .socialMediaContainer .row > * {
   padding: 24px;
   padding-left: 0;
   padding-top: 0;
   padding-right: 12px;
 }
-.footerContainer .row > .col-6:nth-child(2) {
+.footerContainer .socialMediaContainer .row > .col-6:nth-child(2) {
   padding-left: 12px;
   padding-right: 0;
 }
