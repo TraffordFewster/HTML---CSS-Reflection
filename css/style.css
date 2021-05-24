@@ -184,6 +184,7 @@ main {
   min-width: 3.5rem;
   background: #999AA2;
   border: solid 2px #999AA2;
+  border-radius: 0 3px 3px 0;
 }
 .search button i {
   font-size: 1.5em;
