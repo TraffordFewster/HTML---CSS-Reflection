@@ -1,161 +1,160 @@
-.productBG{
-
-    padding-bottom: 3em;
-    padding-top: 3em;
+.productBG {
+	padding-bottom: 3em;
+	padding-top: 3em;
 }
 
-
-.productOverviews{
-    padding: 0;
+.productOverviews {
+	padding: 0;
 }
-.productOverviews .row{
-    margin-left: - $gutter;
-    margin-right: - $gutter;
+.productOverviews .row {
+	margin-left: -$gutter;
+	margin-right: -$gutter;
 }
 
-.productPanel{
-    padding: $gutter;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: $gutter;
-    margin-top: ($gutter);
-    //border:dotted 1px black;
-    background: white;
-    font-size: .9em;
-    min-height: 21em; max-height: 50em;
-    height: auto; // Why does this fix flex grow on IE :)
+.productPanel {
+	padding: $gutter;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: $gutter;
+	margin-top: ($gutter);
+	//border:dotted 1px black;
+	background: white;
+	font-size: 0.9em;
+	min-height: 21em;
+	max-height: 50em;
+	height: auto; // Why does this fix flex grow on IE :)
 
-    -webkit-box-shadow: 0 3px 35px rgb(0, 0, 0 / 10%); 
-    box-shadow: 0 3px 35px rgb(0, 0, 0 / 10%);
-    border: rgb(204, 204, 204) solid 1px;
-    text-decoration: none;
-    color: $dark-1;
+	-webkit-box-shadow: 0 3px 35px rgb(0, 0, 0 / 10%);
+	box-shadow: 0 3px 35px rgb(0, 0, 0 / 10%);
+	border: rgb(204, 204, 204) solid 1px;
+	text-decoration: none;
+	color: $dark-1;
 
-    &:hover{
-        color:white
-    }
+	&:hover {
+		color: white;
+	}
 
-    .spreader{
-        flex-grow: 1;
-        width: 10px;
-        //background: red;
-    }
+	.spreader {
+		flex-grow: 1;
+		width: 10px;
+		//background: red;
+	}
 
-    .iContainer{
-        position: relative;
-        min-width: 5em;
-        min-height: 5em;
-        border-radius: 50%;
-        margin-top: $gutter;
-    }
+	.iContainer {
+		position: relative;
+		min-width: 5em;
+		min-height: 5em;
+		border-radius: 50%;
+		margin-top: $gutter;
+	}
 
-    i{
-        left: 0; right: 0; top: 0; bottom: 0;
-        position: absolute;
-        margin: auto 0;
-        font-size: 1.5em;
-        height: 1em;
-        color: white;
-    }
+	i {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		margin: auto 0;
+		font-size: 1.5em;
+		height: 1em;
+		color: white;
+	}
 
-    h2{
-        font-size: 1.4em;
-        margin-top: 1em;
-    }
+	h2 {
+		font-size: 1.4em;
+		margin-top: 1em;
+	}
 
-    .Spacer{
-        content: "";
-        background: $dark-1;
-        width: 30px;
-        min-height: 3px;
-        margin-top: .75em;
-        margin-bottom: .75em;
-    }
+	.Spacer {
+		content: '';
+		background: $dark-1;
+		width: 30px;
+		min-height: 3px;
+		margin-top: 0.75em;
+		margin-bottom: 0.75em;
+	}
 
-    p{
-        font-size: .8;
-        max-width: 97%;
-        font-weight: 400;
-        overflow: hidden;
-    }
+	p {
+		font-size: 0.8;
+		max-width: 97%;
+		font-weight: 400;
+		overflow: hidden;
+	}
 
-    .readMore{
-        display: block;
-        width: 8em;
-        margin: 0 auto;
-        //margin-top: auto;
-        margin-bottom: $gutter;
-        padding: .7em;
-        font-size: 1.2em;
-        border-radius: .2em;
-        color: white;
-    }
-
-
+	.readMore {
+		display: block;
+		width: 8em;
+		margin: 0 auto;
+		//margin-top: auto;
+		margin-bottom: $gutter;
+		padding: 0.7em;
+		font-size: 1.2em;
+		border-radius: 0.2em;
+		color: white;
+	}
 }
-@media screen and (min-width: 768px){
-    
-    .productExtraHelp2{
-        min-height: 23em;
-    }
+@media screen and (min-width: 768px) {
+	.productExtraHelp2 {
+		min-height: 23em;
+	}
 }
 
 @media screen and (min-width: 992px) {
-    .productPanel{
-        min-height: 21em;
-        height: 0;
-    }
+	.productPanel {
+		min-height: 21em;
+		height: 0;
+	}
 
-    .productExtraHelp2{
-        min-height: 22.4em;
-    }
+	.productExtraHelp2 {
+		min-height: 22.4em;
+	}
 
-    .productExtraHelp{
-        min-height: 25em;
-    }
+	.productExtraHelp {
+		min-height: 25em;
+	}
 }
 
 @media screen and (min-width: 1260px) {
-    .productPanel{
-        min-height: 24em;
-    }
+	.productPanel {
+		min-height: 24em;
+	}
 }
 
-@media screen and (max-width:768px){
-    .productPanel{
-        margin: $gutter $gutter*2.5;
-    }
+@media screen and (max-width: 767px) {
+	.productPanel {
+		margin: $gutter $gutter * 2.5;
+	}
 }
 
-@each $name, $color in $product-colors{
-    .prod-#{$name}{
-        .iContainer {
-            background: $color;
-        }
+@each $name, $color in $product-colors {
+	.prod-#{$name} {
+		.iContainer {
+			background: $color;
+		}
 
-        .readMore{
-            background: $color;
-        }
+		.readMore {
+			background: $color;
+		}
 
-        &:hover{
-            background: $color;
-            .Spacer{
-                background: white
-            }
+		&:hover {
+			background: $color;
+			.Spacer {
+				background: white;
+			}
 
-            .iContainer{
-                background: white;
-                i{
-                    color: $color;
-                }
-            }
+			.iContainer {
+				background: white;
+				i {
+					color: $color;
+				}
+			}
 
-            .readMore{
-                color: $color;
-                background: white;
-            }
-        }
-    }
+			.readMore {
+				color: $color;
+				background: white;
+			}
+		}
+	}
 }

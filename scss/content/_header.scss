@@ -1,317 +1,541 @@
-.header-mini{
-    display: flex;
-    padding: $gutter;
-    text-align: center;
+.header-mini {
+	display: flex;
+	padding: $gutter;
+	text-align: center;
 
-    .phone{
-        margin-top: .6em;
-        margin-left: auto;
-        flex: 5 4em;
-        max-width: 4em;
-        min-width: 4em;
-        a{
-            font-size: 2em;
-            color: $dark-1;
-            border-bottom: white solid 2px;
-        }
-        a:hover{
-            color: darken($color: $dark-1, $amount: 10);
-            text-decoration: underline;
-            border-bottom: darken($color: $dark-1, $amount: 10) solid 2px;
-        }
-    }
+	.phone {
+		margin-top: 0.6em;
+		margin-left: auto;
+		flex: 5 4em;
+		max-width: 4em;
+		min-width: 4em;
+		a {
+			font-size: 2em;
+			color: $dark-1;
+			border-bottom: white solid 2px;
+		}
+		a:hover {
+			color: darken($color: $dark-1, $amount: 10);
+			text-decoration: underline;
+			border-bottom: darken($color: $dark-1, $amount: 10) solid 2px;
+		}
+	}
 
-    .menu{
-        margin-left: 1em;
-        flex: 5 4em;
-        max-width: 4em;
-        min-width: 4em;
-    }
-    .search{
-        margin-top: -$gutter;
-        padding: 0;
-        background: #E5E5E5;
-        border: #CECECE 3px solid;
-        height: 3rem;
-        min-width: 0;
+	.menu {
+		margin-left: 1em;
+		flex: 5 4em;
+		max-width: 4em;
+		min-width: 4em;
+	}
+	.search {
+		margin-top: -$gutter;
+		padding: 0;
+		background: #e5e5e5;
+		border: #cecece 3px solid;
+		height: 3rem;
+		min-width: 0;
 
-        input{
-            background: none;
-            border: none;
-            min-width: 0;
-        }
+		input {
+			background: none;
+			border: none;
+			min-width: 0;
+		}
 
-        button{
-            background: none;
-            border: none;
+		button {
+			background: none;
+			border: none;
 
-            &:hover{
-                background: none;
-            }
+			&:hover {
+				background: none;
+			}
 
-            i{
-                color: #333645;
-                font-size: 1.4rem;
-                min-width: 3rem;
-            }
-        }
-    }
+			i {
+				color: #333645;
+				font-size: 1.4rem;
+				min-width: 3rem;
+			}
+		}
+	}
 
-    .imgHolder{
-        flex: 1 0;
-        min-width: 0;
-        display: block;
-        text-align: center;
-        margin-top: auto;
-        margin-bottom: auto;
-        height: fit-content;
+	.imgHolder {
+		flex: 1 0;
+		min-width: 0;
+		display: block;
+		text-align: center;
+		margin-top: auto;
+		margin-bottom: auto;
+		height: fit-content;
 
-        img{
-            display: block;
-            margin-right:auto;
-            max-width: 100%;
-        }
+		img {
+			display: block;
+			margin-right: auto;
+			max-width: 100%;
+		}
 
-        a{
-            margin-right:auto;
-            display: block;
-        }
-
-    }
+		a {
+			margin-right: auto;
+			display: block;
+		}
+	}
 }
 
+.menu {
+	background: $dark-1;
+	color: white;
+	border: none;
+	@include centerVert;
+	width: 4em;
+	height: 3.5em;
+	margin-left: $gutter * 2;
+	border-radius: 0.25em;
+	position: relative;
+	.menuText {
+		display: block;
+		margin-top: 2rem;
+		font-size: 0.8em;
+		font-weight: 400;
+	}
+	&:hover {
+		background: darken($color: $dark-1, $amount: 10);
+	}
 
-.menu{
-    background: $dark-1;
-    color: white;
-    border:none;
-    @include centerVert;
-    width: 4em;
-    height: 3.5em;
-    margin-left: $gutter * 2;
-    border-radius: .25em;
-    position: relative;
-    .menuText{
-        display: block;
-        margin-top: 2rem;
-        font-size: .8em;
-        font-weight: 400;
-    }
-    &:hover{
-        background: darken($color: $dark-1, $amount: 10);
-    }
-
-    .burgerHolder{
-        position: absolute;
-        height: 2rem;
-        width: 100%;
-        display: block;
-        line-height: 1px;
-        .burgerLines{
-            display: block;
-            position: absolute;
-            width: 2.5rem;
-            left: 0; right: 0;
-            background: white;
-            margin: auto;
-            height: .2em;
-            z-index: 10;
-            transform: rotate(0deg);
-            transition: margin-top 200ms 400ms linear,transform 400ms linear;
-        }
-        .bl1{
-            margin-top: 5px;
-        };
-        .bl2{
-            margin-top: 15px;
-        };
-        .bl3{
-            margin-top: 25px;
-        };
-        margin-bottom: 0;
-    }
+	.burgerHolder {
+		position: absolute;
+		height: 2rem;
+		width: 100%;
+		display: block;
+		line-height: 1px;
+		.burgerLines {
+			display: block;
+			position: absolute;
+			width: 2.5rem;
+			left: 0;
+			right: 0;
+			background: white;
+			margin: auto;
+			height: 0.2em;
+			z-index: 10;
+			transform: rotate(0deg);
+			transition: margin-top 200ms 400ms linear, transform 400ms linear;
+		}
+		.bl1 {
+			margin-top: 5px;
+		}
+		.bl2 {
+			margin-top: 15px;
+		}
+		.bl3 {
+			margin-top: 25px;
+		}
+		margin-bottom: 0;
+	}
 }
 
-.menuTog .burgerHolder{
-    .burgerLines{
-        margin-top: 15px;
-        transition: margin-top 200ms,transform 400ms 200ms;
-    }
-    .bl1{
-        transform: rotate(225deg)
-    };
-    .bl2{
-        transform: rotate(-225deg)
-    };
-    .bl3{
-        transform: rotate(225deg)
-    };
+.menuTog .burgerHolder {
+	.burgerLines {
+		margin-top: 15px;
+		transition: margin-top 200ms, transform 400ms 200ms;
+	}
+	.bl1 {
+		transform: rotate(225deg);
+	}
+	.bl2 {
+		transform: rotate(-225deg);
+	}
+	.bl3 {
+		transform: rotate(225deg);
+	}
 }
-.search{
-    @include centerVert;
-    height: 3.5em;
-    display: flex;
-    flex: 1;
-    input{
-        padding-left: $gutter / 2;
-        flex: 1;
-        min-width: 8em;
-        background: white;
-        border:solid 1px #CCCCCC;
-        @media screen and (min-width:992px){
-            min-width: 12em;
-        }
-    }
+.search {
+	@include centerVert;
+	height: 3.5em;
+	display: flex;
+	flex: 1;
+	input {
+		padding-left: $gutter / 2;
+		flex: 1;
+		min-width: 8em;
+		background: white;
+		border: solid 1px #cccccc;
+		@media screen and (min-width: 992px) {
+			min-width: 12em;
+		}
+	}
 
-    input:focus{
-        outline:none;
-    }
+	input:focus {
+		outline: none;
+	}
 
-    button{
-        color:white;
-        min-width: 3.5rem;
-        background: $light-offset-2;
-        border:solid 2px $light-offset-2;
-        i{
-            font-size: 1.5em;
-        }
+	button {
+		color: white;
+		min-width: 3.5rem;
+		background: $light-offset-2;
+		border: solid 2px $light-offset-2;
+		i {
+			font-size: 1.5em;
+		}
 
-
-        &:hover{
-            background: darken($color: $light-offset-2, $amount: 10);
-        }
-    }
-}
-
-
-
-.header-med{
-    padding-top: $gutter * 1.5;
-    padding-bottom: $gutter * 1.5;
-    overflow: hidden;
-    // .menu{
-    //     margin-right: -$gutter/2;
-    // }
-
-    .logo{
-        display: block;
-        max-width: 100%;
-        height: 3.5rem;
-        overflow: hidden;
-        @include centerVert;
-        img{
-             max-width: 100%;
-             height: 3.5rem;
-        }
-  
-    }
-
-    .actions{
-        display: flex;
-        padding-left: 40px;
-        padding-right: 0;
-
-        & > * {
-            flex: 0 1 auto;
-        }
-
-        .smallButton{
-            @include centerVert;
-            min-width: 4em;
-            max-width: 4em;
-            height: 3.5em;
-            margin-left: $gutter * 2;
-            border-radius: .25em;
-            i{
-                font-size: 1.7em
-            }
-        }
-
-        .medButton{
-            @include centerVert;
-            min-width: 9em;
-            max-width: 9em;
-            flex-basis: 8em;
-            height: 3.5em;
-            margin-left: $gutter * 2;
-            border-radius: .25em;
-            text-align: center;
-            i{
-                display: inline-block;
-                margin-top: .9em;
-                font-size: 1.2em;
-                text-decoration: none;
-            }
-        }
-
-        .phone{
-            @include centerVert;
-            font-size: 2em;
-            margin-left: $gutter;
-        }
-        .search{
-            //margin-left: $gutter * 2;
-            margin-bottom: auto;
-            border-radius: 0 3px 3px 0;
-
-            input{
-                box-shadow: inset 0 1px 1px rgba($color: black, $alpha: .6);
-                transition: border-color 150ms ,box-shadow 150ms;
-                &:focus{
-                    border-color: #5bc0de;
-                    box-shadow: inset 0 1px 1px rgba($color: black, $alpha: .6), 0 0 8px #5bc0de;
-                }
-            };
-
-            @media screen and (min-width:768px){
-                max-width: 14em;
-            };
-
-            @media screen and (min-width: map-get($map: $breakpoints, $key:lg )){
-                margin-left: $gutter * 2;
-            };
-
-        }
-        .searchButton{
-            background: $light-offset-2;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            &:hover{
-                background: darken($color: $light-offset-2, $amount: 10);
-            }
-        }
-
-        .contactButton{
-            background: $light-offset-2;
-            color: white;
-            border: none;
-            &:hover{
-                background: darken($color: $light-offset-2, $amount: 10);
-            }
-        }
-
-        .supportButton{
-            background: #4183D7;
-            color:white;
-            border: none;
-            margin-left: auto;
-            &:hover{
-                background: darken($color: #4183D7, $amount: 10);
-            }
-        }
-
-
-    }
+		&:hover {
+			background: darken($color: $light-offset-2, $amount: 10);
+		}
+	}
 }
 
-header{
-    overflow: visible;
-    position: relative;
-    z-index: 50000;
-    background: white;
+.header-med {
+	padding-top: $gutter * 1.5;
+	padding-bottom: $gutter * 1.5;
+	overflow: hidden;
+	// .menu{
+	//     margin-right: -$gutter/2;
+	// }
+
+	.logo {
+		display: block;
+		max-width: 100%;
+		height: 3.5rem;
+		overflow: hidden;
+		@include centerVert;
+		img {
+			max-width: 100%;
+			height: 3.5rem;
+		}
+	}
+
+	.actions {
+		display: flex;
+		padding-left: 40px;
+		padding-right: 0;
+
+		& > * {
+			flex: 0 1 auto;
+		}
+
+		.smallButton {
+			@include centerVert;
+			min-width: 4em;
+			max-width: 4em;
+			height: 3.5em;
+			margin-left: $gutter * 2;
+			border-radius: 0.25em;
+			i {
+				font-size: 1.7em;
+			}
+		}
+
+		.medButton {
+			@include centerVert;
+			min-width: 9em;
+			max-width: 9em;
+			flex-basis: 8em;
+			height: 3.5em;
+			margin-left: $gutter * 2;
+			border-radius: 0.25em;
+			text-align: center;
+			i {
+				display: inline-block;
+				margin-top: 0.9em;
+				font-size: 1.2em;
+				text-decoration: none;
+			}
+		}
+
+		.phone {
+			@include centerVert;
+			font-size: 2em;
+			margin-left: $gutter;
+		}
+		.search {
+			//margin-left: $gutter * 2;
+			margin-bottom: auto;
+			border-radius: 0 3px 3px 0;
+
+			input {
+				box-shadow: inset 0 1px 1px rgba($color: black, $alpha: 0.6);
+				transition: border-color 150ms, box-shadow 150ms;
+				&:focus {
+					border-color: #5bc0de;
+					box-shadow: inset 0 1px 1px rgba($color: black, $alpha: 0.6),
+						0 0 8px #5bc0de;
+				}
+			}
+
+			@media screen and (min-width: 768px) {
+				max-width: 14em;
+			}
+
+			@media screen and (min-width: map-get($map: $breakpoints, $key:lg )) {
+				margin-left: $gutter * 2;
+			}
+		}
+		.searchButton {
+			background: $light-offset-2;
+			color: white;
+			border: none;
+			border-radius: 3px;
+			&:hover {
+				background: darken($color: $light-offset-2, $amount: 10);
+			}
+		}
+
+		.contactButton {
+			background: $light-offset-2;
+			color: white;
+			border: none;
+			&:hover {
+				background: darken($color: $light-offset-2, $amount: 10);
+			}
+		}
+
+		.supportButton {
+			background: #4183d7;
+			color: white;
+			border: none;
+			margin-left: auto;
+			&:hover {
+				background: darken($color: #4183d7, $amount: 10);
+			}
+		}
+	}
 }
 
-.haveTransition{
-    transition: transform 200ms;
+header {
+	overflow: visible;
+	position: relative;
+	z-index: 50000;
+	background: white;
+}
+
+.haveTransition {
+	transition: transform 200ms;
+}
+.menu {
+	background: $dark-1;
+	color: white;
+	border: none;
+	@include centerVert;
+	width: 4em;
+	height: 3.5em;
+	margin-left: $gutter * 2;
+	border-radius: 0.25em;
+	position: relative;
+	.menuText {
+		display: block;
+		margin-top: 2rem;
+		font-size: 0.8em;
+		font-weight: 400;
+	}
+	&:hover {
+		background: darken($color: $dark-1, $amount: 10);
+	}
+
+	.burgerHolder {
+		position: absolute;
+		height: 2rem;
+		width: 100%;
+		display: block;
+		line-height: 1px;
+		.burgerLines {
+			display: block;
+			position: absolute;
+			width: 2.5rem;
+			left: 0;
+			right: 0;
+			background: white;
+			margin: auto;
+			height: 0.2em;
+			z-index: 10;
+			transform: rotate(0deg);
+			transition: margin-top 200ms 400ms linear, transform 400ms linear;
+		}
+		.bl1 {
+			margin-top: 5px;
+		}
+		.bl2 {
+			margin-top: 15px;
+		}
+		.bl3 {
+			margin-top: 25px;
+		}
+		margin-bottom: 0;
+	}
+}
+
+.menuTog .burgerHolder {
+	.burgerLines {
+		margin-top: 15px;
+		transition: margin-top 200ms, transform 400ms 200ms;
+	}
+	.bl1 {
+		transform: rotate(225deg);
+	}
+	.bl2 {
+		transform: rotate(-225deg);
+	}
+	.bl3 {
+		transform: rotate(225deg);
+	}
+}
+
+.search {
+	@include centerVert;
+	height: 3.5em;
+	display: flex;
+	flex: 1;
+	input {
+		padding-left: $gutter / 2;
+		flex: 1;
+		min-width: 0em;
+		background: white;
+		border: solid 1px #cccccc;
+		@media screen and (min-width: 992px) {
+			min-width: 0em;
+		}
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	button {
+		color: white;
+		min-width: 3.5rem;
+		background: $light-offset-2;
+		border: solid 2px $light-offset-2;
+		i {
+			font-size: 1.5em;
+		}
+
+		&:hover {
+			background: darken($color: $light-offset-2, $amount: 10);
+		}
+	}
+}
+
+.header-med {
+	padding-top: $gutter * 1.5;
+	padding-bottom: $gutter * 1.5;
+	overflow: hidden;
+	// .menu{
+	//     margin-right: -$gutter/2;
+	// }
+
+	.logo {
+		display: block;
+		max-width: 100%;
+		height: 3.5rem;
+		overflow: hidden;
+		@include centerVert;
+		img {
+			max-width: 100%;
+			height: 3.5rem;
+		}
+	}
+
+	.actions {
+		display: flex;
+		padding-left: 40px;
+		padding-right: 0;
+
+		& > * {
+			flex: 0 1 auto;
+		}
+
+		.smallButton {
+			@include centerVert;
+			min-width: 4em;
+			max-width: 4em;
+			height: 3.5em;
+			margin-left: $gutter * 2;
+			border-radius: 0.25em;
+			i {
+				font-size: 1.7em;
+			}
+		}
+
+		.medButton {
+			@include centerVert;
+			min-width: 9em;
+			max-width: 9em;
+			flex-basis: 8em;
+			height: 3.5em;
+			margin-left: $gutter * 2;
+			border-radius: 0.25em;
+			text-align: center;
+			i {
+				display: inline-block;
+				margin-top: 0.9em;
+				font-size: 1.2em;
+				text-decoration: none;
+			}
+		}
+
+		.phone {
+			@include centerVert;
+			font-size: 2em;
+			margin-left: $gutter;
+		}
+		.search {
+			//margin-left: $gutter * 2;
+			margin-bottom: auto;
+			border-radius: 0 3px 3px 0;
+			overflow: hidden;
+
+			input {
+				box-shadow: inset 0 1px 1px rgba($color: black, $alpha: 0.6);
+				transition: border-color 150ms, box-shadow 150ms;
+				&:focus {
+					border-color: #5bc0de;
+					box-shadow: inset 0 1px 1px rgba($color: black, $alpha: 0.6),
+						0 0 8px #5bc0de;
+				}
+			}
+
+			@media screen and (min-width: 768px) {
+				max-width: 14em;
+			}
+
+			@media screen and (min-width: map-get($map: $breakpoints, $key:lg )) {
+				margin-left: $gutter * 2;
+			}
+		}
+		.searchButton {
+			background: $light-offset-2;
+			color: white;
+			border: none;
+			border-radius: 3px;
+			&:hover {
+				background: darken($color: $light-offset-2, $amount: 10);
+			}
+		}
+
+		.contactButton {
+			background: $light-offset-2;
+			color: white;
+			border: none;
+			&:hover {
+				background: darken($color: $light-offset-2, $amount: 10);
+			}
+		}
+
+		.supportButton {
+			background: #4183d7;
+			color: white;
+			border: none;
+			margin-left: auto;
+			&:hover {
+				background: darken($color: #4183d7, $amount: 10);
+			}
+		}
+	}
+}
+
+header {
+	overflow: visible;
+	position: relative;
+	z-index: 50000;
+	background: white;
+}
+
+.haveTransition {
+	transition: transform 200ms;
 }
