@@ -912,7 +912,7 @@ main {
     min-height: 24em;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .productPanel {
     margin: 16px 40px;
   }
