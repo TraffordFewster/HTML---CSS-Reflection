@@ -1598,7 +1598,7 @@ main {
   text-decoration: underline;
 }
 .footerContainer li {
-  padding: 2px 0;
+  padding-bottom: 2px;
   font-size: 0.8em;
   font-weight: 400;
 }
