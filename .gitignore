@@ -1,2 +1,4 @@
 /bootstrapScss
 node_modules
+vendor
+.env

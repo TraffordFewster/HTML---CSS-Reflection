@@ -1,0 +1,10 @@
+{
+	"require": {
+		"josegonzalez/dotenv": "dev-master"
+	},
+	"autoload": {
+		"classmap": [
+			"src"
+		]
+	}
+}
