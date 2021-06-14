@@ -1,38 +1,42 @@
 $dark-1: #333645;
-$dark-1-hover: #22242E;
+$dark-1-hover: #22242e;
 
 $light-offset: darken(white, 10);
-$light-offset-2: #999AA2;
+$light-offset-2: #999aa2;
 
 $productNav-bg: #333645;
 
 $gutter: 16px;
 
 $product-colors: (
-    "bespSoft": #67809F,
-    "itSup":#4183D7,
-    "digitalmarketing": #2ECC71,
-    "telecoms": #D64541,
-    "webdesign": #926FB1,
-    "cybersecurity":#F62459,
-    "scs": #926FB1,
+	'bespSoft': #67809f,
+	'itSup': #4183d7,
+	'digitalmarketing': #2ecc71,
+	'telecoms': #d64541,
+	'webdesign': #926fb1,
+	'cybersecurity': #f62459,
+	'scs': #926fb1,
 );
 
-$news-types:(
-    "news": #D64541,
-    "carreers" : #4183D7,
+$news-types: (
+	'webDes': #d64541,
+	'itSup': #4183d7,
+	'tele': #000000,
+	'bespSoft': #000000,
+	'digMark': #000000,
+	'cyberSec': #000000,
 );
 
-$social-media:(
-    "fb": #4267B2,
-    "twitter": #1DA1F2,
-    "li": #2867b2,
+$social-media: (
+	'fb': #4267b2,
+	'twitter': #1da1f2,
+	'li': #2867b2,
 );
 
-$breakpoints:(
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1260px,
+$breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1260px,
 );

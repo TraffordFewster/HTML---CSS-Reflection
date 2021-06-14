@@ -17,6 +17,7 @@ class NewsItem {
     }
 
     public function setDesc($desc){
+        if (strlen($desc) > 80) $desc = substr($desc,0,80). "...";
         $this->shortDesc = $desc;
     }
 

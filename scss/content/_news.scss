@@ -1,179 +1,190 @@
-.newsSelector{
-    padding-top: $gutter * 2;
-    padding-left: $gutter;
-    padding-right: 0;
-    h2{
-        @media screen and (min-width: map-get($map: $breakpoints, $key:md )){
-            margin-left: - $gutter
-        }
-        margin-left: $gutter * .25;
-        padding-bottom: ($gutter * 1.5);
-        margin-bottom:- $gutter * 0.4;
-        display: block;
-        width: 3.5em;
-        font-size: 1.5em;
-        //min-height: 10em;
-        border-bottom: solid .2em $dark-1;
-    }
+.newsSelector {
+	padding-top: $gutter * 2;
+	padding-left: $gutter;
+	padding-right: 0;
+	h2 {
+		@media screen and (min-width: map-get($map: $breakpoints, $key:md )) {
+			margin-left: -$gutter;
+		}
+		margin-left: $gutter * 0.25;
+		padding-bottom: ($gutter * 1.5);
+		margin-bottom: -$gutter * 0.4;
+		display: block;
+		width: 3.5em;
+		font-size: 1.5em;
+		//min-height: 10em;
+		border-bottom: solid 0.2em $dark-1;
+	}
 }
 
-.newsContainerBG{
-    background:$light-offset;
-    background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(255,255,255,1) 12%);
-    margin-top: .4em;
-    padding-top: $gutter;
-    padding-bottom: $gutter;
+.newsContainerBG {
+	background: $light-offset;
+	background: linear-gradient(
+		180deg,
+		rgba(239, 239, 239, 1) 0%,
+		rgba(255, 255, 255, 1) 12%
+	);
+	margin-top: 0.4em;
+	padding-top: $gutter;
+	padding-bottom: $gutter;
 }
-.newsContainer{
-    padding: 0;
+.newsContainer {
+	padding: 0;
 }
-.newsContainer .row{
-    @media screen and (min-width: map-get($map: $breakpoints, $key:md )){
-        margin-left: - $gutter;
-        margin-right: - $gutter;
-    }
-}
-
-.newsItem{
-    min-width: 0px;
-    //max-width: calc(33% - #{$gutter * 2});
-    max-width: calc(100% - #{$gutter*2});
-
-    @media screen and (min-width:map-get($map: $breakpoints, $key:md )){
-        max-width: calc(50% - #{$gutter * 2});
-    }
-
-    @media screen and (min-width:map-get($map: $breakpoints, $key:xl )){
-        max-width: calc(33.333333333333% - #{$gutter * 2});
-    }
-    // display: flex;
-    // flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #CBCBCB;
-    border-radius: .25em;
-    overflow: hidden;
-    color:$dark-1;
-    padding: 0;
-    margin: 1em;
-    a{
-        text-decoration: none;
-        color: white;
-    }
-    .thumbnail-holder{
-        display: block;
-        background:red;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-
-        &:before {
-            position: absolute; 
-            z-index: 20;
-            display: block; 
-            content: "";
-            top: 0; right: 0; bottom: 0; left: 0;  
-            transition: background-color 200ms;
-            background: rgba($color: #ffffff, $alpha: 0);
-        }
-
-        &:hover{
-            &:before { 
-                background: rgba($color: #ffffff, $alpha: .5);
-            }
-
-            img{
-                transform: scale(1.1);
-            }
-        }
-        img{
-            position: relative;
-            transition: transform 200ms;
-            width: 100%
-        }
-    }
-
-
-
-    .title{
-        display: block;
-        font-size: 1em;
-        font-weight: 600;
-        min-height: 3em;
-    }
-
-    .desc{
-        font-size: .9em;
-        min-height: 5em;
-    }
-
-    h3:hover{
-        text-decoration: underline;
-    }
-    .newsItemText{
-        padding: $gutter * 2;
-        display: flex;
-        flex-direction: column;
-
-        .give-hr-margin{
-            margin: $gutter 0 ;
-        }
-    }
-
-    .readMore{
-        margin-top: auto;
-        padding: ($gutter / 1.5) ($gutter /4);
-        border-radius: .2em;
-        text-align: center;
-        max-width: 7.5rem;
-    }
-
-    .author{
-        font-size: .87rem;
-        line-height: .2rem;
-        img{
-            float: left;
-            border-radius: 50%;
-            margin-right: $gutter;
-        }
-        h4{
-            font-weight: 600;
-            font-size: .87rem;
-            margin-top: .15rem;
-            margin-bottom: .75rem;
-        }
-    }
+.newsContainer .row {
+	@media screen and (min-width: map-get($map: $breakpoints, $key:md )) {
+		margin-left: -$gutter;
+		margin-right: -$gutter;
+	}
 }
 
-@each $type,$color in $news-types {
-    .newsType-#{$type} {
-        position: relative;
-        .overlayBanner{
-            display: block;
-            padding: .2rem .5rem;
-            background: $color;
-            font-size: .75rem;
-            font-weight: 600;
-            position: absolute;
-            top: 5%;
-            right:0%;
-            z-index: 400;
-            text-align: center;
+.newsItem {
+	min-width: 0px;
+	//max-width: calc(33% - #{$gutter * 2});
+	max-width: calc(100% - #{$gutter * 2});
 
-            &:hover{
-                text-decoration: underline;
-            }
-        }
+	@media screen and (min-width: map-get($map: $breakpoints, $key:md )) {
+		max-width: calc(50% - #{$gutter * 2});
+		&:nth-child(3) {
+			display: none !important;
+		}
+	}
 
-        h3{
-            color:$color;
-        }
+	@media screen and (min-width: map-get($map: $breakpoints, $key:xl )) {
+		max-width: calc(33.333333333333% - #{$gutter * 2});
+		&:nth-child(3) {
+			display: block !important;
+		}
+	}
+	// display: flex;
+	// flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #cbcbcb;
+	border-radius: 0.25em;
+	overflow: hidden;
+	color: $dark-1;
+	padding: 0;
+	margin: 1em;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	.thumbnail-holder {
+		display: block;
+		background: red;
+		width: 100%;
+		overflow: hidden;
+		position: relative;
 
-        .readMore{
-            background:$color;
-            &:hover{
-                background:darken($color, 10);
-            }
-        }
-    }
+		&:before {
+			position: absolute;
+			z-index: 20;
+			display: block;
+			content: '';
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			transition: background-color 200ms;
+			background: rgba($color: #ffffff, $alpha: 0);
+		}
+
+		&:hover {
+			&:before {
+				background: rgba($color: #ffffff, $alpha: 0.5);
+			}
+
+			img {
+				transform: scale(1.1);
+			}
+		}
+		img {
+			position: relative;
+			transition: transform 200ms;
+			width: 100%;
+		}
+	}
+
+	.title {
+		display: block;
+		font-size: 1em;
+		font-weight: 600;
+		min-height: 3em;
+	}
+
+	.desc {
+		font-size: 0.9em;
+		min-height: 5em;
+	}
+
+	h3:hover {
+		text-decoration: underline;
+	}
+	.newsItemText {
+		padding: $gutter * 2;
+		display: flex;
+		flex-direction: column;
+
+		.give-hr-margin {
+			margin: $gutter 0;
+		}
+	}
+
+	.readMore {
+		margin-top: auto;
+		padding: ($gutter / 1.5) ($gutter / 4);
+		border-radius: 0.2em;
+		text-align: center;
+		max-width: 7.5rem;
+	}
+
+	.author {
+		font-size: 0.87rem;
+		line-height: 0.2rem;
+		img {
+			float: left;
+			border-radius: 50%;
+			margin-right: $gutter;
+		}
+		h4 {
+			font-weight: 600;
+			font-size: 0.87rem;
+			margin-top: 0.15rem;
+			margin-bottom: 0.75rem;
+		}
+	}
+}
+
+@each $type, $color in $news-types {
+	.newsType-#{$type} {
+		position: relative;
+		.overlayBanner {
+			display: block;
+			padding: 0.2rem 0.5rem;
+			background: $color;
+			font-size: 0.75rem;
+			font-weight: 600;
+			position: absolute;
+			top: 5%;
+			right: 0%;
+			z-index: 400;
+			text-align: center;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		h3 {
+			color: $color;
+		}
+
+		.readMore {
+			background: $color;
+			&:hover {
+				background: darken($color, 10);
+			}
+		}
+	}
 }
