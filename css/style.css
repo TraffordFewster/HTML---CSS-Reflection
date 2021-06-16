@@ -1345,7 +1345,7 @@ header {
   .newsType-webDes .overlayBanner {
     display: block;
     padding: 0.2rem 0.5rem;
-    background: #d64541;
+    background: #926fb1;
     font-size: 0.75rem;
     font-weight: 600;
     position: absolute;
@@ -1356,11 +1356,11 @@ header {
     .newsType-webDes .overlayBanner:hover {
       text-decoration: underline; }
   .newsType-webDes h3 {
-    color: #d64541; }
+    color: #926fb1; }
   .newsType-webDes .readMore {
-    background: #d64541; }
+    background: #926fb1; }
     .newsType-webDes .readMore:hover {
-      background: #bc2c28; }
+      background: #79539a; }
 
 .newsType-itSup {
   position: relative; }
@@ -1389,7 +1389,7 @@ header {
   .newsType-tele .overlayBanner {
     display: block;
     padding: 0.2rem 0.5rem;
-    background: #000000;
+    background: #d64541;
     font-size: 0.75rem;
     font-weight: 600;
     position: absolute;
@@ -1400,18 +1400,18 @@ header {
     .newsType-tele .overlayBanner:hover {
       text-decoration: underline; }
   .newsType-tele h3 {
-    color: #000000; }
+    color: #d64541; }
   .newsType-tele .readMore {
-    background: #000000; }
+    background: #d64541; }
     .newsType-tele .readMore:hover {
-      background: black; }
+      background: #bc2c28; }
 
 .newsType-bespSoft {
   position: relative; }
   .newsType-bespSoft .overlayBanner {
     display: block;
     padding: 0.2rem 0.5rem;
-    background: #000000;
+    background: #67809f;
     font-size: 0.75rem;
     font-weight: 600;
     position: absolute;
@@ -1422,18 +1422,18 @@ header {
     .newsType-bespSoft .overlayBanner:hover {
       text-decoration: underline; }
   .newsType-bespSoft h3 {
-    color: #000000; }
+    color: #67809f; }
   .newsType-bespSoft .readMore {
-    background: #000000; }
+    background: #67809f; }
     .newsType-bespSoft .readMore:hover {
-      background: black; }
+      background: #526781; }
 
 .newsType-digMark {
   position: relative; }
   .newsType-digMark .overlayBanner {
     display: block;
     padding: 0.2rem 0.5rem;
-    background: #000000;
+    background: #2ecc71;
     font-size: 0.75rem;
     font-weight: 600;
     position: absolute;
@@ -1444,18 +1444,18 @@ header {
     .newsType-digMark .overlayBanner:hover {
       text-decoration: underline; }
   .newsType-digMark h3 {
-    color: #000000; }
+    color: #2ecc71; }
   .newsType-digMark .readMore {
-    background: #000000; }
+    background: #2ecc71; }
     .newsType-digMark .readMore:hover {
-      background: black; }
+      background: #25a25a; }
 
 .newsType-cyberSec {
   position: relative; }
   .newsType-cyberSec .overlayBanner {
     display: block;
     padding: 0.2rem 0.5rem;
-    background: #000000;
+    background: #f62459;
     font-size: 0.75rem;
     font-weight: 600;
     position: absolute;
@@ -1466,11 +1466,11 @@ header {
     .newsType-cyberSec .overlayBanner:hover {
       text-decoration: underline; }
   .newsType-cyberSec h3 {
-    color: #000000; }
+    color: #f62459; }
   .newsType-cyberSec .readMore {
-    background: #000000; }
+    background: #f62459; }
     .newsType-cyberSec .readMore:hover {
-      background: black; }
+      background: #de093f; }
 
 .clientsBG {
   background: white;
@@ -1567,7 +1567,7 @@ header {
   top: -11rem; }
 
 .emailBG {
-  background: #DDDDDD;
+  background: #dddddd;
   padding-top: 32px;
   padding-bottom: 32px; }
 
@@ -1580,7 +1580,8 @@ header {
   .emailContainer .row {
     margin-left: 32px;
     margin-right: 32px; }
-  .emailContainer h2, .emailContainer label {
+  .emailContainer h2,
+  .emailContainer label {
     padding: 0;
     font-weight: 500; }
   .emailContainer h2 {
@@ -1597,64 +1598,14 @@ header {
     .emailContainer input:focus {
       border-color: #5bc0de;
       box-shadow: inset 0 1px 1px black, 0 0 8px #5bc0de; }
-  .emailContainer .emailCol, .emailContainer .nameCol {
+  .emailContainer .emailCol,
+  .emailContainer .nameCol {
     margin-top: 16px; }
   @media screen and (min-width: 992px) {
     .emailContainer .nameCol > * {
       margin-right: 8px; }
     .emailContainer .emailCol > * {
       margin-left: 8px; } }
-  .emailContainer .checkMarketing {
-    display: flex;
-    margin: 0;
-    margin-top: 16px;
-    padding: 0;
-    position: relative; }
-    .emailContainer .checkMarketing .checkHolder {
-      min-width: 2em;
-      height: 2em;
-      position: relative; }
-      .emailContainer .checkMarketing .checkHolder .holderThing {
-        content: "1";
-        opacity: 1;
-        width: 2em;
-        height: 2em;
-        background: none;
-        border: 3px solid #333645;
-        border-radius: 3px;
-        position: absolute;
-        z-index: 1;
-        left: 0;
-        top: 4px;
-        bottom: 0;
-        right: 0;
-        text-align: center; }
-        .emailContainer .checkMarketing .checkHolder .holderThing .fa-check {
-          margin-top: 8px;
-          opacity: 0; }
-      .emailContainer .checkMarketing .checkHolder input {
-        position: absolute;
-        z-index: 12;
-        opacity: 0;
-        width: 2em;
-        height: 2em; }
-        .emailContainer .checkMarketing .checkHolder input:hover {
-          cursor: pointer; }
-        .emailContainer .checkMarketing .checkHolder input:checked {
-          background-color: #333645;
-          color: white;
-          border: none; }
-      .emailContainer .checkMarketing .checkHolder input:checked ~ .holderThing {
-        background-color: #333645;
-        color: white;
-        border: none; }
-        .emailContainer .checkMarketing .checkHolder input:checked ~ .holderThing .fa-check {
-          opacity: 1;
-          color: white; }
-    .emailContainer .checkMarketing label {
-      font-size: 1rem;
-      font-weight: 500;
-      margin-left: 8px; }
   .emailContainer .btn {
     margin-top: 32px;
     background: #333645;
@@ -1662,6 +1613,58 @@ header {
     height: 3em; }
     .emailContainer .btn:hover {
       background: #1d1f28; }
+
+.checkMarketing {
+  display: flex;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  position: relative; }
+  .checkMarketing .checkHolder {
+    min-width: 2em;
+    height: 2em;
+    position: relative; }
+    .checkMarketing .checkHolder .holderThing {
+      content: '1';
+      opacity: 1;
+      width: 2em;
+      height: 2em;
+      background: none;
+      border: 3px solid #333645;
+      border-radius: 3px;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 4px;
+      bottom: 0;
+      right: 0;
+      text-align: center; }
+      .checkMarketing .checkHolder .holderThing .fa-check {
+        margin-top: 8px;
+        opacity: 0; }
+    .checkMarketing .checkHolder input {
+      position: absolute;
+      z-index: 12;
+      opacity: 0;
+      width: 2em;
+      height: 2em; }
+      .checkMarketing .checkHolder input:hover {
+        cursor: pointer; }
+      .checkMarketing .checkHolder input:checked {
+        background-color: #333645;
+        color: white;
+        border: none; }
+    .checkMarketing .checkHolder input:checked ~ .holderThing {
+      background-color: #333645;
+      color: white;
+      border: none; }
+      .checkMarketing .checkHolder input:checked ~ .holderThing .fa-check {
+        opacity: 1;
+        color: white; }
+  .checkMarketing label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 8px; }
 
 .mainFooterBG {
   background: #333645;
@@ -1904,3 +1907,143 @@ header {
     @media screen and (max-width: 768px) {
       #cookiePopup .cookieBox {
         width: 85%; } }
+
+.navLocLine {
+  margin: 0; }
+
+.navLoc {
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px; }
+  .navLoc a {
+    font-weight: bold;
+    color: #333645;
+    text-decoration: none; }
+    .navLoc a:hover {
+      text-decoration: underline; }
+
+.contactMainConBG {
+  width: 100%;
+  background: linear-gradient(180deg, #efefef 0px, white 30px);
+  background-repeat: no-repeat; }
+
+.contactMainCon {
+  padding-top: 32px;
+  padding-bottom: 32px; }
+  .contactMainCon h1 {
+    font-weight: 400;
+    font-size: 2.25rem; }
+
+.officeHolder {
+  margin: 0; }
+
+.contactDetails {
+  margin: 0; }
+  .contactDetails a {
+    color: #926fb1;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-decoration: none; }
+    .contactDetails a:hover {
+      text-decoration: underline; }
+  .contactDetails > * {
+    margin-top: 16px; }
+
+.contactForm .row {
+  padding: 0;
+  margin: 0; }
+
+.contactPart {
+  padding: 0; }
+  .contactPart > * {
+    display: block;
+    width: 100%; }
+  .contactPart label {
+    margin-top: 16px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #333645;
+    position: relative; }
+  .contactPart input,
+  .contactPart textarea {
+    border: 1px solid #e5e5e5;
+    padding: 5px 15px;
+    font-size: 1rem; }
+    .contactPart input:focus,
+    .contactPart textarea:focus {
+      border-color: #5bc0de;
+      box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.6), 0 0 8px #5bc0de;
+      border: 1px solid #e5e5e5;
+      outline: none; }
+  .contactPart textarea {
+    height: 6rem; }
+  .contactPart .btn {
+    margin-top: 32px;
+    background: #333645;
+    color: white;
+    height: 3em;
+    max-width: 10rem; }
+    .contactPart .btn:hover {
+      background: #1d1f28; }
+
+.checkMarketing .form-check-label:hover {
+  cursor: pointer; }
+
+.checkMarketing .form-check-label a {
+  color: #333645; }
+  .checkMarketing .form-check-label a:hover {
+    color: #494d62; }
+
+.inputError {
+  border: 1px solid #f06060 !important; }
+
+.successCover {
+  display: block !important;
+  transition: opacity 400ms;
+  background: #dddddd;
+  opacity: 0;
+  border-radius: 5px; }
+  .successCover div > * {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #46ad39; }
+  .successCover i {
+    font-size: 8rem; }
+  .successCover span {
+    font-size: 2.3rem;
+    font-weight: 500; }
+  .successCover div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.lockForm {
+  position: relative; }
+  .lockForm input,
+  .lockForm textarea {
+    border: 1px solid #71f060 !important; }
+  .lockForm .successCover {
+    opacity: 1;
+    z-index: 2000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; }
+
+.formError {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.6rem; }
+
+@media screen and (min-width: 992px) {
+  .lg-rp {
+    padding-right: 8px; }
+  .lg-lp {
+    padding-left: 8px; }
+  .contactForm .row {
+    margin-right: 16px; } }

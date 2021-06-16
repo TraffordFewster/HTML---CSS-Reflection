@@ -50,7 +50,7 @@
                 <a class="supportButton medButton d-none d-lg-block"  href="https://support.netmatters.com/">
                         <i class="fas fa-mouse"> <span class="fw-normal text-uppercase">Support</span></i>
                 </a>
-                <a class="contactButton medButton d-none d-lg-block"  href="https://www.netmatters.co.uk/contact-us">
+                <a class="contactButton medButton d-none d-lg-block"  href="contact.php">
                         <i class="fas fa-paper-plane"> <span class="fw-normal text-uppercase">Contact</span></i>
                 </a>
                 <div class="search d-lg-none d-xl-flex">

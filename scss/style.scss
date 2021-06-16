@@ -1,18 +1,7 @@
-@import 'utility/variables',
-        'utility/functions',
-        'utility/mixins',
-        'utility/selectors',
-        'utility/misc';
+@import 'utility/variables', 'utility/functions', 'utility/mixins',
+	'utility/selectors', 'utility/misc';
 
-@import 'content/header',
-        'content/productNav',
-        'content/cta-banner',
-        'content/products',
-        'content/description',
-        'content/news',
-        'content/_client-footer',
-        'content/email-form',
-        'content/footer',
-        'content/awards',
-        'content/sideMenu',
-        'content/cookies';
+@import 'content/header', 'content/productNav', 'content/cta-banner',
+	'content/products', 'content/description', 'content/news',
+	'content/_client-footer', 'content/email-form', 'content/footer',
+	'content/awards', 'content/sideMenu', 'content/cookies', 'content/contactUs';

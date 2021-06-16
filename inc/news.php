@@ -40,9 +40,9 @@
     <div class="newsContainerBG">
         <div class="container-md newsContainer">
             <div class="row align-items-stretch">
-                <?php echo $newsObjs[0]; ?>
-                <?php echo $newsObjs[1]; ?>
                 <?php echo $newsObjs[2]; ?>
+                <?php echo $newsObjs[1]; ?>
+                <?php echo $newsObjs[0]; ?>
             </div>
         </div>
     </div>
