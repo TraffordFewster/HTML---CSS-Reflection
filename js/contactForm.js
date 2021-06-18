@@ -19,9 +19,9 @@ const elements = {
 		e: document.getElementById('message'),
 		f: verifyString,
 	},
-	newsletterMarketing: {
+	contactMarketing: {
 		t: true,
-		e: document.getElementById('newsletterMarketing'),
+		e: document.getElementById('contactMarketing'),
 		f: validateTick,
 	},
 };
@@ -47,19 +47,28 @@ function validateTick(val) {
 function giveErrorTags(brokenArray) {
 	for (const p in elements) {
 		const ele = elements[p].e;
-		console.log(ele.classList);
 		ele.classList.remove('inputError');
-		document.getElementById(`${p}_error`).classList.add('d-none');
+		let errorEle = document.getElementById(`${p}_error`);
+		if (errorEle) {
+			document.getElementById(`${p}_error`).classList.add('d-none');
+		}
 	}
+	console.log(brokenArray);
 	brokenArray.forEach((v, i) => {
 		let element = elements[v].e;
+		console.log(element);
 		element.classList.add('inputError');
-		document.getElementById(`${v}_error`).classList.remove('d-none');
+		let errorEle = document.getElementById(`${v}_error`);
+		if (errorEle) {
+			document.getElementById(`${v}_error`).classList.remove('d-none');
+		}
 	});
+	document.getElementById('contactSubmit').disabled = false;
 }
 document.getElementById('contactSubmit').onclick = () => {
 	let failed = [];
 	let values = {};
+	document.getElementById('contactSubmit').disabled = true;
 	for (let key in elements) {
 		let obj = elements[key];
 		let value = obj.e.value;

@@ -84,11 +84,11 @@
                                 </div>
                                 <div class="col-12 checkMarketing">
                                     <div class="checkHolder">
-                                        <input type="checkbox" class="form-check-input" id="newsletterMarketing">
+                                        <input type="checkbox" class="form-check-input" id="contactMarketing">
                                         <span class="holderThing"><span class="fas fa-check"></span></span>
                                     </div>
                                     <div>
-                                        <label class="form-check-label" for="newsletterMarketing">Please tick this box if you wish to receive marketing information from us. Please see our <a href="https://www.netmatters.co.uk/privacy-policy">Privacy Policy</a> for more information on how we use your data. <span id="newsletterMarketing_error" class="d-none text-danger formError"></span> </label>
+                                        <label class="form-check-label" for="contactMarketing">Please tick this box if you wish to receive marketing information from us. Please see our <a href="https://www.netmatters.co.uk/privacy-policy">Privacy Policy</a> for more information on how we use your data. <span id="newsletterMarketing_error" class="d-none text-danger formError"></span> </label>
                                     </div>
                                 </div>
                                 <div class="col-12 contactPart">

@@ -21,9 +21,9 @@ var elements = {
     e: document.getElementById('message'),
     f: verifyString
   },
-  newsletterMarketing: {
+  contactMarketing: {
     t: true,
-    e: document.getElementById('newsletterMarketing'),
+    e: document.getElementById('contactMarketing'),
     f: validateTick
   }
 };
@@ -51,21 +51,32 @@ function validateTick(val) {
 function giveErrorTags(brokenArray) {
   for (var p in elements) {
     var ele = elements[p].e;
-    console.log(ele.classList);
     ele.classList.remove('inputError');
-    document.getElementById("".concat(p, "_error")).classList.add('d-none');
+    var errorEle = document.getElementById("".concat(p, "_error"));
+
+    if (errorEle) {
+      document.getElementById("".concat(p, "_error")).classList.add('d-none');
+    }
   }
 
+  console.log(brokenArray);
   brokenArray.forEach(function (v, i) {
     var element = elements[v].e;
+    console.log(element);
     element.classList.add('inputError');
-    document.getElementById("".concat(v, "_error")).classList.remove('d-none');
+    var errorEle = document.getElementById("".concat(v, "_error"));
+
+    if (errorEle) {
+      document.getElementById("".concat(v, "_error")).classList.remove('d-none');
+    }
   });
+  document.getElementById('contactSubmit').disabled = false;
 }
 
 document.getElementById('contactSubmit').onclick = function () {
   var failed = [];
   var values = {};
+  document.getElementById('contactSubmit').disabled = true;
 
   for (var key in elements) {
     var obj = elements[key];

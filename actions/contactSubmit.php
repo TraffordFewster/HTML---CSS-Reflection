@@ -13,14 +13,14 @@
     function checkTick($s) {
         return $s;
     };
-    $requiredPosts = ["full_name","email","phone","subject","message","newsletterMarketing"];
+    $requiredPosts = ["full_name","email","phone","subject","message","contactMarketing"];
     $filters = [
         "full_name" => FILTER_SANITIZE_STRING,
         "email" => FILTER_VALIDATE_EMAIL,
         "phone" => FILTER_SANITIZE_STRING,
         "subject" => FILTER_SANITIZE_STRING,
         "message" => FILTER_SANITIZE_STRING,
-        "newsletterMarketing" => FILTER_VALIDATE_BOOL,
+        "contactMarketing" => FILTER_VALIDATE_BOOL,
     ];
     $checksForType = [
         "full_name" => "checkString",
@@ -28,7 +28,7 @@
         "phone" => "checkPhone",
         "subject" => "checkString",
         "message" => "checkString",
-        "newsletterMarketing" => "checkTick",
+        "contactMarketing" => "checkTick",
     ];
     $failed = [];
     $recievedPosts = [];
