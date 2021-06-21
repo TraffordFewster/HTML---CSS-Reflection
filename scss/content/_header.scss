@@ -154,12 +154,9 @@
 	input {
 		padding-left: $gutter / 2;
 		flex: 1;
-		min-width: 8em;
+		min-width: 10em;
 		background: white;
 		border: solid 1px #cccccc;
-		@media screen and (min-width: 992px) {
-			min-width: 12em;
-		}
 	}
 
 	input:focus {
@@ -296,17 +293,6 @@
 			}
 		}
 	}
-}
-
-header {
-	overflow: visible;
-	position: relative;
-	z-index: 50000;
-	background: white;
-}
-
-.haveTransition {
-	transition: transform 200ms;
 }
 .menu {
 	background: $dark-1;
@@ -531,11 +517,17 @@ header {
 
 header {
 	overflow: visible;
-	position: relative;
-	z-index: 50000;
+	width: 100%;
+	z-index: 19;
 	background: white;
+	position: fixed;
+	top: 0;
+	transition: top 200ms, left 400ms;
 }
+.headerMoveSide{
+	transform: translateX(-350px) !important;
 
-.haveTransition {
-	transition: transform 200ms;
+    @media screen and (max-width: map-get($map:$breakpoints , $key: "lg" )) {
+        transform: translateX(-260px) !important;
+    }
 }

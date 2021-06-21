@@ -14,7 +14,11 @@ const mobileMenuElements = [
     {
         element: $(".mainPageCover"),
         toggle : "mPCExpanded",
-    }
+    },
+    {
+        element: $("header"),
+        toggle : "headerMoveSide"
+    },
 ]
 
 const toggleMobileMenu = () => {

@@ -228,12 +228,9 @@ main {
   .search input {
     padding-left: 8px;
     flex: 1;
-    min-width: 8em;
+    min-width: 10em;
     background: white;
     border: solid 1px #cccccc; }
-    @media screen and (min-width: 992px) {
-      .search input {
-        min-width: 12em; } }
   .search input:focus {
     outline: none; }
   .search button {
@@ -331,15 +328,6 @@ main {
       margin-left: auto; }
       .header-med .actions .supportButton:hover {
         background: #286abd; }
-
-header {
-  overflow: visible;
-  position: relative;
-  z-index: 50000;
-  background: white; }
-
-.haveTransition {
-  transition: transform 200ms; }
 
 .menu {
   background: #333645;
@@ -514,12 +502,18 @@ header {
 
 header {
   overflow: visible;
-  position: relative;
-  z-index: 50000;
-  background: white; }
+  width: 100%;
+  z-index: 19;
+  background: white;
+  position: fixed;
+  top: 0;
+  transition: top 200ms, left 400ms; }
 
-.haveTransition {
-  transition: transform 200ms; }
+.headerMoveSide {
+  transform: translateX(-350px) !important; }
+  @media screen and (max-width: 992px) {
+    .headerMoveSide {
+      transform: translateX(-260px) !important; } }
 
 .productNavBG {
   background: #333645;
@@ -1663,7 +1657,7 @@ header {
   min-height: 100vh;
   right: 0;
   bottom: 0;
-  z-index: 20;
+  z-index: 21;
   transform: translateX(350px); }
   .sideMenu .productSideNav {
     display: none; }
@@ -1750,7 +1744,7 @@ header {
   top: 0;
   background: black;
   opacity: 0;
-  z-index: 10; }
+  z-index: 20; }
 
 .mPCExpanded {
   opacity: .5; }
